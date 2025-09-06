@@ -103,9 +103,30 @@
 
 
 
+\subsubsection{标量场的T变换}
 
-
-
-
-
-
+时间反演变换
+\begin{equation}
+    {\mathcal{T} ^{\mu}}_{\nu}=(\mathcal{T} ^{-1}{)^{\mu}}_{\nu}=\left( \begin{matrix}
+	-1&		&		&		\\
+	&		+1&		&		\\
+	&		&		+1&		\\
+	&		&		&		+1\\
+\end{matrix} \right) 
+\end{equation}
+时空坐标变换
+\begin{equation}
+    x^{\mu}=\left( t,\mathbf{x} \right) \Rightarrow \,\,x^{\prime \mu}={\mathcal{T} ^{\mu}}_{\nu}x^{\nu}=(\mathcal{T} x)^{\mu}=\left( -t,\mathbf{x} \right) 
+\end{equation}
+四维动量变换
+\begin{equation}
+    p^{\mu}=\left( E,\mathbf{p} \right) \Rightarrow \,\,p^{\prime \mu}={\mathcal{T} ^{\mu}}_{\nu}p^{\nu}=(\mathcal{T} p)^{\mu}=\left( -E,\mathbf{p} \right) 
+\end{equation}
+时空导数变换
+\begin{equation}
+    \partial _{\mu}^{\prime}=(\mathcal{T} ^{-1}{)^{\nu}}_{\mu}\partial _{\nu}
+\end{equation}
+时间反演变换保持时空体积元不变
+\begin{equation}
+    \mathrm{d}^4x^{\prime}=\left| \det\mathrm{(}\mathcal{T} ) \right|\mathrm{d}^4x=\mathrm{d}^4x
+\end{equation}

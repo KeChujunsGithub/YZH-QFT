@@ -1,0 +1,266 @@
+\section{Feynman 图}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Yukawa 理论}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+补充推导：
+
+(7.21)
+\begin{equation}
+    \begin{aligned}
+     \langle 0|\mathrm{i}T_{1}^{(1)}|\mathbf{p}^+,\lambda ;\mathbf{q}^-,\lambda ^{\prime};\mathbf{k}\rangle &=-\mathrm{i}\kappa \int{\mathrm{d}^4x}\langle 0|\mathrm{N} [ \phi (x)\bar{\psi}(x)\psi (x) ] |\mathbf{p}^+,\lambda ;\mathbf{q}^-,\lambda ^{\prime};\mathbf{k}\rangle 
+\\
+\text{缩并}&=\wick{-\mathrm{i}\kappa \int{\mathrm{d}^4x}\langle 0|\mathrm{N} [ \c3{\phi}(x)\c2{\bar{\psi}}(x)\c1{\psi}(x) ] |\c1{\mathbf{p}}^+,\lambda ;\c2{\mathbf{q}}^-,\lambda ^{\prime};\c3{\mathbf{k}}\rangle } 
+\\
+\text{调整}&=\wick{-\mathrm{i}\kappa \int{\mathrm{d}^4x}\langle 0|\mathrm{N} [ \c3{\phi}(x)\c2{\bar{\psi}}_a(x)\c1{\psi}_a(x) ] |\c1{\mathbf{p}}^+,\lambda ;\c2{\mathbf{q}}^-,\lambda ^{\prime};\c3{\mathbf{k}}\rangle }
+\\
+&=-\mathrm{i}\kappa \int{\mathrm{d}^4x}\langle 0|\phi ^{(+)}(x)\bar{\psi}_{a}^{(+)}(x)\psi _{a}^{(+)}(x)|\mathbf{p}^+,\lambda ;\mathbf{q}^-,\lambda ^{\prime};\mathbf{k}\rangle 
+\\
+&=-\mathrm{i}\kappa \int{\mathrm{d}^4x}\langle 0|\mathrm{e}^{-\mathrm{i}k\cdot x}\bar{v}_a(\mathbf{q},\lambda ^{\prime})\mathrm{e}^{-\mathrm{i}q\cdot x}u_a(\mathbf{p},\lambda )\mathrm{e}^{-\mathrm{i}p\cdot x}|0\rangle 
+\\
+\text{忽略下标}a&=-\mathrm{i}\kappa \int{\mathrm{d}^4x}\bar{v}_a(\mathbf{q},\lambda ^{\prime})u_a(\mathbf{p},\lambda )\mathrm{e}^{-\mathrm{i}\left( p+q+k \right) \cdot x}\langle 0|0\rangle 
+\\
+&=-\mathrm{i}\kappa \int{\mathrm{d}^4x}\bar{v}(\mathbf{q},\lambda ^{\prime})u(\mathbf{p},\lambda )\mathrm{e}^{-\mathrm{i}\left( p+q+k \right) \cdot x}
+\\
+\text{带一横在前}&=-\mathrm{i}\kappa \bar{v}(\mathbf{q},\lambda ^{\prime})u(\mathbf{p},\lambda )\left( 2\pi \right) ^4\delta ^{(4)}(p+q+k)
+    \end{aligned}
+\end{equation}
+
+
+
+
+
+(7.28)
+\begin{equation}
+    \begin{aligned}
+       \langle \mathbf{p}^+,\lambda ;\mathbf{q}^-,\lambda ^{\prime};\mathbf{k}|\mathrm{i}T_{1}^{(1)}|0\rangle &=-\mathrm{i}\kappa \int{\mathrm{d}^4}x\langle \mathbf{p}^+,\lambda ;\mathbf{q}^-,\lambda ^{\prime};\mathbf{k}|\mathrm{N}[ \phi (x)\bar{\psi}(x)\psi (x) ] |0\rangle 
+\\
+\text{缩并}&=\wick{-\mathrm{i}\kappa \int{\mathrm{d}^4}x\langle \c3{\mathbf{p}}^+,\lambda ;\c2{\mathbf{q}}^-,\lambda ^{\prime};\c1{\mathbf{k}}|\mathrm{N}[ \c1{\phi}(x)\c3{\bar{\psi}}(x)\c2{\psi}(x) ] |0\rangle }
+\\
+\text{调整}&=\wick{{\color[RGB]{240, 0, 0} +}\mathrm{i}\kappa \int{\mathrm{d}^4}x\langle \c3{\mathbf{p}}^+,\lambda ;\c2{\mathbf{q}}^-,\lambda ^{\prime};\c1{\mathbf{k}}|\mathrm{N}[ \c1{\phi}(x)\c2{\psi}_a(x)\c3{\bar{\psi}}_a(x) ] |0\rangle }
+\\
+&=+\mathrm{i}\kappa \int{\mathrm{d}^4}x\langle \mathbf{p}^+,\lambda ;\mathbf{q}^-,\lambda ^{\prime};\mathbf{k}|\phi ^{(-)}(x)\psi _{a}^{(-)}(x)\bar{\psi}_{a}^{(-)}(x)|0\rangle 
+\\
+&=+\mathrm{i}\kappa \int{\mathrm{d}^4}x\langle 0|\mathrm{e}^{\mathrm{i}k\cdot x}v_a(\mathbf{q},\lambda ^{\prime})\mathrm{e}^{\mathrm{i}q\cdot x}\bar{u}_a(\mathbf{p},\lambda )\mathrm{e}^{\mathrm{i}p\cdot x}|0\rangle 
+\\
+&=+\mathrm{i}\kappa \int{\mathrm{d}^4}xv_a(\mathbf{q},\lambda ^{\prime})\bar{u}_a(\mathbf{p},\lambda )\mathrm{e}^{\mathrm{i}\left( p+q+k \right) \cdot x}\langle 0|0\rangle 
+\\
+\text{忽略下标，调整横在前}&=+\mathrm{i}\kappa \int{\mathrm{d}^4}x\bar{u}(\mathbf{p},\lambda )v(\mathbf{q},\lambda ^{\prime})\mathrm{e}^{\mathrm{i}\left( p+q+k \right) \cdot x}
+\\
+\delta \text{函数性质}&=+\mathrm{i}\kappa \bar{u}(\mathbf{p},\lambda )v(\mathbf{q},\lambda ^{\prime})\left( 2\pi \right) ^4\delta ^{(4)}(p+q+k)
+    \end{aligned}
+\end{equation}
+
+(7.32)b
+\begin{equation}
+    \begin{aligned}
+        \langle \mathbf{p}^+,\lambda ;\mathbf{q}^-,\lambda ^{\prime}|\mathrm{i}T_{1}^{(1)}|\mathbf{k}\rangle &=-\mathrm{i}\kappa \int{\mathrm{d}^4}x\langle \mathbf{p}^+,\lambda ;\mathbf{q}^-,\lambda ^{\prime}|\mathrm{N} [ \phi (x)\bar{\psi}(x)\psi (x) ] |\mathbf{k}\rangle 
+\\
+\text{缩并}&=\wick{-\mathrm{i}\kappa \int{\mathrm{d}^4}x\langle \c1{\mathbf{p}}^+,\lambda ;\c2{\mathbf{q}}^-,\lambda ^{\prime}|\mathrm{N} [\c3{\phi}(x)\c1{\bar{\psi}}(x)\c2{\psi}(x) ] |\c3{\mathbf{k}}\rangle }
+\\
+\text{调整}&=\wick{+\mathrm{i}\kappa \int{\mathrm{d}^4}x\langle \c2{\mathbf{p}}^+,\lambda ;\c1{\mathbf{q}}^-,\lambda ^{\prime}|\mathrm{N} [ \c1{\psi}_a(x)\c2{\bar{\psi}}_a(x)\c3{\phi}(x) ] |\c3{\mathbf{k}}\rangle }
+\\
+\text{去正规乘积}&=+\mathrm{i}\kappa \int{\mathrm{d}^4}x\langle \mathbf{p}^+,\lambda ;\mathbf{q}^-,\lambda ^{\prime}|\psi _{a}^{(-)}(x)\bar{\psi}_{a}^{(-)}(x)\phi ^{(+)}(x)|\mathbf{k}\rangle 
+\\
+&=+\mathrm{i}\kappa \int{\mathrm{d}^4}x\langle 0|v_a(\mathbf{q},\lambda ^{\prime})\mathrm{e}^{\mathrm{i}q\cdot x}\bar{u}_a(\mathbf{p},\lambda )\mathrm{e}^{\mathrm{i}p\cdot x}\mathrm{e}^{-\mathrm{i}k\cdot x}|0\rangle 
+\\
+&=+\mathrm{i}\kappa \int{\mathrm{d}^4}xv_a(\mathbf{q},\lambda ^{\prime})\bar{u}_a(\mathbf{p},\lambda )\mathrm{e}^{-\mathrm{i}\left( k-p-q \right) \cdot x}\langle 0|0\rangle 
+\\
+&=+\mathrm{i}\kappa \int{\mathrm{d}^4}x\bar{u}(\mathbf{p},\lambda )v(\mathbf{q},\lambda ^{\prime})\mathrm{e}^{-\mathrm{i}\left( k-p-q \right) \cdot x}
+\\
+\text{有一横在前面}&=+\mathrm{i}\kappa \bar{u}(\mathbf{p},\lambda )v(\mathbf{q},\lambda ^{\prime})\left( 2\pi \right) ^4\delta ^{(4)}(k-p-q)
+    \end{aligned}
+\end{equation}
+
+(7.33)c
+\begin{equation}
+    \begin{aligned}
+        \langle \mathbf{q}^+,\lambda ^{\prime};\mathbf{k}|\mathrm{i}T_{1}^{(1)}|\mathbf{p}^+,\lambda \rangle &=-\mathrm{i}\kappa \int{\mathrm{d}^4}x\langle \mathbf{q}^+,\lambda ^{\prime};\mathbf{k}|\mathrm{N} [ \phi (x)\bar{\psi}(x)\psi (x) ] |\mathbf{p}^+,\lambda \rangle 
+\\
+\text{缩并}&=\wick{-\mathrm{i}\kappa \int{\mathrm{d}^4}x\langle \c2{\mathbf{q}}^+,\lambda ^{\prime};\c1{\mathbf{k}}|\mathrm{N} [ \c1{\phi}(x)\c2{\bar{\psi}}(x)\c3{\psi}(x) ] |\c3{\mathbf{p}}^+,\lambda \rangle }
+\\
+\text{整理}&=\wick{-\mathrm{i}\kappa \int{\mathrm{d}^4}x\langle \c2{\mathbf{q}}^+,\lambda ^{\prime};\c1{\mathbf{k}}|\mathrm{N} [\c1{\phi}(x)\c2{\bar{\psi}}_a(x)\c3{\psi}_a(x) ] |\c3{\mathbf{p}}^+,\lambda \rangle }
+\\
+\text{去正规乘积}&=-\mathrm{i}\kappa \int{\mathrm{d}^4}x\langle \mathbf{q}^+,\lambda ^{\prime};\mathbf{k}|\phi ^{(-)}(x)\bar{\psi}_{a}^{(-)}(x)\psi _{a}^{(+)}(x)|\mathbf{p}^+,\lambda \rangle 
+\\
+&=-\mathrm{i}\kappa \int{\mathrm{d}^4}x\langle 0|\mathrm{e}^{\mathrm{i}k\cdot x}\bar{u}_a(\mathbf{q},\lambda ^{\prime})\mathrm{e}^{\mathrm{i}q\cdot x}u_a(\mathbf{p},\lambda )\mathrm{e}^{-\mathrm{i}p\cdot x}|0\rangle 
+\\
+&=-\mathrm{i}\kappa \int{\mathrm{d}^4}x\bar{u}_a(\mathbf{q},\lambda ^{\prime})u_a(\mathbf{p},\lambda )\mathrm{e}^{-\mathrm{i}\left( p-q-k \right) \cdot x}\langle 0|0\rangle 
+\\
+&=-\mathrm{i}\kappa \int{\mathrm{d}^4}x\bar{u}(\mathbf{q},\lambda ^{\prime})u(\mathbf{p},\lambda )\mathrm{e}^{-\mathrm{i}\left( p-q-k \right) \cdot x}
+\\
+&=-\mathrm{i}\kappa \bar{u}(\mathbf{q},\lambda ^{\prime})u(\mathbf{p},\lambda )\left( 2\pi \right) ^4\delta ^{(4)}(p-q-k)
+    \end{aligned}
+\end{equation}
+
+
+
+(7.34)d
+\begin{equation}
+    \begin{aligned}
+        \langle \mathbf{q}^-,\lambda ^{\prime};\mathbf{k}|\mathrm{i}T_{1}^{(1)}|\mathbf{p}^-,\lambda \rangle &=-\mathrm{i}\kappa \int{\mathrm{d}^4x}\langle \mathbf{q}^-,\lambda ^{\prime};\mathbf{k}|\mathrm{N} [ \phi (x)\bar{\psi}_a(x)\psi _a(x) ] |\mathbf{p}^-,\lambda \rangle 
+\\
+\text{缩并}&=\wick{-\mathrm{i}\kappa \int{\mathrm{d}^4}x\langle \c3{\mathbf{q}}^-,\lambda ^{\prime};\c1{\mathbf{k}}|\mathrm{N} [ \c1{\phi}(x)\c2{\bar{\psi}}(x)\c3{\psi}(x) ] |\c2{\mathbf{p}}^-,\lambda \rangle }
+\\
+\text{调整}&=\wick{+\mathrm{i}\kappa \int{\mathrm{d}^4}x\langle \c2{\mathbf{q}}^-,\lambda ^{\prime};\c1{\mathbf{k}}|\mathrm{N} [ \c1{\phi}(x)\c2{\bar{\psi}}_a(x)\c3{\psi}_a(x) ] |\c3{\mathbf{p}}^-,\lambda \rangle }
+\\
+&=+\mathrm{i}\kappa \int{\mathrm{d}^4}x\langle \mathbf{q}^-,\lambda ^{\prime};\mathbf{k}|\phi ^{(-)}(x)\psi _{a}^{(-)}(x)\bar{\psi}_{a}^{(+)}(x)|\mathbf{p}^-,\lambda \rangle 
+\\
+&=+\mathrm{i}\kappa \int{\mathrm{d}^4}x\langle 0|\mathrm{e}^{\mathrm{i}k\cdot x}v_a(\mathbf{q},\lambda ^{\prime})\mathrm{e}^{\mathrm{i}q\cdot x}\bar{v}_a(\mathbf{p},\lambda )\mathrm{e}^{-\mathrm{i}p\cdot x}|0\rangle 
+\\
+&=+\mathrm{i}\kappa \int{\mathrm{d}^4}xv_a(\mathbf{q},\lambda ^{\prime})\bar{v}_a(\mathbf{p},\lambda )\mathrm{e}^{-\mathrm{i}\left( p-q-k \right) \cdot x}\langle 0|0\rangle 
+\\
+&=+\mathrm{i}\kappa \int{\mathrm{d}^4}x\bar{v}(\mathbf{p},\lambda )v(\mathbf{q},\lambda ^{\prime})\mathrm{e}^{-\mathrm{i}\left( p-q-k \right) \cdot x}
+\\
+&=+\mathrm{i}\kappa \bar{v}(\mathbf{p},\lambda )v(\mathbf{q},\lambda ^{\prime})\left( 2\pi \right) ^4\delta ^{(4)}(p-q-k)
+    \end{aligned}
+\end{equation}
+
+(7.35)f
+\begin{equation}
+    \begin{aligned}
+        \langle \mathbf{k}|\mathrm{i}T_{1}^{(1)}|\mathbf{p}^+,\lambda ;\mathbf{q}^-,\lambda ^{\prime}\rangle &=-\mathrm{i}\kappa \int{\mathrm{d}^4}x\langle \mathbf{k}|\mathrm{N}[ \phi (x)\bar{\psi}(x)\psi (x) ] |\mathbf{p}^+,\lambda ;\mathbf{q}^-,\lambda ^{\prime}\rangle 
+\\
+\text{缩并}&=\wick{-\mathrm{i}\kappa \int{\mathrm{d}^4}x\langle \c1{\mathbf{k}}|\mathrm{N} [ \c1{\phi}(x)\c3{\bar{\psi}}(x)\c2{\psi}(x) ] |\c2{\mathbf{p}}^+,\lambda ;\c3{\mathbf{q}}^-,\lambda ^{\prime}\rangle }
+\\
+\text{调整}&=\wick{-\mathrm{i}\kappa \int{\mathrm{d}^4}x\langle \c1{\mathbf{k}}|\mathrm{N} [ \c1{\phi}(x)\c3{\bar{\psi}}_a(x)\c2{\psi}_a(x) ] |\c2{\mathbf{p}}^+,\lambda ;\c3{\mathbf{q}}^-,\lambda ^{\prime}\rangle }
+\\
+\text{去正规乘积}&=-\mathrm{i}\kappa \int{\mathrm{d}^4}x\langle \mathbf{k}|\phi ^{(-)}(x)\bar{\psi}_{a}^{(+)}(x)\psi _{a}^{(+)}(x)|\mathbf{p}^+,\lambda ;\mathbf{q}^-,\lambda ^{\prime}\rangle 
+\\
+&=-\mathrm{i}\kappa \int{\mathrm{d}^4}x\langle 0|\mathrm{e}^{\mathrm{i}k\cdot x}\bar{v}_a(\mathbf{q},\lambda ^{\prime})\mathrm{e}^{-\mathrm{i}q\cdot x}u_a(\mathbf{p},\lambda )\mathrm{e}^{-\mathrm{i}p\cdot x}|0\rangle 
+\\
+&=-\mathrm{i}\kappa \int{\mathrm{d}^4}x\bar{v}_a(\mathbf{q},\lambda ^{\prime})u_a(\mathbf{p},\lambda )\mathrm{e}^{-\mathrm{i}\left( p+q-k \right) \cdot x}\langle 0|0\rangle 
+\\
+&=-\mathrm{i}\kappa \int{\mathrm{d}^4}x\bar{v}(\mathbf{q},\lambda ^{\prime})u(\mathbf{p},\lambda )\mathrm{e}^{-\mathrm{i}\left( p+q-k \right) \cdot x}
+\\
+\delta \text{函数性质}&=-\mathrm{i}\kappa \bar{v}(\mathbf{q},\lambda ^{\prime})u(\mathbf{p},\lambda )\left( 2\pi \right) ^4\delta ^{(4)}(p+q-k)
+    \end{aligned}
+\end{equation}
+
+
+(7.36)g
+\begin{equation}
+    \begin{aligned}
+        \langle \mathbf{q}^+,\lambda ^{\prime}|\mathrm{i}T_{1}^{(1)}|\mathbf{p}^+,\lambda ;\mathbf{k}\rangle &=-\mathrm{i}\kappa \int{\mathrm{d}^4}x\langle \mathbf{q}^+,\lambda ^{\prime}|\mathrm{N}[ \phi (x)\bar{\psi}(x)\psi (x) ] |\mathbf{p}^+,\lambda ;\mathbf{k}\rangle 
+\\
+\text{缩并}&=\wick{-\mathrm{i}\kappa \int{\mathrm{d}^4}x\langle \c1{\mathbf{q}}^+,\lambda ^{\prime}|\mathrm{N}[ \c3{\phi}(x)\c1{\bar{\psi}}(x)\c2{\psi}(x) ] |\c2{\mathbf{p}}^+,\lambda ;\c3{\mathbf{k}}\rangle }
+\\
+\text{调整}&=\wick{-\mathrm{i}\kappa \int{\mathrm{d}^4}x\langle \c1{\mathbf{q}}^+,\lambda ^{\prime}|\mathrm{N}[ \c1{\bar{\psi}}_a(x)\c3{\phi}(x)\c2{\psi}_a(x) ] |\c2{\mathbf{p}}^+,\lambda ;\c3{\mathbf{k}}\rangle }
+\\
+\text{去正规乘积}&=-\mathrm{i}\kappa \int{\mathrm{d}^4}x\langle \mathbf{q}^+,\lambda ^{\prime}|\bar{\psi}_{a}^{(-)}(x)\phi ^{(+)}(x)\psi _{a}^{(+)}(x)|\mathbf{p}^+,\lambda ;\mathbf{k}\rangle 
+\\
+&=-\mathrm{i}\kappa \int{\mathrm{d}^4}x\langle 0|\bar{u}_a(\mathbf{q},\lambda ^{\prime})\mathrm{e}^{\mathrm{i}q\cdot x}\mathrm{e}^{-\mathrm{i}k\cdot x}u_a(\mathbf{p},\lambda )\mathrm{e}^{-\mathrm{i}p\cdot x}|0\rangle 
+\\
+&=-\mathrm{i}\kappa \int{\mathrm{d}^4}x\bar{u}_a(\mathbf{q},\lambda ^{\prime})u_a(\mathbf{p},\lambda )\mathrm{e}^{-\mathrm{i}\left( p+k-q \right) \cdot x}\langle 0|0\rangle 
+\\
+&=-\mathrm{i}\kappa \int{\mathrm{d}^4}x\bar{u}(\mathbf{q},\lambda ^{\prime})u(\mathbf{p},\lambda )\mathrm{e}^{-\mathrm{i}\left( p+k-q \right) \cdot x}
+\\
+\text{函数性质}&=-\mathrm{i}\kappa \bar{u}(\mathbf{q},\lambda ^{\prime})u(\mathbf{p},\lambda )\left( 2\pi \right) ^4\delta ^{(4)}(p+k-q)
+    \end{aligned}
+\end{equation}
+
+
+(7.37)h
+\begin{equation}
+    \begin{aligned}
+        \langle \mathbf{q}^-,\lambda ^{\prime}|\mathrm{i}T_{1}^{(1)}|\mathbf{p}^-,\lambda ;\mathbf{k}\rangle &=-\mathrm{i}\kappa \int{\mathrm{d}^4}x\langle \mathbf{q}^-,\lambda ^{\prime}|\mathrm{N}[ \phi (x)\bar{\psi}(x)\psi (x) ] |\mathbf{p}^-,\lambda ;\mathbf{k}\rangle 
+\\
+\text{缩并}&=\wick{-\mathrm{i}\kappa \int{\mathrm{d}^4}x\langle \c1{\mathbf{q}}^-,\lambda ^{\prime}|\mathrm{N}[ \c2{\phi}(x)\c3{\bar{\psi}}(x)\c1{\psi}(x) ] |\c3{\mathbf{p}}^-,\lambda ;\c2{\mathbf{k}}\rangle }
+\\
+\text{调整}&=\wick{+\mathrm{i}\kappa \int{\mathrm{d}^4}x\langle \c1{\mathbf{q}}^-,\lambda ^{\prime}|\mathrm{N} [ \c1{\psi}_a(x)\c3{\phi}(x)\c2{\bar{\psi}}_a(x) ] |\c2{\mathbf{p}}^-,\lambda ;\c3{\mathbf{k}}\rangle }
+\\
+\text{正负能解}&=+\mathrm{i}\kappa \int{\mathrm{d}^4}x\langle \mathbf{q}^-,\lambda ^{\prime}|\psi _{a}^{(-)}(x)\phi (x)\bar{\psi}_{a}^{(+)}(x)|\mathbf{p}^-,\lambda ;\mathbf{k}\rangle 
+\\
+&=+\mathrm{i}\kappa \int{\mathrm{d}^4}x\langle 0|v_a(\mathbf{q},\lambda ^{\prime})\mathrm{e}^{\mathrm{i}q\cdot x}\mathrm{e}^{-\mathrm{i}k\cdot x}\bar{v}_a(\mathbf{p},\lambda )\mathrm{e}^{-\mathrm{i}p\cdot x}|0\rangle 
+\\
+&=+\mathrm{i}\kappa \int{\mathrm{d}^4}x\bar{v}_a(\mathbf{p},\lambda )v_a(\mathbf{q},\lambda ^{\prime})\mathrm{e}^{-\mathrm{i}\left( p+k-q \right) \cdot x}\langle 0|0\rangle 
+\\
+\text{横在前}&=+\mathrm{i}\kappa \int{\mathrm{d}^4}x\bar{v}(\mathbf{p},\lambda )v(\mathbf{q},\lambda ^{\prime})\mathrm{e}^{-\mathrm{i}\left( p+k-q \right) \cdot x}
+\\
+\text{函数性质}&=+\mathrm{i}\kappa \bar{v}(\mathbf{p},\lambda )v(\mathbf{q},\lambda ^{\prime})\left( 2\pi \right) ^4\delta ^{(4)}(p+k-q)
+    \end{aligned}
+\end{equation}
+
+
+\newpage
+
+
+
+
+\newpage
+(7.58)无缩并
+\begin{equation}
+    \mathrm{i}T_{1}^{(2)}=\frac{\left( -\mathrm{i}\kappa \right) ^2}{2!}\int{\mathrm{d}^4x\mathrm{d}^4y\mathrm{N[}\phi (x)\bar{\psi}(x)\psi (x)\phi (y)\bar{\psi}(y)\psi (y)]}
+\end{equation}
+
+一次
+\begin{equation}
+    \begin{aligned}
+        \mathrm{i}T_{2}^{(2)}&=\wick{ \frac{\left( -\mathrm{i}\kappa \right) ^2}{2!}\int{\mathrm{d}^4x\mathrm{d}^4y\mathrm{N} [ \c{\phi}(x)\bar{\psi}(x)\psi(x)\c{\phi}(y)\bar{\psi}(y)\psi (y)]} }
+\\
+\mathrm{i}T_{3}^{(2)}&=\frac{\left( -\mathrm{i}\kappa \right) ^2}{2!}\int{\mathrm{d}^4x\mathrm{d}^4y\mathrm{N} [ \phi (x)\bar{\psi}(x)\psi (x)\phi (y)\bar{\psi}(y)\psi (y)]}
+\\
+\mathrm{i}T_{4}^{(2)}&=\frac{\left( -\mathrm{i}\kappa \right) ^2}{2!}\int{\mathrm{d}^4x\mathrm{d}^4y\mathrm{N} [ \phi (x)\bar{\psi}(x)\psi (x)\phi (y)\bar{\psi}(y)\psi (y)]}
+\\
+\mathrm{i}T_{5}^{(2)}&=\frac{\left( -\mathrm{i}\kappa \right) ^2}{2!}\int{\mathrm{d}^4x\mathrm{d}^4y\mathrm{N} [ \phi (x)\bar{\psi}(x)\psi (x)\phi (y)\bar{\psi}(y)\psi (y)]}
+\\
+\mathrm{i}T_{6}^{(2)}&=\frac{\left( -\mathrm{i}\kappa \right) ^2}{2!}\int{\mathrm{d}^4x\mathrm{d}^4y\mathrm{N} [ \phi (x)\bar{\psi}(x)\psi (x)\phi (y)\bar{\psi}(y)\psi (y)]}
+    \end{aligned}
+\end{equation}
+
+二次缩并
+
+
+
+
+
+三次缩并
+
+
+
+
+、
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

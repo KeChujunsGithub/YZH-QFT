@@ -1,0 +1,456 @@
+\section{预备知识}
+
+量子场论与粒子物理密切相关。
+
+粒子物理研究物质的基本结构和基本相互作用，组成物质的基本单元是粒子。
+
+自然界中存在 4 种基本相互作用，
+即引力相互作用 (gravitational interaction)、
+电磁相互作用 (electromagnetic interaction) 、 
+强相互作用 (strong interaction) 、
+弱相互作用 (weak interaction),
+支配着基本粒子的运动和转化。
+
+基本粒子指尚未发现内部结构的粒子。
+目前已发现 3 代基本费米子 ,
+每一代包含带电轻子、中微子(中性轻子)、下型夸克、上型夸克各一种。
+\\第1代基本费米子包括电子$(e)$、电子型中微子$(\nu_e)$、下夸克$(d)$和上夸克$(u)$ ;
+\\第2代包括$\mu$子$(\mu)$、$\mu$子型中微子$(\nu_\mu)$、奇夸克$(s)$和粲夸克$(c)$;
+\\第3代包括$\tau$子$(\tau)$、$\tau$子型中微子$(\nu_\tau)$、 底夸克$(b)$和顶夸克$(t)$。
+\\某代某种费米子与它在另一代中相对应的费米子具有相同的量子数，但质量不同。（表格中费米子部分同一列）
+
+夸克的种类也称为味道 (flavor), 6 种味道的夸克$d$、$u$、$s$、$c$、$b$、$t$具有不同的质量。
+\\每一味夸克都具有 3 种颜色 (color),
+\\同味异色的夸克具有相同质量，严格构成颜色三重态，与描述强相互作用的量子色动力学有关。
+
+多个夸克可以通过强相互作用组成复合粒子、称为强子(hadron),比如，
+\\1个介子(meson)由1个正夸克和1个反夸克组成，
+\\一个重子(baryon)由3个正夸克或3个反夸克组成。
+\\除 3 代中微子以外，其它基本费米子都具有电荷 (electric charge) , 参与电磁相互作用，相应的理论称为量子电动力学。
+\\所有基本费米子都参与弱相互作用，它与电磁相互作用统一由电弱规范理论描述，这个理论包含了量子电动力学。电弱规范理论和量子色动力学统称为标准模型 (standard model)。
+
+在标准模型中，费米子的相互作用由一些基本玻色子 (boson) 传递。
+\\传递夸克间强相互作用的规范玻色子称为胶子 (gluon),
+\\传递电磁相互作用的规范玻色子是光子 (photon),
+\\传递弱相互作用的规范玻色子是$W^\pm$和$Z^0$玻色子。
+\\此外，还存在一种 Higgs 玻色子，它与电弱规范对称性的自发破缺及基本粒子的质量起源有关。
+
+标准模型是在研究基本粒子如何参与电磁、强、弱相互作用的过程中建立起来的，它的理论
+基础就是量子场论。在粒子物理理论和实验发展的过程中，量子场论起着极为关键的作用。反
+过来，粒子物理研究也极大地促进了量子场论的发展。
+
+\begin{table}[ht]
+\centering
+\caption{标准模型粒子分类表}
+\begin{tabular}{|l|c|c|c|c|c|}
+\hline
+ & \textbf{（第一代）费米子} & \textbf{（第二代）费米子} & \textbf{（第三代）费米子} & \textbf{规范玻色子} & \textbf{标量玻色子} \\
+\hline
+\multirow{4}{*}{\textbf{上型夸克}} 
+& \makecell{u夸克 \\ 2.2\,MeV \\ +2/3 \\ 1/2} 
+& \makecell{c夸克 \\ 1.27\,GeV \\ +2/3 \\ 1/2} 
+& \makecell{t夸克 \\ 173\,GeV \\ +2/3 \\ 1/2} 
+& \makecell{光子 ($\gamma$) \\ 0 \\ 0 \\ 1} 
+& \multirow{-4}{*}{\makecell{希格斯玻色子 ($H^0$) \\ 125\,GeV \\ 0 \\ 0}} \\
+\cline{2-5}
+
+\multirow{4}{*}{\textbf{下型夸克}} 
+& \makecell{d夸克 \\ 4.7\,MeV \\ -1/3 \\ 1/2} 
+& \makecell{s夸克 \\ 95\,MeV \\ -1/3 \\ 1/2} 
+& \makecell{b夸克 \\ 4.18\,GeV \\ -1/3 \\ 1/2} 
+& \makecell{$W^\pm$玻色子 \\ 80.4\,GeV \\ $\pm$1 \\ 1} 
+& \\ \cline{2-5}
+
+\multirow{4}{*}{\textbf{带电轻子}} 
+& \makecell{电子 ($e^-$) \\ 0.511\,MeV \\ -1 \\ 1/2} 
+& \makecell{$\mu$子 ($\mu^-$) \\ 105.7\,MeV \\ -1 \\ 1/2} 
+& \makecell{$\tau$子 ($\tau^-$) \\ 1.777\,GeV \\ -1 \\ 1/2} 
+& \makecell{$Z$玻色子 \\ 91.2\,GeV \\ 0 \\ 1} 
+& \\ \cline{2-5}
+
+\multirow{4}{*}{\textbf{中微子}\\ \textbf{中性轻子}} 
+& \makecell{$\nu_e$电子中微子 \\ <1\,eV \\ 0 \\ 1/2} 
+& \makecell{$\nu_\mu$$\mu$子中微子 \\ <0.1\,eV \\ 0 \\ 1/2} 
+& \makecell{$\nu_\tau$$\tau$子中微子 \\ <15.5\,MeV \\ 0 \\ 1/2} 
+& \makecell{胶子 (8种) \\ 0 \\ 0 \\ 1} 
+& \\ \hline
+\end{tabular}
+\end{table}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+\subsection{}
+
+
+
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+\subsection{}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+\subsection{}
+
+
+
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+\subsection{}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+\subsection{}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+\subsection{ Lorentz 矢量}
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+\subsection{Lorentz 张量}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+总结：自然单位制下的麦克斯韦方程组
+\begin{equation}
+    \begin{aligned}
+        \nabla \cdot \mathbf{E}&=\rho 
+\\
+\nabla \times \mathbf{B}&=\mathbf{J}+\frac{\partial \mathbf{E}}{\partial t}
+\\
+\nabla \cdot \mathbf{B}&=0
+\\
+\nabla \times \mathbf{E}&=-\frac{\partial \mathbf{B}}{\partial t}
+    \end{aligned}
+\end{equation}
+
+Gauss 定律
+\begin{equation}
+    \nabla \cdot \mathbf{E}=\rho 
+\end{equation}
+Ampère 环路定律对应的Ampère-Maxwell 方程
+\begin{equation}
+    \nabla \times \mathbf{B}=\mathbf{J}+\frac{\partial \mathbf{E}}{\partial t}
+\end{equation}
+Gauss 磁定律
+\begin{equation}
+    \nabla \cdot \mathbf{B}=0
+\end{equation}
+Faraday 电磁感应定律对应的 MaxwellFaraday 方程
+\begin{equation}
+    \nabla \cdot \mathbf{B}=0
+\end{equation}
+
+补充：推导
+1.1推导
+\begin{equation}
+    \nabla \cdot \mathbf{E}=\rho \Rightarrow \partial _{\mu}F^{\mu 0}=J^0
+\end{equation}
+过程
+\begin{equation}
+    \begin{aligned}
+        \nabla \cdot \mathbf{E}&=\rho 
+\\
+\partial _iE^i&=J^0
+\\
+-\partial _iF^{0i}&=J^0
+\\
+\partial _iF^{i0}&=J^0
+\\
+\partial _0F^{00}+\partial _iF^{i0}&=J^0
+\\
+\partial _{\mu}F^{\mu 0}&=J^0
+    \end{aligned}
+\end{equation}
+其中
+
+
+
+
+
+
+2.1推导
+\begin{equation}
+    \nabla \times \mathbf{B}=\mathbf{J}+\frac{\partial \mathbf{E}}{\partial t}\Rightarrow \partial _{\mu}F^{\mu i}=J^i
+\end{equation}
+过程
+\begin{equation}
+    \begin{aligned}
+        \nabla \times \mathbf{B}&=\mathbf{J}+\frac{\partial \mathbf{E}}{\partial t}
+\\
+\varepsilon ^{ijk}\partial _jB^k&=J^i+\partial _0E^i
+\\
+\partial _j\varepsilon ^{ijk}B^k&=J^i+\partial _0E^i
+\\
+-\partial _jF^{ij}&=J^i-\partial _0F^{0i}
+\\
+\partial _0F^{0i}-\partial _jF^{ij}&=J^i
+\\
+\partial _0F^{0i}+\partial _jF^{ji}&=J^i
+\\
+\partial _{\mu}F^{\mu i}&=J^i
+$$
+
+    \end{aligned}
+\end{equation}
+
+
+
+
+3.1推导
+\begin{equation}
+    
+\end{equation}
+过程
+\begin{equation}
+    \begin{aligned}
+        \nabla \times \mathbf{E}&=-\frac{\partial \mathbf{B}}{\partial t}
+\\
+\varepsilon ^{kmn}\partial _mE^n&=-\partial _0B^k
+\\
+-\varepsilon ^{kmn}\partial _mF^{0n}&=\frac{1}{2}\varepsilon ^{kmn}\partial _0F^{mn}
+\\
+\varepsilon ^{kmn}\partial _mF^{0n}+\frac{1}{2}\varepsilon ^{kmn}\partial _0F^{mn}&=0
+\\
+\varepsilon ^{kij}\varepsilon ^{kmn}\left( \partial _mF^{0n}+\frac{1}{2}\partial _0F^{mn} \right) &=0
+\\
+\left( \delta ^{im}\delta ^{jn}-\delta ^{in}\delta ^{jm} \right) \left( \partial _mF^{0n}+\frac{1}{2}\partial _0F^{mn} \right) &=0
+\\
+\delta ^{im}\delta ^{jn}\partial _mF^{0n}-\delta ^{in}\delta ^{jm}\partial _mF^{0n}+\frac{1}{2}\left( \delta ^{im}\delta ^{jn}\partial _0F^{mn}-\delta ^{in}\delta ^{jm}\partial _0F^{mn} \right) &=0
+\\
+\partial _iF^{0j}-\partial _jF^{0i}+\frac{1}{2}\left( \partial _0F^{ij}-\partial _0F^{ji} \right) &=0
+\\
+-\partial _iF^{j0}-\partial _jF^{0i}+\frac{1}{2}\left( \partial _0F^{ij}+\partial _0F^{ij} \right) &=0
+\\
+\partial _0F^{ij}-\partial _iF^{j0}-\partial _jF^{0i}&=0
+\\
+\partial ^0F^{ij}+\partial ^iF^{j0}+\partial ^jF^{0i}&=0
+    \end{aligned}
+\end{equation}
+
+
+
+
+
+
+
+4.1推导
+\begin{equation}
+    \nabla \times \mathbf{E}=-\frac{\partial \mathbf{B}}{\partial t}\Rightarrow \partial ^0F^{ij}+\partial ^iF^{j0}+\partial ^jF^{0i}=0
+\end{equation}
+
+\begin{equation}
+    \begin{aligned}
+        
+    \end{aligned}
+\end{equation}
+
+
+
+1.2推导
+\begin{equation}
+    \partial _{\mu}F^{\mu 0}=J^0\Rightarrow \nabla \cdot \mathbf{E}=\rho 
+\end{equation}
+过程
+\begin{equation}
+    \begin{aligned}
+        \partial _{\mu}F^{\mu 0}&=J^0
+\\
+\,\partial _0F^{00}+\partial _iF^{i0}&=J^0
+\\
+\partial _iF^{i0}&=J^0
+\\
+-\partial _iF^{0i}&=J^0
+\\
+\partial _iE^i&=J^0
+\\
+\nabla \cdot \mathbf{E}&=\rho 
+    \end{aligned}
+\end{equation}
+其中
+\begin{equation}
+    \begin{aligned}
+        F^{00}&=0
+\\
+\partial _0F^{00}&=0
+    \end{aligned}
+\end{equation}
+
+
+
+
+2.2推导
+\begin{equation}
+    \partial _{\mu}F^{\mu i}=J^i\Rightarrow \nabla \times \mathbf{B}=\mathbf{J}+\frac{\partial \mathbf{E}}{\partial t}
+\end{equation}
+过程
+\begin{equation}
+    \begin{aligned}
+        \partial _{\mu}F^{\mu i}&=J^i
+\\
+\partial _0F^{0i}+\partial _jF^{ji}&=J^i
+\\
+-\partial _0E^i-\partial _j\varepsilon ^{jik}B^k&=J^i
+\\
+-\partial _0E^i-\varepsilon ^{jik}\partial _jB^k&=J^i
+\\
+-\partial _0E^i+\varepsilon ^{ijk}\partial _jB^k&=J^i
+\\
+\varepsilon ^{ijk}\partial _jB^k&=J^i+\partial _0E^i
+\\
+\nabla \times \mathbf{B}&=\mathbf{J}+\frac{\partial \mathbf{E}}{\partial t}
+    \end{aligned}
+\end{equation}
+
+
+
+
+3.2推导
+\begin{equation}
+    \partial ^iF^{jk}+\partial ^jF^{ki}+\partial ^kF^{ij}=0\Rightarrow \nabla \cdot \mathbf{B}=0
+\end{equation}
+过程
+\begin{equation}
+    \begin{aligned}
+        \partial ^iF^{jk}+\partial ^jF^{ki}+\partial ^kF^{ij}&=0
+\\
+-\partial _iF^{jk}-\partial _jF^{ki}-\partial _kF^{ij}&=0
+\\
+\partial _iF^{jk}+\partial _jF^{ki}+\partial _kF^{ij}&=0
+\\
+\partial _i\varepsilon ^{jkl}B^l+\partial _j\varepsilon ^{kil}B^l+\partial _k\varepsilon ^{ijl}B^l&=0
+\\
+\varepsilon ^{jkl}\partial _iB^l+\varepsilon ^{kil}\partial _jB^l+\varepsilon ^{ijl}\partial _kB^l&=0
+\\
+\varepsilon ^{ijk}\left( \varepsilon ^{jkl}\partial _iB^l+\varepsilon ^{kil}\partial _jB^l+\varepsilon ^{ijl}\partial _kB^l \right) &=0
+\\
+\varepsilon ^{jki}\varepsilon ^{jkl}\partial _iB^l+\varepsilon ^{kij}\varepsilon ^{kil}\partial _jB^l+\varepsilon ^{ijk}\varepsilon ^{ijl}\partial _kB^l&=0
+\\
+\delta ^{il}\partial _iB^l+\delta ^{jl}\partial _jB^l+\delta ^{kl}\partial _kB^l&=0
+\\
+3\partial _lB^l&=0
+\\
+\partial _iB^i&=0
+\\
+\nabla \cdot \mathbf{B}&=0
+    \end{aligned}
+\end{equation}
+
+
+
+
+
+
+
+4.2推导
+\begin{equation}
+    \partial ^0F^{ij}+\partial ^iF^{j0}+\partial ^jF^{0i}=0\Rightarrow \nabla \times \mathbf{E}=-\frac{\partial \mathbf{B}}{\partial t}
+\end{equation}
+过程
+\begin{equation}
+    \begin{aligned}
+        
+    \end{aligned}
+\end{equation}
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+\subsection{}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

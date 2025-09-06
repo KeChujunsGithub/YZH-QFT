@@ -1,0 +1,192 @@
+\section{量子场的相互作用}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{}
+
+
+
+
+
+散射指的是
+在时间上，从无穷远时刻来，到发生散射的时刻，再到无穷远时刻去
+在空间上，从无穷远位置来，到发生散射的位置，再到无穷远空间去
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Feynman 传播子}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+实标量场的 Feynman 传播子
+\begin{equation}
+    D_{\mathrm{F}}(x-y)=\varphi (x)\varphi (y)=\langle 0|\mathrm{T}\left[ \varphi (x)\varphi (y) \right] |0\rangle =\int{\frac{\mathrm{d}^4p}{\left( 2\pi \right) ^4}}\frac{\mathrm{i}}{p^2-m^2+\mathrm{i}\epsilon}\mathrm{e}^{-\mathrm{i}p\cdot \left( x-y \right)}
+\end{equation}
+复标量场的Feynman传播子
+\begin{equation}
+   D_{\mathrm{F}}(x-y)=\phi (x)\phi ^{\dagger}(y)=\langle 0|\mathrm{T}\left[ \phi (x)\phi ^{\dagger}(y) \right] |0\rangle =\int{\frac{\mathrm{d}^4p}{\left( 2\pi \right) ^4}}\frac{\mathrm{i}}{p^2-m^2+\mathrm{i}\epsilon}\mathrm{e}^{-\mathrm{i}p\cdot \left( x-y \right)}
+\end{equation}
+有质量矢量场的Feynman传播子
+\begin{equation}
+   \Delta _{\mathrm{F}}^{\mu \nu}(x-y)=A^{\mu}(x)A^{\nu}(y)=\langle 0|\mathrm{T}\left[ A^{\mu}(x)A^{\nu}(y) \right] |0\rangle =\int{\frac{\mathrm{d}^4p}{\left( 2\pi \right) ^4}}\frac{-\mathrm{i}\left( g^{\mu \nu}-\frac{p^{\mu}p^{\nu}}{m^2} \right)}{p^2-m^2+\mathrm{i}\epsilon}\mathrm{e}^{-\mathrm{i}p\cdot \left( x-y \right)}
+\end{equation}
+无质量矢量场的Feynman传播子
+\begin{equation}
+   \Delta _{\mathrm{F}}^{\mu \nu}(x-y)=A^{\mu}(x)A^{\nu}(y)=\langle 0|\mathrm{T}\left[ A^{\mu}(x)A^{\nu}(y) \right] |0\rangle =\int{\frac{\mathrm{d}^4p}{\left( 2\pi \right) ^4}}\frac{-\mathrm{i}g^{\mu \nu}}{p^2+\mathrm{i}\epsilon}\mathrm{e}^{-\mathrm{i}p\cdot \left( x-y \right)}
+\end{equation}
+Dirac旋量场的Feynman传播子
+\begin{equation}
+   \begin{aligned}
+       S_{\mathrm{F},ab}(x-y)=\psi _a(x)\psi _b(y)=\langle 0|\mathrm{T}\left[ \psi _a(x)\psi _b(y) \right] |0\rangle &=\int{\frac{\mathrm{d}^4p}{\left( 2\pi \right) ^4}}\frac{\mathrm{i}\left( p+m \right)}{p^2-m^2+\mathrm{i}\epsilon}\mathrm{e}^{-\mathrm{i}p\cdot \left( x-y \right)}
+       \\
+       &=\int{\frac{\mathrm{d}^4p}{\left( 2\pi \right) ^4}}\frac{\mathrm{i}}{p^2-m^2+\mathrm{i}\epsilon}\mathrm{e}^{-\mathrm{i}p\cdot \left( x-y \right)}
+   \end{aligned}
+\end{equation}
+
+补充:
+坐标表象下的Feynman传播子通过傅里叶变换转换到动量表象下的Feynman传播子
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{习题}
+
+
+\subsubsection{6.2}
+\begin{equation}
+    \begin{aligned}
+        \mathrm{T[}A^{\mu}\bar{\psi}(x)\gamma _{\mu}\psi (x)A^{\nu}(y)\bar{\psi}(y)\gamma _{\nu}\psi (y)]&=\mathrm{N[}A^{\mu}(x)\bar{\psi}(x)\gamma _{\mu}\psi (x)A^{\nu}(y)\bar{\psi}(y)\gamma _{\nu}\psi (y)]
+\\
+&+\wick{\c{A}^{\mu}(x)\bar{\psi}(x)\gamma _{\mu}\psi (x)\c{A}^{\nu}(y)\bar{\psi}(y)\gamma _{\nu}\psi (y)}
+\\
+&+\wick{A^{\mu}(x)\bar{\psi}(x)\gamma _{\mu}\c{\psi} (x)A^{\nu}(y)\c{\bar{\psi}}(y)\gamma _{\nu}\psi (y)}
+\\
+&+\wick{A^{\mu}(x)\c{\bar{\psi}}(x)\gamma _{\mu}\psi (x)A^{\nu}(y)\bar{\psi}(y)\gamma _{\nu}\c{\psi} (y)}
+\\
+&+\wick{A^{\mu}(x)\c{\bar{\psi}}(x)\gamma _{\mu}\c{\psi} (x)A^{\nu}(y)\bar{\psi}(y)\gamma _{\nu}\psi (y)}
+\\
+&+\wick{A^{\mu}(x)\bar{\psi}(x)\gamma _{\mu}\psi (x)A^{\nu}(y)\c{\bar{\psi}}(y)\gamma _{\nu}\c{\psi} (y)}
+\\
+&+\wick{\c1{A}^{\mu}(x)\bar{\psi}(x)\gamma _{\mu}\c2{\psi} (x)\c1{A}^{\nu}(y)\c2{\bar{\psi}}(y)\gamma _{\nu}\psi (y)}
+\\
+&+\wick{\c1{A}^{\mu}(x)\c2{\bar{\psi}}(x)\gamma _{\mu}\psi (x)\c1{A}^{\nu}(y)\bar{\psi}(y)\gamma _{\nu}\c2{\psi} (y)}
+\\
+&+\wick{\c1{A}^{\mu}(x)\c2{\bar{\psi}}(x)\gamma _{\mu}\c2{\psi} (x)\c1{A}^{\nu}(y)\bar{\psi}(y)\gamma _{\nu}\psi (y)}
+\\
+&+\wick{\c1{A}^{\mu}(x)\bar{\psi}(x)\gamma _{\mu}\psi (x)\c1{A}^{\nu}(y)\c2{\bar{\psi}}(y)\gamma _{\nu}\c2{\psi} (y)}
+\\
+&+\wick{A^{\mu}(x)\c2{\bar{\psi}}(x)\gamma _{\mu}\c1{\psi} (x)A^{\nu}(y)\c1{\bar{\psi}}(y)\gamma _{\nu}\c2{\psi} (y)}
+\\
+&+\wick{A^{\mu}(x)\c1{\bar{\psi}}(x)\gamma _{\mu}\c1{\psi} (x)A^{\nu}(y)\c2{\bar{\psi}}(y)\gamma _{\nu}\c2{\psi} (y)}
+\\
+&+\wick{\c3{A}^{\mu}(x)\c2{\bar{\psi}}(x)\gamma _{\mu}\c1{\psi} (x)\c3{A}^{\nu}(y)\c1{\bar{\psi}}(y)\gamma _{\nu}\c2{\psi} (y)}
+\\
+&+\wick{\c2{A}^{\mu}(x)\c1{\bar{\psi}}(x)\gamma _{\mu}\c1{\psi} (x)\c2{A}^{\nu}(y)\c3{\bar{\psi}}(y)\gamma _{\nu}\c3{\psi} (y)}
+    \end{aligned}
+\end{equation}
+
+
+
+
+

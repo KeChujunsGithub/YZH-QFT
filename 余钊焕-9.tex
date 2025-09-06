@@ -2,6 +2,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{9.1}
 
+\subsubsection{标量场的P变换}
 宇称变换
 \begin{equation}
     {\mathcal{P} ^{\mu}}_{\nu}=(\mathcal{P} ^{-1}{)^{\mu}}_{\nu}=\left( \begin{matrix}
@@ -45,10 +46,20 @@
 \begin{equation}
     \phi (x)=\int{\frac{\mathrm{d}^3p}{\left( 2\pi \right) ^3}}\frac{1}{\sqrt{2E_{\mathbf{p}}}}\left( a_{\mathbf{p}}\mathrm{e}^{-\mathrm{i}p\cdot x}+b_{\mathbf{p}}^{\dagger}\mathrm{e}^{\mathrm{i}p\cdot x} \right) 
 \end{equation}
+以及复共轭
+\begin{equation}
+    \phi ^{\dagger}(x)=\int{\frac{\mathrm{d}^3p}{\left( 2\pi \right) ^3}}\frac{1}{\sqrt{2E_{\mathbf{p}}}}\left( b_{\mathbf{p}}\mathrm{e}^{-\mathrm{i}p\cdot x}+a_{\mathbf{p}}^{\dagger}\mathrm{e}^{\mathrm{i}p\cdot x} \right) 
+\end{equation}
+
 得到宇称变换后的标量场
 \begin{equation}
     \phi (\mathcal{P} x)=\int{\frac{\mathrm{d}^3p}{\left( 2\pi \right) ^3}}\frac{1}{\sqrt{2E_{\mathbf{p}}}}\left( a_{\mathbf{p}}\mathrm{e}^{-\mathrm{i}p\cdot \left( \mathcal{P} x \right)}+b_{\mathbf{p}}^{\dagger}\mathrm{e}^{\mathrm{i}p\cdot \left( \mathcal{P} x \right)} \right) 
 \end{equation}
+以及
+\begin{equation}
+    \phi ^{\dagger}(\mathcal{P} x)=\int{\frac{\mathrm{d}^3p}{\left( 2\pi \right) ^3}}\frac{1}{\sqrt{2E_{\mathbf{p}}}}\left( b_{\mathbf{p}}\mathrm{e}^{-\mathrm{i}p\cdot \left( \mathcal{P} x \right)}+a_{\mathbf{p}}^{\dagger}\mathrm{e}^{\mathrm{i}p\cdot \left( \mathcal{P} x \right)} \right) 
+\end{equation}
+
 2.计算
 \begin{equation}
     \begin{aligned}
@@ -69,18 +80,7 @@
 \begin{equation}
     P^{-1}\phi (x)P=\eta _{P}^{*}\phi (\mathcal{P} x)
 \end{equation}
-
-
-推导：
-1.由标量场的复共轭
-\begin{equation}
-    \phi ^{\dagger}(x)=\int{\frac{\mathrm{d}^3p}{\left( 2\pi \right) ^3}}\frac{1}{\sqrt{2E_{\mathbf{p}}}}\left( b_{\mathbf{p}}\mathrm{e}^{-\mathrm{i}p\cdot x}+a_{\mathbf{p}}^{\dagger}\mathrm{e}^{\mathrm{i}p\cdot x} \right) 
-\end{equation}
-得到
-\begin{equation}
-    \phi ^{\dagger}(\mathcal{P} x)=\int{\frac{\mathrm{d}^3p}{\left( 2\pi \right) ^3}}\frac{1}{\sqrt{2E_{\mathbf{p}}}}\left( b_{\mathbf{p}}\mathrm{e}^{-\mathrm{i}p\cdot \left( \mathcal{P} x \right)}+a_{\mathbf{p}}^{\dagger}\mathrm{e}^{\mathrm{i}p\cdot \left( \mathcal{P} x \right)} \right) 
-\end{equation}
-2.计算
+同样地
 \begin{equation}
     \begin{aligned}
         P^{-1}\phi ^{\dagger}(x)P&=\int{\frac{\mathrm{d}^3p}{\left( 2\pi \right) ^3}}\frac{1}{\sqrt{2E_{\mathbf{p}}}}\left( P^{-1}b_{\mathbf{p}}P\mathrm{e}^{-\mathrm{i}p\cdot x}+P^{-1}a_{\mathbf{p}}^{\dagger}P\mathrm{e}^{\mathrm{i}p\cdot x} \right) 
@@ -101,8 +101,47 @@
     P^{-1}\phi ^{\dagger}(x)P=\eta _P\phi ^{\dagger}(\mathcal{P} x)
 \end{equation}
 
+推导：时空导数的宇称变换
+1
+\begin{equation}
+    \begin{aligned}
+        \partial _{x,\mu}&=\frac{\partial}{\partial x^{\mu}}
+\\
+&=\frac{\partial \left( {\mathcal{P} ^{\nu}}_{\rho}x^{\rho} \right)}{\partial x^{\mu}}\frac{\partial}{\partial \left( {\mathcal{P} ^{\nu}}_{\rho}x^{\rho} \right)}
+\\
+&={\mathcal{P} ^{\nu}}_{\rho}\frac{\partial x^{\rho}}{\partial x^{\mu}}\frac{\partial}{\partial (\mathcal{P} x)^{\nu}}
+\\
+&={\mathcal{P} ^{\nu}}_{\rho}{\delta ^{\rho}}_{\mu}\frac{\partial}{\partial (\mathcal{P} x)^{\nu}}
+\\
+&={\mathcal{P} ^{\nu}}_{\mu}\frac{\partial}{\partial (\mathcal{P} x)^{\nu}}
+\\
+&=(\mathcal{P} ^{-1}{)^{\nu}}_{\mu}\frac{\partial}{\partial (\mathcal{P} x)^{\nu}}
+\\
+&=(\mathcal{P} ^{-1}{)^{\nu}}_{\mu}\partial _{\mathcal{P} x,\nu}
+    \end{aligned}
+\end{equation}
+2
+\begin{equation}
+    \begin{aligned}
+        \partial _{x}^{\mu}&=\frac{\partial}{\partial x_{\mu}}
+\\
+&=\frac{\partial \left( (\mathcal{P} ^{-1}{)^{\rho}}_{\nu}x_{\rho} \right)}{\partial x_{\mu}}\frac{\partial}{\partial \left( (\mathcal{P} ^{-1}{)^{\rho}}_{\nu}x_{\rho} \right)}
+\\
+&=(\mathcal{P} ^{-1}{)^{\rho}}_{\nu}\frac{\partial x_{\rho}}{\partial x_{\mu}}\frac{\partial}{\partial (\mathcal{P} x)_{\nu}}
+\\
+&=(\mathcal{P} ^{-1}{)^{\rho}}_{\nu}{\delta ^{\mu}}_{\rho}\frac{\partial}{\partial (\mathcal{P} x)_{\nu}}
+\\
+&=(\mathcal{P} ^{-1}{)^{\mu}}_{\nu}\frac{\partial}{\partial (\mathcal{P} x)_{\nu}}
+\\
+&={\mathcal{P} ^{\mu}}_{\nu}\frac{\partial}{\partial (\mathcal{P} x)_{\nu}}
+\\
+&={\mathcal{P} ^{\mu}}_{\nu}\partial _{\mathcal{P} x}^{\nu}
+    \end{aligned}
+\end{equation}
 
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{标量场的T变换}
 
 时间反演变换
@@ -130,6 +169,8 @@
 \begin{equation}
     \mathrm{d}^4x^{\prime}=\left| \det\mathrm{(}\mathcal{T} ) \right|\mathrm{d}^4x=\mathrm{d}^4x
 \end{equation}
+
+
 
 
 推导：

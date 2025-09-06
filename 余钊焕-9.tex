@@ -41,15 +41,15 @@
 
 
 推导：
-根据
+1.由标量场
 \begin{equation}
     \phi (x)=\int{\frac{\mathrm{d}^3p}{\left( 2\pi \right) ^3}}\frac{1}{\sqrt{2E_{\mathbf{p}}}}\left( a_{\mathbf{p}}\mathrm{e}^{-\mathrm{i}p\cdot x}+b_{\mathbf{p}}^{\dagger}\mathrm{e}^{\mathrm{i}p\cdot x} \right) 
 \end{equation}
-得到
+得到宇称变换后的标量场
 \begin{equation}
     \phi (\mathcal{P} x)=\int{\frac{\mathrm{d}^3p}{\left( 2\pi \right) ^3}}\frac{1}{\sqrt{2E_{\mathbf{p}}}}\left( a_{\mathbf{p}}\mathrm{e}^{-\mathrm{i}p\cdot \left( \mathcal{P} x \right)}+b_{\mathbf{p}}^{\dagger}\mathrm{e}^{\mathrm{i}p\cdot \left( \mathcal{P} x \right)} \right) 
 \end{equation}
-计算
+2.计算
 \begin{equation}
     \begin{aligned}
         P^{-1}\phi (x)P&=\int{\frac{\mathrm{d}^3p}{\left( 2\pi \right) ^3}}\frac{1}{\sqrt{2E_{\mathbf{p}}}}\left( P^{-1}a_{\mathbf{p}}P\mathrm{e}^{-\mathrm{i}p\cdot x}+P^{-1}b_{\mathbf{p}}^{\dagger}P\mathrm{e}^{\mathrm{i}p\cdot x} \right) 
@@ -72,7 +72,7 @@
 
 
 推导：
-根据
+1.由标量场的复共轭
 \begin{equation}
     \phi ^{\dagger}(x)=\int{\frac{\mathrm{d}^3p}{\left( 2\pi \right) ^3}}\frac{1}{\sqrt{2E_{\mathbf{p}}}}\left( b_{\mathbf{p}}\mathrm{e}^{-\mathrm{i}p\cdot x}+a_{\mathbf{p}}^{\dagger}\mathrm{e}^{\mathrm{i}p\cdot x} \right) 
 \end{equation}
@@ -80,7 +80,7 @@
 \begin{equation}
     \phi ^{\dagger}(\mathcal{P} x)=\int{\frac{\mathrm{d}^3p}{\left( 2\pi \right) ^3}}\frac{1}{\sqrt{2E_{\mathbf{p}}}}\left( b_{\mathbf{p}}\mathrm{e}^{-\mathrm{i}p\cdot \left( \mathcal{P} x \right)}+a_{\mathbf{p}}^{\dagger}\mathrm{e}^{\mathrm{i}p\cdot \left( \mathcal{P} x \right)} \right) 
 \end{equation}
-计算
+2.计算
 \begin{equation}
     \begin{aligned}
         P^{-1}\phi ^{\dagger}(x)P&=\int{\frac{\mathrm{d}^3p}{\left( 2\pi \right) ^3}}\frac{1}{\sqrt{2E_{\mathbf{p}}}}\left( P^{-1}b_{\mathbf{p}}P\mathrm{e}^{-\mathrm{i}p\cdot x}+P^{-1}a_{\mathbf{p}}^{\dagger}P\mathrm{e}^{\mathrm{i}p\cdot x} \right) 
@@ -129,4 +129,113 @@
 时间反演变换保持时空体积元不变
 \begin{equation}
     \mathrm{d}^4x^{\prime}=\left| \det\mathrm{(}\mathcal{T} ) \right|\mathrm{d}^4x=\mathrm{d}^4x
+\end{equation}
+
+
+推导：
+1.由标量场
+\begin{equation}
+    \phi (x)=\int{\frac{\mathrm{d}^3p}{\left( 2\pi \right) ^3}\frac{1}{\sqrt{2E_{\mathbf{p}}}}\left( a_{\mathbf{p}}\mathrm{e}^{-\mathrm{i}p\cdot x}+b_{\mathbf{p}}^{\dagger}\mathrm{e}^{\mathrm{i}p\cdot x} \right)}
+\end{equation}
+得到时间反演变换后的标量场
+\begin{equation}
+    \phi (\mathcal{T} x)=\int{\frac{\mathrm{d}^3p}{\left( 2\pi \right) ^3}\frac{1}{\sqrt{2E_{\mathbf{p}}}}\left( a_{\mathbf{p}}\mathrm{e}^{-\mathrm{i}p\cdot \left( \mathcal{T} x \right)}+b_{\mathbf{p}}^{\dagger}\mathrm{e}^{\mathrm{i}p\cdot \left( \mathcal{T} x \right)} \right)}
+\end{equation}
+2.计算
+\begin{equation}
+    \begin{aligned}
+        T^{-1}\phi \left( x \right) T&=\int{\frac{\mathrm{d}^3p}{\left( 2\pi \right) ^3}\frac{1}{\sqrt{2E_{\mathbf{p}}}}T^{-1}\left( a_{\mathbf{p}}\mathrm{e}^{-\mathrm{i}p\cdot x}+b_{\mathbf{p}}^{\dagger}\mathrm{e}^{\mathrm{i}p\cdot x} \right)}T
+\\
+&=\int{\frac{\mathrm{d}^3p}{\left( 2\pi \right) ^3}}\frac{1}{\sqrt{2E_{\mathbf{p}}}}\left( T^{-1}a_{\mathbf{p}}TT^{-1}\mathrm{e}^{-\mathrm{i}p\cdot x}T+T^{-1}b_{\mathbf{p}}^{\dagger}TT^{-1}\mathrm{e}^{\mathrm{i}p\cdot x}T \right) 
+\\
+&=\int{\frac{\mathrm{d}^3p}{\left( 2\pi \right) ^3}}\frac{1}{\sqrt{2E_{\mathbf{p}}}}\left( \eta _{T}^{*}a_{-\mathbf{p}}\mathrm{e}^{\mathrm{i}p\cdot x}+\tilde{\eta}_Tb_{-\mathbf{p}}^{\dagger}\mathrm{e}^{-\mathrm{i}p\cdot x} \right) 
+\\
+&=\int{\frac{\mathrm{d}^3p}{\left( 2\pi \right) ^3}}\frac{1}{\sqrt{2E_{\mathbf{p}}}}\left( \eta _{T}^{*}a_{\mathbf{p}}\mathrm{e}^{\mathrm{i}\left( \mathcal{P} p \right) \cdot x}+\tilde{\eta}_Tb_{\mathbf{p}}^{\dagger}\mathrm{e}^{-\mathrm{i}\left( \mathcal{P} p \right) \cdot x} \right) 
+\\
+&=\int{\frac{\mathrm{d}^3p}{\left( 2\pi \right) ^3}}\frac{1}{\sqrt{2E_{\mathbf{p}}}}\left( \eta _{T}^{*}a_{\mathbf{p}}\mathrm{e}^{\mathrm{i}p\cdot \left( \mathcal{P} x \right)}+\tilde{\eta}_Tb_{\mathbf{p}}^{\dagger}\mathrm{e}^{-\mathrm{i}p\cdot \left( \mathcal{P} x \right)} \right) 
+\\
+&=\int{\frac{\mathrm{d}^3p}{\left( 2\pi \right) ^3}}\frac{1}{\sqrt{2E_{\mathbf{p}}}}\left( \eta _{T}^{*}a_{\mathbf{p}}\mathrm{e}^{-\mathrm{i}p\cdot (\mathcal{T} x)}+\tilde{\eta}_Tb_{\mathbf{p}}^{\dagger}\mathrm{e}^{\mathrm{i}p\cdot (\mathcal{T} x)} \right) 
+\\
+&=\int{\frac{\mathrm{d}^3p}{\left( 2\pi \right) ^3}}\frac{1}{\sqrt{2E_{\mathbf{p}}}}\left( \eta _{T}^{*}a_{\mathbf{p}}\mathrm{e}^{-\mathrm{i}p\cdot (\mathcal{T} x)}+\eta _{T}^{*}b_{\mathbf{p}}^{\dagger}\mathrm{e}^{\mathrm{i}p\cdot (\mathcal{T} x)} \right) 
+\\
+&=\eta _{T}^{*}\int{\frac{\mathrm{d}^3p}{\left( 2\pi \right) ^3}}\frac{1}{\sqrt{2E_{\mathbf{p}}}}\left( a_{\mathbf{p}}\mathrm{e}^{-\mathrm{i}p\cdot (\mathcal{T} x)}+b_{\mathbf{p}}^{\dagger}\mathrm{e}^{\mathrm{i}p\cdot (\mathcal{T} x)} \right) 
+    \end{aligned}
+\end{equation}
+对比得到
+
+
+1.由
+\begin{equation}
+    \phi ^{\dagger}(x)=\int{\frac{\mathrm{d}^3p}{\left( 2\pi \right) ^3}}\frac{1}{\sqrt{2E_{\mathbf{p}}}}\left( b_{\mathbf{p}}\mathrm{e}^{-\mathrm{i}p\cdot x}+a_{\mathbf{p}}^{\dagger}\mathrm{e}^{\mathrm{i}p\cdot x} \right) 
+\end{equation}
+得到
+\begin{equation}
+    \phi ^{\dagger}(\mathcal{T} x)=\int{\frac{\mathrm{d}^3p}{\left( 2\pi \right) ^3}}\frac{1}{\sqrt{2E_{\mathbf{p}}}}\left( b_{\mathbf{p}}\mathrm{e}^{-\mathrm{i}p\cdot \left( \mathcal{T} x \right)}+a_{\mathbf{p}}^{\dagger}\mathrm{e}^{\mathrm{i}p\cdot \left( \mathcal{T} x \right)} \right) 
+\end{equation}
+2.计算
+\begin{equation}
+    \begin{aligned}
+        T^{-1}\phi ^{\dagger}\left( x \right) T&=\int{\frac{\mathrm{d}^3p}{\left( 2\pi \right) ^3}}\frac{1}{\sqrt{2E_{\mathbf{p}}}}T^{-1}\left( b_{\mathbf{p}}\mathrm{e}^{-\mathrm{i}p\cdot x}+a_{\mathbf{p}}^{\dagger}\mathrm{e}^{\mathrm{i}p\cdot x} \right) T
+\\
+&=\int{\frac{\mathrm{d}^3p}{\left( 2\pi \right) ^3}}\frac{1}{\sqrt{2E_{\mathbf{p}}}}\left( T^{-1}b_{\mathbf{p}}TT^{-1}\mathrm{e}^{-\mathrm{i}p\cdot x}T+T^{-1}a_{\mathbf{p}}^{\dagger}TT^{-1}\mathrm{e}^{\mathrm{i}p\cdot x}T \right) 
+\\
+&=\int{\frac{\mathrm{d}^3p}{\left( 2\pi \right) ^3}}\frac{1}{\sqrt{2E_{\mathbf{p}}}}\left( \tilde{\eta}_{T}^{*}b_{-\mathbf{p}}\mathrm{e}^{\mathrm{i}p\cdot x}+\eta _Ta_{-\mathbf{p}}^{\dagger}\mathrm{e}^{-\mathrm{i}p\cdot x} \right) 
+\\
+&=\int{\frac{\mathrm{d}^3p}{\left( 2\pi \right) ^3}}\frac{1}{\sqrt{2E_{\mathbf{p}}}}\left( \tilde{\eta}_{T}^{*}b_{\mathbf{p}}\mathrm{e}^{\mathrm{i}\left( \mathcal{P} p \right) \cdot x}+\eta _Ta_{\mathbf{p}}^{\dagger}\mathrm{e}^{-\mathrm{i}\left( \mathcal{P} p \right) \cdot x} \right) 
+\\
+&=\int{\frac{\mathrm{d}^3p}{\left( 2\pi \right) ^3}}\frac{1}{\sqrt{2E_{\mathbf{p}}}}\left( \tilde{\eta}_{T}^{*}b_{\mathbf{p}}\mathrm{e}^{\mathrm{i}p\cdot \left( \mathcal{P} x \right)}+\eta _Ta_{\mathbf{p}}^{\dagger}\mathrm{e}^{-\mathrm{i}p\cdot \left( \mathcal{P} x \right)} \right) 
+\\
+&=\int{\frac{\mathrm{d}^3p}{\left( 2\pi \right) ^3}}\frac{1}{\sqrt{2E_{\mathbf{p}}}}\left( \tilde{\eta}_{T}^{*}b_{\mathbf{p}}\mathrm{e}^{-\mathrm{i}p\cdot (\mathcal{T} x)}+\eta _Ta_{\mathbf{p}}^{\dagger}\mathrm{e}^{\mathrm{i}p\cdot (\mathcal{T} x)} \right) 
+\\
+&=\int{\frac{\mathrm{d}^3p}{\left( 2\pi \right) ^3}}\frac{1}{\sqrt{2E_{\mathbf{p}}}}\left( \eta _Tb_{\mathbf{p}}\mathrm{e}^{-\mathrm{i}p\cdot (\mathcal{T} x)}+\eta _Ta_{\mathbf{p}}^{\dagger}\mathrm{e}^{\mathrm{i}p\cdot (\mathcal{T} x)} \right) 
+\\
+&=\eta _T\int{\frac{\mathrm{d}^3p}{\left( 2\pi \right) ^3}}\frac{1}{\sqrt{2E_{\mathbf{p}}}}\left( b_{\mathbf{p}}\mathrm{e}^{-\mathrm{i}p\cdot (\mathcal{T} x)}+a_{\mathbf{p}}^{\dagger}\mathrm{e}^{\mathrm{i}p\cdot (\mathcal{T} x)} \right) 
+    \end{aligned}
+\end{equation}
+对比得到
+\begin{equation}
+    T^{-1}\phi ^{\dagger}\left( x \right) T=\eta _T\phi ^{\dagger}(\mathcal{T} x)
+\end{equation}
+
+
+由标量场
+\begin{equation}
+    \phi \left( x \right) =\int{\frac{\mathrm{d}^3p}{\left( 2\pi \right) ^3}}\frac{1}{\sqrt{2E_{\mathbf{p}}}}\left( a_{\mathbf{p}}\mathrm{e}^{-\mathrm{i}p\cdot x}+b_{\mathbf{p}}^{\dagger}\mathrm{e}^{\mathrm{i}p\cdot x} \right) 
+\end{equation}
+和复共轭
+\begin{equation}
+    \phi ^{\dagger}(x)=\int{\frac{\mathrm{d}^3p}{\left( 2\pi \right) ^3}}\frac{1}{\sqrt{2E_{\mathbf{p}}}}\left( b_{\mathbf{p}}\mathrm{e}^{-\mathrm{i}p\cdot x}+a_{\mathbf{p}}^{\dagger}\mathrm{e}^{\mathrm{i}p\cdot x} \right) 
+\end{equation}
+
+2.计算
+\begin{equation}
+    \begin{aligned}
+        C^{-1}\phi C&=\int{\frac{\mathrm{d}^3p}{\left( 2\pi \right) ^3}}\frac{1}{\sqrt{2E_{\mathbf{p}}}}C^{-1}\left( a_{\mathbf{p}}\mathrm{e}^{-\mathrm{i}p\cdot x}+b_{\mathbf{p}}^{\dagger}\mathrm{e}^{\mathrm{i}p\cdot x} \right) C
+\\
+&=\int{\frac{\mathrm{d}^3p}{\left( 2\pi \right) ^3}}\frac{1}{\sqrt{2E_{\mathbf{p}}}}\left( C^{-1}a_{\mathbf{p}}C\mathrm{e}^{-\mathrm{i}p\cdot x}+C^{-1}b_{\mathbf{p}}^{\dagger}C\mathrm{e}^{\mathrm{i}p\cdot x} \right) 
+\\
+&=\int{\frac{\mathrm{d}^3p}{\left( 2\pi \right) ^3}}\frac{1}{\sqrt{2E_{\mathbf{p}}}}\left( \eta _{C}^{*}b_{\mathbf{p}}\mathrm{e}^{-\mathrm{i}p\cdot x}+\eta _{C}^{*}a_{\mathbf{p}}^{\dagger}\mathrm{e}^{\mathrm{i}p\cdot x} \right) 
+\\
+&=\eta _{C}^{*}\int{\frac{\mathrm{d}^3p}{\left( 2\pi \right) ^3}}\frac{1}{\sqrt{2E_{\mathbf{p}}}}\left( b_{\mathbf{p}}\mathrm{e}^{-\mathrm{i}p\cdot x}+a_{\mathbf{p}}^{\dagger}\mathrm{e}^{\mathrm{i}p\cdot x} \right) 
+    \end{aligned}
+\end{equation}
+对比得到
+\begin{equation}
+    C^{-1}\phi (x)C=\eta _{C}^{*}\phi ^{\dagger}(x)
+\end{equation}
+同样地
+\begin{equation}
+    \begin{aligned}
+        C^{-1}\phi ^{\dagger}(x)C&=\int{\frac{\mathrm{d}^3p}{\left( 2\pi \right) ^3}}\frac{1}{\sqrt{2E_{\mathbf{p}}}}C^{-1}\left( b_{\mathbf{p}}\mathrm{e}^{-\mathrm{i}p\cdot x}+a_{\mathbf{p}}^{\dagger}\mathrm{e}^{\mathrm{i}p\cdot x} \right) C
+\\
+&=\int{\frac{\mathrm{d}^3p}{\left( 2\pi \right) ^3}}\frac{1}{\sqrt{2E_{\mathbf{p}}}}\left( C^{-1}b_{\mathbf{p}}C\mathrm{e}^{-\mathrm{i}p\cdot x}+C^{-1}a_{\mathbf{p}}^{\dagger}C\mathrm{e}^{\mathrm{i}p\cdot x} \right) 
+\\
+&=\int{\frac{\mathrm{d}^3p}{\left( 2\pi \right) ^3}}\frac{1}{\sqrt{2E_{\mathbf{p}}}}\left( \eta _Ca_{\mathbf{p}}\mathrm{e}^{-\mathrm{i}p\cdot x}+\eta _Cb_{\mathbf{p}}^{\dagger}\mathrm{e}^{\mathrm{i}p\cdot x} \right) 
+\\
+&=\eta _C\int{\frac{\mathrm{d}^3p}{\left( 2\pi \right) ^3}}\frac{1}{\sqrt{2E_{\mathbf{p}}}}\left( a_{\mathbf{p}}\mathrm{e}^{-\mathrm{i}p\cdot x}+b_{\mathbf{p}}^{\dagger}\mathrm{e}^{\mathrm{i}p\cdot x} \right) 
+    \end{aligned}
+\end{equation}
+对比得到
+\begin{equation}
+    C^{-1}\phi ^{\dagger}(x)C=\eta _C\phi (x)
 \end{equation}

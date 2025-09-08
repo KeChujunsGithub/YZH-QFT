@@ -1,0 +1,298 @@
+\section{8.2}
+
+
+
+
+
+
+
+
+\subsection{推导：散射振幅}
+
+
+1.对于Feynman图，根据Feynman 规则，写出散射过程的不变振幅
+
+根据，
+入射粒子（外线）：
+
+出射粒子（外线）：
+
+传播子（内线）：
+
+写出不变振幅
+\begin{equation}
+    \begin{aligned}
+        \mathrm{i}\mathcal{M} &=\bar{v}(\mathbf{k}_2,\lambda _2)\left( \mathrm{i}e\gamma ^{\mu} \right) u(\mathbf{k}_1,\lambda _1)\frac{-\mathrm{i}g_{\mu \nu}}{q^2}\bar{u}(\mathbf{p}_1,\lambda _{1}^{\prime})\left( \mathrm{i}e\gamma ^{\nu} \right) v(\mathbf{p}_2,\lambda _{2}^{\prime})
+\\
+&=\frac{\mathrm{i}e^2}{q^2}\bar{v}(\mathbf{k}_2,\lambda _2)\gamma ^{\mu}u(\mathbf{k}_1,\lambda _1)\bar{u}(\mathbf{p}_1,\lambda _{1}^{\prime})\gamma _{\mu}v(\mathbf{p}_2,\lambda _{2}^{\prime})
+    \end{aligned}
+\end{equation}
+
+
+1.2求解双线性型的复共轭为
+利用
+\begin{equation}
+    \begin{aligned}
+        \left( ABC \right) ^{\dagger}&=C^{\dagger}B^{\dagger}A^{\dagger}
+\\
+\gamma ^{0\dagger}&=\gamma ^0
+\\
+\gamma ^{\mu \dagger}\gamma ^0&=\gamma ^0\gamma ^{\mu}
+    \end{aligned}
+\end{equation}
+计算
+\begin{equation}
+    \begin{aligned}
+       \left( \bar{v}\gamma ^{\mu}u \right) ^*&=\left( \bar{v}\gamma ^{\mu}u \right) ^{\dagger}
+\\
+&=\left( v^{\dagger}\gamma ^0\gamma ^{\mu}u \right) ^{\dagger}
+\\
+&=u^{\dagger}\gamma ^{\mu \dagger}\gamma ^{0\dagger}v^{\dagger \dagger}
+\\
+&=u^{\dagger}\gamma ^{\mu \dagger}\gamma ^0v
+\\
+&=u^{\dagger}\gamma ^0\gamma ^{\mu}v
+\\
+&=\bar{u}\gamma ^{\mu}v
+    \end{aligned}
+\end{equation}
+以及，下指标同理
+\begin{equation}
+    \begin{aligned}
+        \left( \bar{u}\gamma _{\mu}v \right) ^*&=\left( \bar{u}\gamma _{\mu}v \right) ^{\dagger}
+\\
+&=\left( u^{\dagger}\gamma ^0\gamma _{\mu}v \right) ^{\dagger}
+\\
+&=v^{\dagger}\gamma _{\mu}^{\dagger}\gamma ^{0\dagger}u^{\dagger \dagger}
+\\
+&=v^{\dagger}\gamma _{\mu}^{\dagger}\gamma ^0u
+\\
+&=v^{\dagger}\gamma ^0\gamma _{\mu}u
+\\
+&=\bar{v}\gamma _{\mu}u
+    \end{aligned}
+\end{equation}
+得到，iM 的复共轭为
+\begin{equation}
+    \begin{aligned}
+        \left( \mathrm{i}\mathcal{M} \right) ^*&=-\frac{\mathrm{i}e^2}{q^2}\left( \bar{v}(\mathbf{k}_2,\lambda _2)\gamma ^{\mu}u(\mathbf{k}_1,\lambda _1) \right) ^*\left( \bar{u}(\mathbf{p}_1,\lambda _{1}^{\prime})\gamma _{\mu}v(\mathbf{p}_2,\lambda _{2}^{\prime}) \right) ^*
+\\
+&=-\frac{\mathrm{i}e^2}{q^2}\bar{u}(\mathbf{k}_1,\lambda _1)\gamma ^{\nu}v(\mathbf{k}_2,\lambda _2)\bar{v}(\mathbf{p}_2,\lambda _{2}^{\prime})\gamma _{\nu}u(\mathbf{p}_1,\lambda _{1}^{\prime})
+    \end{aligned}
+\end{equation}
+
+1.3根据上面的结论
+\begin{equation}
+    \begin{aligned}
+        \mathrm{i}\mathcal{M} &=\frac{\mathrm{i}e^2}{E_{\mathrm{CM}}^{2}}\bar{v}(\mathbf{k}_2,\lambda _2)\gamma ^{\mu}u(\mathbf{k}_1,\lambda _1)\bar{u}(\mathbf{p}_1,\lambda _{1}^{\prime})\gamma _{\mu}v(\mathbf{p}_2,\lambda _{2}^{\prime})
+\\
+\left( \mathrm{i}\mathcal{M} \right) ^*&=-\frac{\mathrm{i}e^2}{E_{\mathrm{CM}}^{2}}\bar{u}(\mathbf{k}_1,\lambda _1)\gamma ^{\nu}v(\mathbf{k}_2,\lambda _2)\bar{v}(\mathbf{p}_2,\lambda _{2}^{\prime})\gamma _{\nu}u(\mathbf{p}_1,\lambda _{1}^{\prime})
+    \end{aligned}
+\end{equation}
+不变振幅的模方为
+\begin{equation}
+    \begin{aligned}
+        \left| \mathcal{M} \right|^2&=\mathrm{i}\mathcal{M} \left( \mathrm{i}\mathcal{M} \right) ^*
+\\
+&=\frac{e^4}{E_{\mathrm{CM}}^{4}}{\color[RGB]{240, 0, 0} \bar{v}(\mathbf{k}_2,\lambda _2)\gamma ^{\mu}u(\mathbf{k}_1,\lambda _1)\bar{u}(\mathbf{p}_1,\lambda _{1}^{\prime})\gamma _{\mu}v(\mathbf{p}_2,\lambda _{2}^{\prime})}{\color[RGB]{0, 0, 240} \bar{u}(\mathbf{k}_1,\lambda _1)\gamma ^{\nu}v(\mathbf{k}_2,\lambda _2)\bar{v}(\mathbf{p}_2,\lambda _{2}^{\prime})\gamma _{\nu}u(\mathbf{p}_1,\lambda _{1}^{\prime})}
+\\
+&=\frac{e^4}{E_{\mathrm{CM}}^{4}}{\color[RGB]{240, 0, 0} \bar{v}(\mathbf{k}_2,\lambda _2)\gamma ^{\mu}u(\mathbf{k}_1,\lambda _1)}{\color[RGB]{0, 0, 240} \bar{u}(\mathbf{k}_1,\lambda _1)\gamma ^{\nu}v(\mathbf{k}_2,\lambda _2)}{\color[RGB]{240, 0, 0} \bar{u}(\mathbf{p}_1,\lambda _{1}^{\prime})\gamma _{\mu}v(\mathbf{p}_2,\lambda _{2}^{\prime})}{\color[RGB]{0, 0, 240} \bar{v}(\mathbf{p}_2,\lambda _{2}^{\prime})\gamma _{\nu}u(\mathbf{p}_1,\lambda _{1}^{\prime})}
+    \end{aligned}
+\end{equation}
+
+1.4利用Casimir 技巧得到
+\begin{equation}
+    \left| \mathcal{M} \right|^2=\frac{e^4}{E_{\mathrm{CM}}^{4}}\mathrm{tr}\left[ v(\mathbf{k}_2,\lambda _2)\bar{v}(\mathbf{k}_2,\lambda _2)\gamma ^{\mu}u(\mathbf{k}_1,\lambda _1)\bar{u}(\mathbf{k}_1,\lambda _1)\gamma ^{\nu} \right] \mathrm{tr}\left[ u(\mathbf{p}_1,\lambda _{1}^{\prime})\bar{u}(\mathbf{p}_1,\lambda _{1}^{\prime})\gamma _{\mu}v(\mathbf{p}_2,\lambda _{2}^{\prime})\bar{v}(\mathbf{p}_2,\lambda _{2}^{\prime})\gamma _{\nu} \right] 
+\end{equation}
+
+
+2计算平均
+\begin{equation}
+    \begin{aligned}
+        \overline{\left| \mathcal{M} \right|^2} &= {\color[RGB]{0, 0, 240} \frac{1}{2}\sum_{\lambda _1 =\pm}{{\color[RGB]{240, 0, 0} \frac{1}{2}\sum_{\lambda _2=\pm}{\sum_{\lambda _{1}^{\prime}=\pm}{\sum_{\lambda _{2}^{\prime}=\pm}{\left| \mathcal{M} \right|^2}}}}}}
+\\
+&=\frac{1}{4}\sum_{\lambda _1\lambda _2\lambda _{1}^{\prime}\lambda _{2}^{\prime}}{\left| \mathcal{M} \right|^2}
+    \end{aligned}
+\end{equation}
+得到
+\begin{equation}
+    \begin{aligned}
+        \overline{\left| \mathcal{M} \right|^2}=\frac{e^4}{4E_{\mathrm{CM}}^{4}}\sum_{\lambda _1\lambda _2\lambda _{1}^{\prime}\lambda _{2}^{\prime}}{\mathrm{tr}\left[ v(\mathbf{k}_2,\lambda _2)\bar{v}(\mathbf{k}_2,\lambda _2)\gamma ^{\mu}u(\mathbf{k}_1,\lambda _1)\bar{u}(\mathbf{k}_1,\lambda _1)\gamma ^{\nu} \right] \mathrm{tr}\left[ u(\mathbf{p}_1,\lambda _{1}^{\prime})\bar{u}(\mathbf{p}_1,\lambda _{1}^{\prime})\gamma _{\mu}v(\mathbf{p}_2,\lambda _{2}^{\prime})\bar{v}(\mathbf{p}_2,\lambda _{2}^{\prime})\gamma _{\nu} \right]}
+    \end{aligned}
+\end{equation}
+3
+对于
+\begin{equation}
+    \overline{\left| \mathcal{M} \right|^2}=\frac{e^4}{4E_{\mathrm{CM}}^{4}}\mathrm{tr}\left[ \sum_{\lambda _1\lambda _2}{v(\mathbf{k}_2,\lambda _2)\bar{v}(\mathbf{k}_2,\lambda _2)}\gamma ^{\mu}\sum_{\lambda _1\lambda _2}{u(\mathbf{k}_1,\lambda _1)\bar{u}(\mathbf{k}_1,\lambda _1)}\gamma ^{\nu} \right] \mathrm{tr}\left[ \sum_{\lambda _{1}^{\prime}\lambda _{2}^{\prime}}{u(\mathbf{p}_1,\lambda _{1}^{\prime})\bar{u}(\mathbf{p}_1,\lambda _{1}^{\prime})}\gamma _{\mu}\sum_{\lambda _{1}^{\prime}\lambda _{2}^{\prime}}{v(\mathbf{p}_2,\lambda _{2}^{\prime})\bar{v}(\mathbf{p}_2,\lambda _{2}^{\prime})}\gamma _{\nu} \right] 
+\end{equation}
+利用求和关系
+
+写出
+\begin{equation}
+    \begin{aligned}
+        \sum_{\lambda _1\lambda _2}{v(\mathbf{k}_2,\lambda _2)\bar{v}(\mathbf{k}_2,\lambda _2)}&=\slashed{k_2}-m_e
+\\
+\sum_{\lambda _1\lambda _2}{u(\mathbf{k}_1,\lambda _1)\bar{u}(\mathbf{k}_1,\lambda _1)}&=\slashed{k_1}+m_e
+\\
+\sum_{\lambda _{1}^{\prime}\lambda _{2}^{\prime}}{u(\mathbf{p}_1,\lambda _{1}^{\prime})\bar{u}(\mathbf{p}_1,\lambda _{1}^{\prime})}&=\slashed{p_1}+m_{\mu}
+\\
+\sum_{\lambda _{1}^{\prime}\lambda _{2}^{\prime}}{v(\mathbf{p}_2,\lambda _{2}^{\prime})\bar{v}(\mathbf{p}_2,\lambda _{2}^{\prime})}&=\slashed{p_2}-m_{\mu}
+    \end{aligned}
+\end{equation}
+得到
+\begin{equation}
+    \overline{\left| \mathcal{M} \right|^2}=\frac{e^4}{4E_{\mathrm{CM}}^{4}}\mathrm{tr}\left[ \left( \slashed{k_2}-m_e \right) \gamma ^{\mu}\left( \slashed{k_1}+m_e \right) \gamma ^{\nu} \right] \mathrm{tr}\left[ \left( \slashed{p_1}+m_{\mu} \right) \gamma _{\mu}\left( \slashed{p_2}-m_{\mu} \right) \gamma _{\nu} \right] 
+\end{equation}
+
+
+4
+利用
+
+计算
+\begin{equation}
+    \begin{aligned}
+        \mathrm{tr}\left[ \left( \slashed{k_2}-m_e \right) \gamma ^{\mu}\left( \slashed{k_1}+m_e \right) \gamma ^{\nu} \right] &=\mathrm{tr}\left[ \left( \slashed{k_2}\gamma ^{\mu}-m_e\gamma ^{\mu} \right) \left( \slashed{k_1}\gamma ^{\nu}+m_e\gamma ^{\nu} \right) \right] 
+\\
+&=\mathrm{tr}\left[ \slashed{k_2}\gamma ^{\mu}\slashed{k_1}\gamma ^{\nu}-m_e\gamma ^{\mu}\slashed{k_1}\gamma ^{\nu}+\slashed{k_2}\gamma ^{\mu}m_e\gamma ^{\nu}-m_e\gamma ^{\mu}m_e\gamma ^{\nu} \right] 
+\\
+&=\mathrm{tr}\left( \slashed{k_2}\gamma ^{\mu}\slashed{k_1}\gamma ^{\nu} \right) -m_e\mathrm{tr}\left( \gamma ^{\mu}\slashed{k_1}\gamma ^{\nu} \right) +m_e\mathrm{tr}\left( \slashed{k_2}\gamma ^{\mu}\gamma ^{\nu} \right) +m_{e}^{2}\mathrm{tr}\left( \gamma ^{\mu}\gamma ^{\nu} \right) 
+\\
+&=\mathrm{tr}\left( k_{2\rho}\gamma ^{\rho}\gamma ^{\mu}k_{1\sigma}\gamma ^{\sigma}\gamma ^{\nu} \right) -m_e\mathrm{tr}\left( \gamma ^{\mu}k_{1\rho}\gamma ^{\rho}\gamma ^{\nu} \right) +m_e\mathrm{tr}\left( k_{2\rho}\gamma ^{\rho}\gamma ^{\mu}\gamma ^{\nu} \right) -m_{e}^{2}\mathrm{tr}\left( \gamma ^{\mu}\gamma ^{\nu} \right) 
+\\
+&=k_{1\sigma}k_{2\rho}\mathrm{tr}\left( \gamma ^{\rho}\gamma ^{\mu}\gamma ^{\sigma}\gamma ^{\nu} \right) -m_ek_{1\rho}\mathrm{tr}\left( \gamma ^{\mu}\gamma ^{\rho}\gamma ^{\nu} \right) +m_ek_{2\rho}\mathrm{tr}\left( \gamma ^{\rho}\gamma ^{\mu}\gamma ^{\nu} \right) -m_{e}^{2}\mathrm{tr}\left( \gamma ^{\mu}\gamma ^{\nu} \right) 
+\\
+&=4k_{1\sigma}k_{2\rho}\left( g^{\rho \mu}g^{\nu \sigma}-g^{\rho \sigma}g^{\mu \nu}+g^{\rho \nu}g^{\mu \sigma} \right) -4m_{e}^{2}g^{\mu \nu}
+\\
+&=4\left( k_{2\rho}g^{\rho \mu}k_{1\sigma}g^{\nu \sigma}-k_{1\sigma}k_{2\rho}g^{\rho \sigma}g^{\mu \nu}+k_{2\rho}g^{\rho \nu}k_{1\sigma}g^{\mu \sigma} \right) -4m_{e}^{2}g^{\mu \nu}
+\\
+&=4\left( k_{2}^{\mu}k_{1}^{\nu}-k_{2\rho}k_{1}^{\rho}g^{\mu \nu}+k_{2}^{\nu}k_{1}^{\mu} \right) -4m_{e}^{2}g^{\mu \nu}
+\\
+&=4\left( k_{2}^{\mu}k_{1}^{\nu}+k_{2}^{\nu}k_{1}^{\mu}-k_{2\rho}k_{1}^{\rho}g^{\mu \nu}-m_{e}^{2}g^{\mu \nu} \right) 
+\\
+&=4\left[ k_{2}^{\mu}k_{1}^{\nu}+k_{2}^{\nu}k_{1}^{\mu}-g^{\mu \nu}\left( k_1\cdot k_2+m_{e}^{2} \right) \right] 
+    \end{aligned}
+\end{equation}
+以及
+\begin{equation}
+    \begin{aligned}
+        \mathrm{tr}\left[ \left( \slashed{p}_1+m_{\mu} \right) \gamma _{\mu}\left( \slashed{p}_2-m_{\mu} \right) \gamma _{\nu} \right] &=\mathrm{tr}\left[ \left( \slashed{p}_1\gamma _{\mu}+m_{\mu}\gamma _{\mu} \right) \left( \slashed{p}_2\gamma _{\nu}-m_{\mu}\gamma _{\nu} \right) \right] 
+\\
+&=\mathrm{tr}\left[ \slashed{p}_1\gamma _{\mu}\slashed{p}_2\gamma _{\nu}+m_{\mu}\gamma _{\mu}\slashed{p}_2\gamma _{\nu}-\slashed{p}_1\gamma _{\mu}m_{\mu}\gamma _{\nu}-m_{\mu}\gamma _{\mu}m_{\mu}\gamma _{\nu} \right] 
+\\
+&=\mathrm{tr}\left( \slashed{p}_1\gamma _{\mu}\slashed{p}_2\gamma _{\nu} \right) +m_{\mu}\mathrm{tr}\left( \gamma _{\mu}\slashed{p}_2\gamma _{\nu} \right) -m_{\mu}\mathrm{tr}\left( \slashed{p}_1\gamma _{\mu}\gamma _{\nu} \right) -m_{\mu}^{2}\mathrm{tr}\left( \gamma _{\mu}\gamma _{\nu} \right) 
+\\
+&=\mathrm{tr}\left( p_{1}^{\rho}\gamma _{\rho}\gamma _{\mu}p_{2}^{\sigma}\gamma _{\sigma}\gamma _{\nu} \right) +m_{\mu}\mathrm{tr}\left( \gamma _{\mu}p_{2}^{\rho}\gamma _{\rho}\gamma _{\nu} \right) -m_{\mu}\mathrm{tr}\left( p_{1}^{\rho}\gamma _{\rho}\gamma _{\mu}\gamma _{\nu} \right) -m_{\mu}^{2}\mathrm{tr}\left( \gamma _{\mu}\gamma _{\nu} \right) 
+\\
+&=p_{1}^{\rho}p_{2}^{\sigma}\mathrm{tr}\left( \gamma _{\rho}\gamma _{\mu}\gamma _{\sigma}\gamma _{\nu} \right) +m_{\mu}p_{2}^{\rho}\mathrm{tr}\left( \gamma _{\mu}\gamma _{\rho}\gamma _{\nu} \right) -m_{\mu}p_{1}^{\rho}\mathrm{tr}\left( \gamma _{\rho}\gamma _{\mu}\gamma _{\nu} \right) -m_{\mu}^{2}\mathrm{tr}\left( \gamma _{\mu}\gamma _{\nu} \right) 
+\\
+&=4p_{1}^{\rho}p_{2}^{\sigma}\left( g_{\rho \mu}g_{\nu \sigma}-g_{\rho \sigma}g_{\mu \nu}+g_{\rho \nu}g_{\mu \sigma} \right) -m_{\mu}^{2}\mathrm{tr}\left( \gamma _{\mu}\gamma _{\nu} \right) 
+\\
+&=4\left( p_{1}^{\rho}g_{\rho \mu}p_{2}^{\sigma}g_{\nu \sigma}-p_{1}^{\rho}p_{2}^{\sigma}g_{\rho \sigma}g_{\mu \nu}+p_{1}^{\rho}g_{\rho \nu}p_{2}^{\sigma}g_{\mu \sigma} \right) -4m_{\mu}^{2}g_{\mu \nu}
+\\
+&=4\left( p_{1\mu}p_{2\nu}-p_{1}^{\rho}p_{2\rho}g_{\mu \nu}+p_{1\nu}p_{2\mu} \right) -4m_{\mu}^{2}g_{\mu \nu}
+\\
+&=4\left( p_{1\mu}p_{2\nu}+p_{1\nu}p_{2\mu}-p_{1}^{\rho}p_{2\rho}g_{\mu \nu}+m_{\mu}^{2}g_{\mu \nu} \right) 
+\\
+&=4\left[ p_{1\mu}p_{2\nu}+p_{1\nu}p_{2\mu}-g_{\mu \nu}\left( p_1\cdot p_2+m_{\mu}^{2} \right) \right] 
+    \end{aligned}
+\end{equation}
+得到
+\begin{equation}
+    \overline{\left| \mathcal{M} \right|^2}=\frac{4e^4}{E_{\mathrm{CM}}^{4}}\left[ k_{2}^{\mu}k_{1}^{\nu}+k_{2}^{\nu}k_{1}^{\mu}-g^{\mu \nu}\left( k_1\cdot k_2+m_{e}^{2} \right) \right] \left[ p_{1\mu}p_{2\nu}+p_{1\nu}p_{2\mu}-g_{\mu \nu}\left( p_1\cdot p_2+m_{\mu}^{2} \right) \right] 
+\end{equation}
+5展开化简
+\begin{equation}
+    \begin{aligned}
+        \overline{\left| \mathcal{M} \right|^2}&=\frac{4e^4}{E_{\mathrm{CM}}^{4}}\left[ k_{2}^{\mu}k_{1}^{\nu}+k_{2}^{\nu}k_{1}^{\mu}-g^{\mu \nu}\left( k_1\cdot k_2+m_{e}^{2} \right) \right] \left[ p_{1\mu}p_{2\nu}+p_{1\nu}p_{2\mu}-g_{\mu \nu}\left( p_1\cdot p_2+m_{\mu}^{2} \right) \right] 
+\\
+&=\frac{4e^4}{E_{\mathrm{CM}}^{4}}\left[ \begin{array}{c}
+	k_{2}^{\mu}k_{1}^{\nu}p_{1\mu}p_{2\nu}+k_{2}^{\nu}k_{1}^{\mu}p_{1\mu}p_{2\nu}-g^{\mu \nu}p_{1\mu}p_{2\nu}\left( k_1\cdot k_2+m_{e}^{2} \right)\\
+	k_{2}^{\mu}k_{1}^{\nu}p_{1\nu}p_{2\mu}+k_{2}^{\nu}k_{1}^{\mu}p_{1\nu}p_{2\mu}-g^{\mu \nu}p_{1\nu}p_{2\mu}\left( k_1\cdot k_2+m_{e}^{2} \right)\\
+	-k_{2}^{\mu}k_{1}^{\nu}g_{\mu \nu}\left( p_1\cdot p_2+m_{\mu}^{2} \right) -k_{2}^{\nu}k_{1}^{\mu}g_{\mu \nu}\left( p_1\cdot p_2+m_{\mu}^{2} \right) +g^{\mu \nu}\left( k_1\cdot k_2+m_{e}^{2} \right) g_{\mu \nu}\left( p_1\cdot p_2+m_{\mu}^{2} \right)\\
+\end{array} \right] 
+\\
+&=\frac{4e^4}{E_{\mathrm{CM}}^{4}}\left[ \begin{array}{c}
+	k_{2}^{\mu}p_{1\mu}\cdot k_{1}^{\nu}p_{2\nu}+k_{1}^{\mu}p_{1\mu}\cdot k_{2}^{\nu}p_{2\nu}-p_{1\mu}p_{2}^{\mu}\left( k_1\cdot k_2+m_{e}^{2} \right)\\
+	k_{1}^{\nu}p_{1\nu}\cdot k_{2}^{\mu}p_{2\mu}+k_{2}^{\nu}p_{1\nu}\cdot k_{1}^{\mu}p_{2\mu}-p_{1}^{\mu}p_{2\mu}\left( k_1\cdot k_2+m_{e}^{2} \right)\\
+	-k_{2}^{\mu}k_{1\mu}\left( p_1\cdot p_2+m_{\mu}^{2} \right) -k_{2\mu}k_{1}^{\mu}\left( p_1\cdot p_2+m_{\mu}^{2} \right) +g^{\mu \nu}g_{\mu \nu}\left( k_1\cdot k_2+m_{e}^{2} \right) \left( p_1\cdot p_2+m_{\mu}^{2} \right)\\
+\end{array} \right] 
+\\
+&=\frac{4e^4}{E_{\mathrm{CM}}^{4}}\left[ \begin{array}{c}
+	{\color[RGB]{240, 0, 0} \left( k_2\cdot p_1 \right) \left( k_1\cdot p_2 \right) +\left( k_1\cdot p_1 \right) \left( k_2\cdot p_2 \right) }-\left( p_1\cdot p_2 \right) \left( k_1\cdot k_2+m_{e}^{2} \right)\\
+	{\color[RGB]{240, 0, 0} \left( k_1\cdot p_1 \right) \left( k_2\cdot p_2 \right) +\left( k_2\cdot p_1 \right) \left( k_1\cdot p_2 \right) }-\left( p_1\cdot p_2 \right) \left( k_1\cdot k_2+m_{e}^{2} \right)\\
+	-\left( k_1\cdot k_2 \right) \left( p_1\cdot p_2+m_{\mu}^{2} \right) -\left( k_2\cdot k_1 \right) \left( p_1\cdot p_2+m_{\mu}^{2} \right) {\color[RGB]{240, 0, 0} +4\left( k_1\cdot k_2+m_{e}^{2} \right) \left( p_1\cdot p_2+m_{\mu}^{2} \right) }\\
+\end{array} \right] 
+\\
+&=\frac{4e^4}{E_{\mathrm{CM}}^{4}}\left[ 2\left( k_1\cdot p_1 \right) \left( k_2\cdot p_2 \right) +2\left( k_1\cdot p_2 \right) \left( k_2\cdot p_1 \right) -2\left( p_1\cdot p_2 \right) \left( k_1\cdot k_2+m_{e}^{2} \right) -2\left( k_1\cdot k_2 \right) \left( p_1\cdot p_2+m_{\mu}^{2} \right) +4\left( k_1\cdot k_2+m_{e}^{2} \right) \left( p_1\cdot p_2+m_{\mu}^{2} \right) \right] 
+\\
+&=\frac{8e^4}{E_{\mathrm{CM}}^{4}}\left[ \begin{array}{c}
+	{\color[RGB]{240, 0, 0} \left( k_1\cdot p_1 \right) \left( k_2\cdot p_2 \right) +\left( k_1\cdot p_2 \right) \left( k_2\cdot p_1 \right) }\\
+	-\left( p_1\cdot p_2 \right) \left( k_1\cdot k_2 \right) -m_{e}^{2}\left( p_1\cdot p_2 \right)\\
+	-\left( k_1\cdot k_2 \right) \left( p_1\cdot p_2 \right) -m_{\mu}^{2}\left( k_1\cdot k_2 \right)\\
+	+2\left( k_1\cdot k_2 \right) \left( p_1\cdot p_2 \right) +2{\color[RGB]{240, 0, 0} m_{\mu}^{2}\left( k_1\cdot k_2 \right) }+2{\color[RGB]{240, 0, 0} m_{e}^{2}\left( p_1\cdot p_2 \right) +2m_{e}^{2}m_{\mu}^{2}}\\
+\end{array} \right] 
+\\
+&=\frac{8e^4}{E_{\mathrm{CM}}^{4}}\left[ \left( k_1\cdot p_1 \right) \left( k_2\cdot p_2 \right) +\left( k_1\cdot p_2 \right) \left( k_2\cdot p_1 \right) +m_{e}^{2}\left( p_1\cdot p_2 \right) +m_{\mu}^{2}\left( k_1\cdot k_2 \right) +2m_{e}^{2}m_{\mu}^{2} \right] 
+    \end{aligned}
+\end{equation}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\subsection{8.4}
+
+
+在高能极限下，忽略质量，
+\\左手Dirac旋量场$\psi_\mathrm{L}$/左手Weyl旋量场$\eta_\mathrm{L}$ :描述 左旋极化的正费米子 和 右旋极化的反费米子，
+\\右手Dirac旋量场$\psi_\mathrm{R}$/右手Weyl旋量场$\eta_\mathrm{R}$ :描述 右旋极化的正费米子 和 左旋极化的反费米子，
+\\$\psi_\mathrm{L}$ 和$\psi_\mathrm{R}$成为两个相互独立的场。
+\\左手Dirac旋量场$\psi_\mathrm{L}$ 等价于左手Weyl旋量场$\eta_\mathrm{L}$ 
+\\右手Dirac旋量场$\psi_\mathrm{R}$ 等价于右手Weyl旋量场$\eta_\mathrm{R}$
+
+左旋极化 $\lambda=-$
+右旋极化 $\lambda=+$
+
+
+\subsection{8.5}
+
+交叉对称性
+一个过程包含一个四维动量为$p^\mathrm{\mu}$的粒子$\Phi$的初态，
+一个过程包含一个四维动量为$k^\mathrm{\mu}$的反粒子$\bar{\Phi}$的末态，
+则这两个过程的不变振幅可以通过动量替换$k^\mu=-p^\mu$联系起来。
+
+一个粒子沿着时间方向运动等价于它的反粒子逆着时间方向运动，这样的反粒子具有负能量和相反动量
+
+
+\subsection{8.6}
+
+\subsection{$e^{-}\gamma\to e^{-}\gamma$}
+Compton 散射：电子与光子的散射过程
+
+s通道的
+
+u通道的
+
+得到总的
+
+
+
+\subsection{$e^+e^-\to\gamma\gamma$}
+
+
+
+
+

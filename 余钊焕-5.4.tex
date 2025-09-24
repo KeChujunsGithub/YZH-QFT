@@ -1,0 +1,290 @@
+\section{}
+
+
+
+\subsection{}
+
+\subsection{推导：}
+记得利用AI修改括号的形式
+
+1.计算
+\begin{equation}
+    \begin{aligned}
+        \bar{u}\left( \mathbf{p},\lambda \right) &=u^{\dagger}\left( \mathbf{p},\lambda \right) \gamma ^0
+\\
+&=\left( \begin{matrix}
+	\omega _{-\lambda}\left( \mathbf{p} \right) \xi _{\lambda}^{\dagger}\left( \mathbf{p} \right)&		\omega _{\lambda}\left( \mathbf{p} \right) \xi _{\lambda}^{\dagger}\left( \mathbf{p} \right)\\
+\end{matrix} \right) \left( \begin{matrix}
+	&		1\\
+	1&		\\
+\end{matrix} \right) 
+\\
+&=\left( \begin{matrix}
+	\omega _{\lambda}\left( \mathbf{p} \right) \xi _{\lambda}^{\dagger}\left( \mathbf{p} \right)&		\omega _{-\lambda}\left( \mathbf{p} \right) \xi _{\lambda}^{\dagger}\left( \mathbf{p} \right)\\
+\end{matrix} \right) 
+    \end{aligned}
+\end{equation}
+且
+\begin{equation}
+    \begin{aligned}
+        \bar{v}\left( \mathbf{p},\lambda \right) &=v^{\dagger}\left( \mathbf{p},\lambda \right) \gamma ^0
+\\
+&=\left( \begin{matrix}
+	\lambda \omega _{\lambda}\left( \mathbf{p} \right) \xi _{-\lambda}^{\dagger}\left( \mathbf{p} \right)&		-\lambda \omega _{-\lambda}\left( \mathbf{p} \right) \xi _{-\lambda}^{\dagger}\left( \mathbf{p} \right)\\
+\end{matrix} \right) \left( \begin{matrix}
+	&		1\\
+	1&		\\
+\end{matrix} \right) 
+\\
+&=\left( \begin{matrix}
+	-\lambda \omega _{-\lambda}\left( \mathbf{p} \right) \xi _{-\lambda}^{\dagger}\left( \mathbf{p} \right)&		\lambda \omega _{\lambda}\left( \mathbf{p} \right) \xi _{-\lambda}^{\dagger}\left( \mathbf{p} \right)\\
+\end{matrix} \right) 
+    \end{aligned}
+\end{equation}
+2.计算
+\begin{equation}
+    \begin{aligned}
+        \bar{u}\left( \mathbf{p},\lambda \right) u\left( \mathbf{p},\lambda \prime \right) &=\left( \begin{matrix}
+	\omega _{\lambda}\left( \mathbf{p} \right) \xi _{\lambda}^{\dagger}\left( \mathbf{p} \right)&		\omega _{-\lambda}\left( \mathbf{p} \right) \xi _{\lambda}^{\dagger}\left( \mathbf{p} \right)\\
+\end{matrix} \right) \left( \begin{array}{c}
+	\omega _{-\lambda \prime}\left( \mathbf{p} \right) \xi _{\lambda \prime}\left( \mathbf{p} \right)\\
+	\omega _{\lambda \prime}\left( \mathbf{p} \right) \xi _{\lambda \prime}\left( \mathbf{p} \right)\\
+\end{array} \right) 
+\\
+&=\omega _{\lambda}\left( \mathbf{p} \right) \xi _{\lambda}^{\dagger}\left( \mathbf{p} \right) \omega _{-\lambda \prime}\left( \mathbf{p} \right) \xi _{\lambda \prime}\left( \mathbf{p} \right) +\omega _{-\lambda}\left( \mathbf{p} \right) \xi _{\lambda}^{\dagger}\left( \mathbf{p} \right) \omega _{\lambda \prime}\left( \mathbf{p} \right) \xi _{\lambda \prime}\left( \mathbf{p} \right) 
+\\
+&=\omega _{\lambda}\left( \mathbf{p} \right) \omega _{-\lambda \prime}\left( \mathbf{p} \right) \xi _{\lambda}^{\dagger}\left( \mathbf{p} \right) \xi _{\lambda \prime}\left( \mathbf{p} \right) +\omega _{-\lambda}\left( \mathbf{p} \right) \omega _{\lambda \prime}\left( \mathbf{p} \right) \xi _{\lambda}^{\dagger}\left( \mathbf{p} \right) \xi _{\lambda \prime}\left( \mathbf{p} \right) 
+\\
+&=\left[ \omega _{\lambda}\left( \mathbf{p} \right) \omega _{-\lambda \prime}\left( \mathbf{p} \right) +\omega _{-\lambda}\left( \mathbf{p} \right) \omega _{\lambda \prime}\left( \mathbf{p} \right) \right] \xi _{\lambda}^{\dagger}\left( \mathbf{p} \right) \xi _{\lambda \prime}\left( \mathbf{p} \right) 
+\\
+&=\left[ \omega _{\lambda}\left( \mathbf{p} \right) \omega _{-\lambda \prime}\left( \mathbf{p} \right) +\omega _{-\lambda}\left( \mathbf{p} \right) \omega _{\lambda \prime}\left( \mathbf{p} \right) \right] \delta _{\lambda \lambda \prime}
+\\
+&=\left[ \omega _{\lambda}\left( \mathbf{p} \right) \omega _{-\lambda}\left( \mathbf{p} \right) +\omega _{-\lambda}\left( \mathbf{p} \right) \omega _{\lambda}\left( \mathbf{p} \right) \right] \delta _{\lambda \lambda \prime}
+\\
+&=\left[ \omega _{\lambda}\left( \mathbf{p} \right) \omega _{-\lambda}\left( \mathbf{p} \right) +\omega _{\lambda}\left( \mathbf{p} \right) \omega _{-\lambda}\left( \mathbf{p} \right) \right] \delta _{\lambda \lambda \prime}
+\\
+&=2\omega _{\lambda}\left( \mathbf{p} \right) \omega _{-\lambda}\left( \mathbf{p} \right) \delta _{\lambda \lambda \prime}
+\\
+&=2m\delta _{\lambda \lambda \prime}
+    \end{aligned}
+\end{equation}
+且
+\begin{equation}
+    \begin{aligned}
+        \bar{v}\left( \mathbf{p},\lambda \right) v\left( \mathbf{p},\lambda ^{\prime} \right) &=\left( \begin{matrix}
+	-\lambda \omega _{-\lambda}\left( \mathbf{p} \right) \xi _{-\lambda}^{\dagger}\left( \mathbf{p} \right)&		\lambda \omega _{\lambda}\left( \mathbf{p} \right) \xi _{-\lambda}^{\dagger}\left( \mathbf{p} \right)\\
+\end{matrix} \right) \left( \begin{array}{c}
+	\lambda \prime \omega _{\lambda \prime}\left( \mathbf{p} \right) \xi _{-\lambda \prime}\left( \mathbf{p} \right)\\
+	-\lambda \prime \omega _{-\lambda \prime}\left( \mathbf{p} \right) \xi _{-\lambda \prime}\left( \mathbf{p} \right)\\
+\end{array} \right) 
+\\
+&=-\lambda \omega _{-\lambda}\left( \mathbf{p} \right) \xi _{-\lambda}^{\dagger}\left( \mathbf{p} \right) \cdot \lambda \prime \omega _{\lambda \prime}\left( \mathbf{p} \right) \xi _{-\lambda \prime}\left( \mathbf{p} \right) -\lambda \omega _{\lambda}\left( \mathbf{p} \right) \xi _{-\lambda}^{\dagger}\left( \mathbf{p} \right) \cdot \lambda \prime \omega _{-\lambda \prime}\left( \mathbf{p} \right) \xi _{-\lambda \prime}\left( \mathbf{p} \right) 
+\\
+&=-\lambda \lambda \prime \omega _{-\lambda}\left( \mathbf{p} \right) \omega _{\lambda \prime}\left( \mathbf{p} \right) \cdot \xi _{-\lambda}^{\dagger}\left( \mathbf{p} \right) \xi _{-\lambda \prime}\left( \mathbf{p} \right) -\lambda \lambda \prime \omega _{\lambda}\left( \mathbf{p} \right) \omega _{-\lambda \prime}\left( \mathbf{p} \right) \cdot \xi _{-\lambda}^{\dagger}\left( \mathbf{p} \right) \xi _{-\lambda \prime}\left( \mathbf{p} \right) 
+\\
+&=-\lambda \lambda \prime \left[ \omega _{-\lambda}\left( \mathbf{p} \right) \omega _{\lambda \prime}\left( \mathbf{p} \right) +\omega _{\lambda}\left( \mathbf{p} \right) \omega _{-\lambda \prime}\left( \mathbf{p} \right) \right] \xi _{-\lambda}^{\dagger}\left( \mathbf{p} \right) \xi _{-\lambda \prime}\left( \mathbf{p} \right) 
+\\
+&=-\lambda \lambda \prime \left[ \omega _{-\lambda}\left( \mathbf{p} \right) \omega _{\lambda \prime}\left( \mathbf{p} \right) +\omega _{\lambda}\left( \mathbf{p} \right) \omega _{-\lambda \prime}\left( \mathbf{p} \right) \right] \delta _{\lambda \lambda \prime}
+\\
+&=-\lambda ^2\left[ \omega _{-\lambda}\left( \mathbf{p} \right) \omega _{\lambda}\left( \mathbf{p} \right) +\omega _{\lambda}\left( \mathbf{p} \right) \omega _{-\lambda}\left( \mathbf{p} \right) \right] \delta _{\lambda \lambda \prime}
+\\
+&=-\lambda ^2\left[ \omega _{\lambda}\left( \mathbf{p} \right) \omega _{-\lambda}\left( \mathbf{p} \right) +\omega _{\lambda}\left( \mathbf{p} \right) \omega _{-\lambda}\left( \mathbf{p} \right) \right] \delta _{\lambda \lambda \prime}
+\\
+&=-2\lambda ^2\omega _{\lambda}\left( \mathbf{p} \right) \omega _{-\lambda}\left( \mathbf{p} \right) \delta _{\lambda \lambda \prime}
+\\
+&=-2m\delta _{\lambda \lambda ^{\prime}}
+    \end{aligned}
+\end{equation}
+且
+\begin{equation}
+    \begin{aligned}
+        \begin{aligned}
+            \bar{u}\left( \mathbf{p},\lambda \right) v\left( \mathbf{p},\lambda ^{\prime} \right) &=\left( \begin{matrix}
+	\omega _{\lambda}\left( \mathbf{p} \right) \xi _{\lambda}^{\dagger}\left( \mathbf{p} \right)&		\omega _{-\lambda}\left( \mathbf{p} \right) \xi _{\lambda}^{\dagger}\left( \mathbf{p} \right)\\
+\end{matrix} \right) \left( \begin{array}{c}
+	\lambda \prime \omega _{\lambda \prime}\left( \mathbf{p} \right) \xi _{-\lambda \prime}\left( \mathbf{p} \right)\\
+	-\lambda \prime \omega _{-\lambda \prime}\left( \mathbf{p} \right) \xi _{-\lambda \prime}\left( \mathbf{p} \right)\\
+\end{array} \right) 
+\\
+&=\omega _{\lambda}\left( \mathbf{p} \right) \xi _{\lambda}^{\dagger}\left( \mathbf{p} \right) \cdot \lambda \prime \omega _{\lambda \prime}\left( \mathbf{p} \right) \xi _{-\lambda \prime}\left( \mathbf{p} \right) -\omega _{-\lambda}\left( \mathbf{p} \right) \xi _{\lambda}^{\dagger}\left( \mathbf{p} \right) \cdot \lambda \prime \omega _{-\lambda \prime}\left( \mathbf{p} \right) \xi _{-\lambda \prime}\left( \mathbf{p} \right) 
+\\
+&=\lambda \prime \omega _{\lambda}\left( \mathbf{p} \right) \omega _{\lambda \prime}\left( \mathbf{p} \right) \cdot \xi _{\lambda}^{\dagger}\left( \mathbf{p} \right) \xi _{-\lambda \prime}\left( \mathbf{p} \right) -\lambda \prime \omega _{-\lambda}\left( \mathbf{p} \right) \omega _{-\lambda \prime}\left( \mathbf{p} \right) \cdot \xi _{\lambda}^{\dagger}\left( \mathbf{p} \right) \xi _{-\lambda \prime}\left( \mathbf{p} \right) 
+\\
+&=\lambda \prime \left[ \omega _{\lambda}\left( \mathbf{p} \right) \omega _{\lambda \prime}\left( \mathbf{p} \right) -\omega _{-\lambda}\left( \mathbf{p} \right) \omega _{-\lambda \prime}\left( \mathbf{p} \right) \right] \xi _{\lambda}^{\dagger}\left( \mathbf{p} \right) \xi _{-\lambda \prime}\left( \mathbf{p} \right) 
+\\
+&=\lambda ^{\prime}\left[ \omega _{\lambda}\left( \mathbf{p} \right) \omega _{\lambda ^{\prime}}\left( \mathbf{p} \right) -\omega _{-\lambda}\left( \mathbf{p} \right) \omega _{-\lambda ^{\prime}}\left( \mathbf{p} \right) \right] \delta _{\lambda ,-\lambda ^{\prime}}
+\\
+&=-\lambda \left[ \omega _{\lambda}\left( \mathbf{p} \right) \omega _{-\lambda}\left( \mathbf{p} \right) -\omega _{-\lambda}\left( \mathbf{p} \right) \omega _{\lambda}\left( \mathbf{p} \right) \right] \delta _{\lambda ,-\lambda ^{\prime}}
+\\
+&=-\lambda \left[ \omega _{\lambda}\left( \mathbf{p} \right) \omega _{-\lambda}\left( \mathbf{p} \right) -\omega _{\lambda}\left( \mathbf{p} \right) \omega _{-\lambda}\left( \mathbf{p} \right) \right] \delta _{\lambda ,-\lambda ^{\prime}}
+\\
+&=0
+        \end{aligned}
+    \end{aligned}
+\end{equation}
+且
+\begin{equation}
+    \begin{aligned}
+        \bar{v}\left( \mathbf{p},\lambda \right) u\left( \mathbf{p},\lambda ^{\prime} \right) &=\left( \begin{matrix}
+	-\lambda \omega _{-\lambda}\left( \mathbf{p} \right) \xi _{-\lambda}^{\dagger}\left( \mathbf{p} \right)&		\lambda \omega _{\lambda}\left( \mathbf{p} \right) \xi _{-\lambda}^{\dagger}\left( \mathbf{p} \right)\\
+\end{matrix} \right) \left( \begin{array}{c}
+	\omega _{-\lambda \prime}\left( \mathbf{p} \right) \xi _{\lambda \prime}\left( \mathbf{p} \right)\\
+	\omega _{\lambda \prime}\left( \mathbf{p} \right) \xi _{\lambda \prime}\left( \mathbf{p} \right)\\
+\end{array} \right) 
+\\
+&=-\lambda \omega _{-\lambda}\left( \mathbf{p} \right) \xi _{-\lambda}^{\dagger}\left( \mathbf{p} \right) \cdot \omega _{-\lambda \prime}\left( \mathbf{p} \right) \xi _{\lambda \prime}\left( \mathbf{p} \right) +\lambda \omega _{\lambda}\left( \mathbf{p} \right) \xi _{-\lambda}^{\dagger}\left( \mathbf{p} \right) \cdot \omega _{\lambda \prime}\left( \mathbf{p} \right) \xi _{\lambda \prime}\left( \mathbf{p} \right) 
+\\
+&=-\lambda \omega _{-\lambda}\left( \mathbf{p} \right) \omega _{-\lambda \prime}\left( \mathbf{p} \right) \cdot \xi _{-\lambda}^{\dagger}\left( \mathbf{p} \right) \xi _{\lambda \prime}\left( \mathbf{p} \right) +\lambda \omega _{\lambda}\left( \mathbf{p} \right) \omega _{\lambda \prime}\left( \mathbf{p} \right) \cdot \xi _{-\lambda}^{\dagger}\left( \mathbf{p} \right) \xi _{\lambda \prime}\left( \mathbf{p} \right) 
+\\
+&=\lambda \left[ -\omega _{-\lambda}\left( \mathbf{p} \right) \omega _{-\lambda ^{\prime}}\left( \mathbf{p} \right) +\omega _{\lambda}\left( \mathbf{p} \right) \omega _{\lambda ^{\prime}}\left( \mathbf{p} \right) \right] \xi _{-\lambda}^{\dagger}\left( \mathbf{p} \right) \xi _{\lambda ^{\prime}}\left( \mathbf{p} \right) 
+\\
+&=\lambda \left[ -\omega _{-\lambda}\left( \mathbf{p} \right) \omega _{-\lambda ^{\prime}}\left( \mathbf{p} \right) +\omega _{\lambda}\left( \mathbf{p} \right) \omega _{\lambda ^{\prime}}\left( \mathbf{p} \right) \right] \delta _{-\lambda ,\lambda ^{\prime}}
+\\
+&=\lambda \left[ -\omega _{-\lambda}\left( \mathbf{p} \right) \omega _{\lambda}\left( \mathbf{p} \right) +\omega _{\lambda}\left( \mathbf{p} \right) \omega _{-\lambda}\left( \mathbf{p} \right) \right] \delta _{-\lambda ,\lambda ^{\prime}}
+\\
+&=\lambda \left[ -\omega _{\lambda}\left( \mathbf{p} \right) \omega _{-\lambda}\left( \mathbf{p} \right) +\omega _{\lambda}\left( \mathbf{p} \right) \omega _{-\lambda}\left( \mathbf{p} \right) \right] \delta _{-\lambda ,\lambda ^{\prime}}
+\\
+&=0
+    \end{aligned}
+\end{equation}
+汇总结论
+
+
+
+
+\subsection{推导：螺旋度求和关系=自旋求和关系}
+记得利用AI修改括号的形式
+1.由
+\begin{equation}
+    \begin{aligned}
+        \left( p\cdot \bar{\sigma} \right) \xi _{\lambda}\left( \mathbf{p} \right) &=\omega _{\lambda}^{2}\left( \mathbf{p} \right) \xi _{\lambda}\left( \mathbf{p} \right) 
+\\
+\left( p\cdot \sigma \right) \xi _{\lambda}\left( \mathbf{p} \right) &=\omega _{-\lambda}^{2}\left( \mathbf{p} \right) \xi _{\lambda}\left( \mathbf{p} \right) 
+    \end{aligned}
+\end{equation}
+写出
+\begin{equation}
+    \begin{aligned}
+        \left( p\cdot \bar{\sigma} \right) \xi _{-\lambda}\left( \mathbf{p} \right) &=\omega _{-\lambda}^{2}\left( \mathbf{p} \right) \xi _{-\lambda}\left( \mathbf{p} \right) 
+\\
+\left( p\cdot \sigma \right) \xi _{-\lambda}\left( \mathbf{p} \right) &=\omega _{\lambda}^{2}\left( \mathbf{p} \right) \xi _{-\lambda}\left( \mathbf{p} \right) 
+    \end{aligned}
+\end{equation}
+2.由
+\begin{equation}
+    \sum_{\lambda =\pm}{\xi _{\lambda}}\left( \mathbf{p} \right) \xi _{\lambda}^{\dagger}\left( \mathbf{p} \right) =1
+\end{equation}
+写出
+\begin{equation}
+    \sum_{\lambda =\pm}{\xi _{-\lambda}}\left( \mathbf{p} \right) \xi _{-\lambda}^{\dagger}\left( \mathbf{p} \right) =1
+\end{equation}
+2.计算
+\begin{equation}
+    \begin{aligned}
+        \sum_{\lambda =\pm}{u}\left( \mathbf{p},\lambda \right) \bar{u}\left( \mathbf{p},\lambda \right) &=\sum_{\lambda =\pm}{\left( \begin{array}{c}
+	\omega _{-\lambda}\left( \mathbf{p} \right) \xi _{\lambda}\left( \mathbf{p} \right)\\
+	\omega _{\lambda}\left( \mathbf{p} \right) \xi _{\lambda}\left( \mathbf{p} \right)\\
+\end{array} \right)}\left( \begin{matrix}
+	\omega _{\lambda}\left( \mathbf{p} \right) \xi _{\lambda}^{\dagger}\left( \mathbf{p} \right)&		\omega _{-\lambda}\left( \mathbf{p} \right) \xi _{\lambda}^{\dagger}\left( \mathbf{p} \right)\\
+\end{matrix} \right) 
+\\
+&=\sum_{\lambda =\pm}{\left( \begin{matrix}
+	\omega _{-\lambda}\left( \mathbf{p} \right) \omega _{\lambda}\left( \mathbf{p} \right) \xi _{\lambda}\left( \mathbf{p} \right) \xi _{\lambda}^{\dagger}\left( \mathbf{p} \right)&		\omega _{-\lambda}^{2}\left( \mathbf{p} \right) \xi _{\lambda}\left( \mathbf{p} \right) \xi _{\lambda}^{\dagger}\left( \mathbf{p} \right)\\
+	\omega _{\lambda}^{2}\left( \mathbf{p} \right) \xi _{\lambda}\left( \mathbf{p} \right) \xi _{\lambda}^{\dagger}\left( \mathbf{p} \right)&		\omega _{\lambda}\left( \mathbf{p} \right) \omega _{-\lambda}\left( \mathbf{p} \right) \xi _{\lambda}\left( \mathbf{p} \right) \xi _{\lambda}^{\dagger}\left( \mathbf{p} \right)\\
+\end{matrix} \right)}
+\\
+&=\sum_{\lambda =\pm}{\left( \begin{matrix}
+	m\xi _{\lambda}\left( \mathbf{p} \right) \xi _{\lambda}^{\dagger}\left( \mathbf{p} \right)&		\left( p\cdot \sigma \right) \xi _{\lambda}\left( \mathbf{p} \right) \xi _{\lambda}^{\dagger}\left( \mathbf{p} \right)\\
+	\left( p\cdot \bar{\sigma} \right) \xi _{\lambda}\left( \mathbf{p} \right) \xi _{\lambda}^{\dagger}\left( \mathbf{p} \right)&		m\xi _{\lambda}\left( \mathbf{p} \right) \xi _{\lambda}^{\dagger}\left( \mathbf{p} \right)\\
+\end{matrix} \right)}
+\\
+&=\left( \begin{matrix}
+	m&		p\cdot \sigma\\
+	p\cdot \bar{\sigma}&		m\\
+\end{matrix} \right) 
+\\
+&=\left( \begin{matrix}
+	&		p\cdot \sigma\\
+	p\cdot \bar{\sigma}&		\\
+\end{matrix} \right) +\left( \begin{matrix}
+	m&		\\
+	&		m\\
+\end{matrix} \right) 
+\\
+&=p_{\mu}\gamma ^{\mu}+m
+    \end{aligned}
+\end{equation}
+同样地
+\begin{equation}
+    \begin{aligned}
+        \sum_{\lambda =\pm}{v}\left( \mathbf{p},\lambda \right) \bar{v}\left( \mathbf{p},\lambda \right) &=\sum_{\lambda =\pm}{\left( \begin{array}{c}
+	\lambda \omega _{\lambda}\left( \mathbf{p} \right) \xi _{-\lambda}\left( \mathbf{p} \right)\\
+	-\lambda \omega _{-\lambda}\left( \mathbf{p} \right) \xi _{-\lambda}\left( \mathbf{p} \right)\\
+\end{array} \right)}\left( \begin{matrix}
+	-\lambda \omega _{-\lambda}\left( \mathbf{p} \right) \xi _{-\lambda}^{\dagger}\left( \mathbf{p} \right)&		\lambda \omega _{\lambda}\left( \mathbf{p} \right) \xi _{-\lambda}^{\dagger}\left( \mathbf{p} \right)\\
+\end{matrix} \right) 
+\\
+&=\sum_{\lambda =\pm}{\left( \begin{matrix}
+	-\lambda ^2\omega _{\lambda}\left( \mathbf{p} \right) \omega _{-\lambda}\left( \mathbf{p} \right) \xi _{-\lambda}\left( \mathbf{p} \right) \xi _{-\lambda}^{\dagger}\left( \mathbf{p} \right)&		\lambda ^2\omega _{\lambda}^{2}\left( \mathbf{p} \right) \xi _{-\lambda}\left( \mathbf{p} \right) \xi _{-\lambda}^{\dagger}\left( \mathbf{p} \right)\\
+	\lambda ^2\omega _{-\lambda}^{2}\left( \mathbf{p} \right) \xi _{-\lambda}\left( \mathbf{p} \right) \xi _{-\lambda}^{\dagger}\left( \mathbf{p} \right)&		-\lambda ^2\omega _{-\lambda}\left( \mathbf{p} \right) \omega _{\lambda}\left( \mathbf{p} \right) \xi _{-\lambda}\left( \mathbf{p} \right) \xi _{-\lambda}^{\dagger}\left( \mathbf{p} \right)\\
+\end{matrix} \right)}
+\\
+&=\sum_{\lambda =\pm}{\left( \begin{matrix}
+	-m\xi _{-\lambda}\left( \mathbf{p} \right) \xi _{-\lambda}^{\dagger}\left( \mathbf{p} \right)&		\left( p\cdot \sigma \right) \xi _{-\lambda}\left( \mathbf{p} \right) \xi _{-\lambda}^{\dagger}\left( \mathbf{p} \right)\\
+	\left( p\cdot \bar{\sigma} \right) \xi _{-\lambda}\left( \mathbf{p} \right) \xi _{-\lambda}^{\dagger}\left( \mathbf{p} \right)&		-m\xi _{-\lambda}\left( \mathbf{p} \right) \xi _{-\lambda}^{\dagger}\left( \mathbf{p} \right)\\
+\end{matrix} \right)}
+\\
+&=\left( \begin{matrix}
+	-m&		p\cdot \sigma\\
+	p\cdot \bar{\sigma}&		-m\\
+\end{matrix} \right) 
+\\
+&=\left( \begin{matrix}
+	&		p\cdot \sigma\\
+	p\cdot \bar{\sigma}&		\\
+\end{matrix} \right) +\left( \begin{matrix}
+	-m&		\\
+	&		-m\\
+\end{matrix} \right) 
+\\
+&=p_{\mu}\gamma ^{\mu}-m
+    \end{aligned}
+\end{equation}
+其中
+\begin{equation}
+    \begin{aligned}
+        \left( \begin{matrix}
+	&		p\cdot \sigma\\
+	p\cdot \bar{\sigma}&		\\
+\end{matrix} \right) &=\left( \begin{matrix}
+	&		p^0\sigma ^0-p^i\sigma ^i\\
+	p^0\sigma ^0+p^i\sigma ^i&		\\
+\end{matrix} \right) 
+\\
+&=\left( \begin{matrix}
+	&		p^0\sigma ^0\\
+	p^0\sigma ^0&		\\
+\end{matrix} \right) +\left( \begin{matrix}
+	&		-p^i\sigma ^i\\
+	p^i\sigma ^i&		\\
+\end{matrix} \right) 
+\\
+&=p^0\left( \begin{matrix}
+	&		1\\
+	1&		\\
+\end{matrix} \right) -p^i\left( \begin{matrix}
+	&		\sigma ^i\\
+	-\sigma ^i&		\\
+\end{matrix} \right) 
+\\
+&=p^0\gamma ^0-p^i\gamma ^i
+\\
+&=p_{\mu}\gamma ^{\mu}
+    \end{aligned}
+\end{equation}
+
+
+
+
+
+

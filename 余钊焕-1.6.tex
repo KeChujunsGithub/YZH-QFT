@@ -1,0 +1,194 @@
+\section{作用量原理}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{推导：的运动方程}
+1.
+对于
+\begin{equation}
+     S=\int_{t_1}^{t_2}{\mathrm{d}t}L
+\end{equation}
+两边同时变分
+\begin{equation}
+     \delta S=\int_{t_1}^{t_2}{\mathrm{d}t}\delta L
+\end{equation}
+2.对于拉氏量
+\begin{equation}
+    L=L[q_i(t),\dot{q}_i(t)]
+\end{equation}
+变分计算为
+\begin{equation}
+     \delta L=\frac{\partial L}{\partial q_i}\delta q_i+\frac{\partial L}{\partial \dot{q}_i}\delta \dot{q}_i
+\end{equation}
+得到
+\begin{equation}
+    \delta S=\int_{t_1}^{t_2}{\mathrm{d}t}\left( \frac{\partial L}{\partial q_i}\delta q_i+\frac{\partial L}{\partial \dot{q}_i}\delta \dot{q}_i \right) 
+\end{equation}
+3.因为求导和变分可交换
+\begin{equation}
+     \delta \dot{q}_i=\delta \left( \frac{\mathrm{d}}{\mathrm{d}t}q_i \right) =\frac{\mathrm{d}}{\mathrm{d}t}\left( \delta q_i \right) 
+\end{equation}
+得到
+\begin{equation}
+     \begin{aligned}
+         \delta S&=\int_{t_1}^{t_2}{\mathrm{d}t}\left( \frac{\partial L}{\partial q_i}\delta q_i+\frac{\partial L}{\partial \dot{q}_i}\delta \left( \frac{\mathrm{d}}{\mathrm{d}t}q_i \right) \right) 
+\\
+&=\int_{t_1}^{t_2}{\mathrm{d}t}\left( \frac{\partial L}{\partial q_i}\delta q_i+\frac{\partial L}{\partial \dot{q}_i}\frac{\mathrm{d}}{\mathrm{d}t}\left( \delta q_i \right) \right) 
+     \end{aligned}
+\end{equation}
+4.求导法则
+\begin{equation}
+    \frac{\mathrm{d}}{\mathrm{d}t}\left( \frac{\partial L}{\partial \dot{q}_i}\delta q_i \right) =\left( \frac{\mathrm{d}}{\mathrm{d}t}\frac{\partial L}{\partial \dot{q}_i} \right) \delta q_i+\frac{\partial L}{\partial \dot{q}_i}\frac{\mathrm{d}}{\mathrm{d}t}\left( \delta q_i \right) 
+\end{equation}
+写出
+\begin{equation}
+    \frac{\partial L}{\partial \dot{q}_i}\frac{\mathrm{d}}{\mathrm{d}t}\left( \delta q_i \right) =\frac{\mathrm{d}}{\mathrm{d}t}\left( \frac{\partial L}{\partial \dot{q}_i}\delta q_i \right) -\left( \frac{\mathrm{d}}{\mathrm{d}t}\frac{\partial L}{\partial \dot{q}_i} \right) \delta q_i
+\end{equation}
+得到
+\begin{equation}
+    \begin{aligned}
+        \delta S&=\int_{t_1}^{t_2}{\mathrm{d}t}\left[ \frac{\partial L}{\partial q_i}\delta q_i+\frac{\mathrm{d}}{\mathrm{d}t}\left( \frac{\partial L}{\partial \dot{q}_i}\delta q_i \right) -\left( \frac{\mathrm{d}}{\mathrm{d}t}\frac{\partial L}{\partial \dot{q}_i} \right) \delta q_i \right] 
+\\
+&=\int_{t_1}^{t_2}{\mathrm{d}t}\left( \frac{\partial L}{\partial q_i}-\frac{\mathrm{d}}{\mathrm{d}t}\frac{\partial L}{\partial \dot{q}_i} \right) \delta q_i+\int_{t_1}^{t_2}{\mathrm{d}t}\frac{\mathrm{d}}{\mathrm{d}t}\left( \frac{\partial L}{\partial \dot{q}_i}\delta q_i \right) 
+    \end{aligned}
+\end{equation}
+5.牛顿莱布尼兹法则
+\begin{equation}
+    \int_{t_1}^{t_2}{\mathrm{d}t}\frac{\mathrm{d}}{\mathrm{d}t}\left( \frac{\partial L}{\partial \dot{q}_i}\delta q_i \right) =\int_{t_1}^{t_2}{\mathrm{d}\left( \frac{\partial L}{\partial \dot{q}_i}\delta q_i \right)}=\frac{\partial L}{\partial \dot{q}_i}\delta q_i|_{t_1}^{t_2}
+\end{equation}
+得到
+\begin{equation}
+    \delta S=\int_{t_1}^{t_2}{\mathrm{d}t}\left( \frac{\partial L}{\partial q_i}-\frac{\mathrm{d}}{\mathrm{d}t}\frac{\partial L}{\partial \dot{q}_i} \right) \delta q_i+\frac{\partial L}{\partial \dot{q}_i}\delta q_i|_{t_1}^{t_2}
+\end{equation}
+6.
+\begin{equation}
+    \delta q_i(t_1)=\delta q_i(t_2)=0
+\end{equation}
+写出
+\begin{equation}
+    \frac{\partial L}{\partial \dot{q}_i}\delta q_i|_{t_1}^{t_2}=\frac{\partial L}{\partial \dot{q}_i}\delta q_i(t_2)-\frac{\partial L}{\partial \dot{q}_i}\delta q_i(t_1)=0
+\end{equation}
+得到
+\begin{equation}
+    \delta S=\int_{t_1}^{t_2}{\mathrm{d}t}\left( \frac{\partial L}{\partial q_i}-\frac{\mathrm{d}}{\mathrm{d}t}\frac{\partial L}{\partial \dot{q}_i} \right) \delta q_i
+\end{equation}
+7.利用最小作用量原理
+\begin{equation}
+    \delta S=0
+\end{equation}
+等式右边积分为零
+\begin{equation}
+    \int_{t_1}^{t_2}{\mathrm{d}t}\left( \frac{\partial L}{\partial q_i}-\frac{\mathrm{d}}{\mathrm{d}t}\frac{\partial L}{\partial \dot{q}_i} \right) \delta q_i=0
+\end{equation}
+被积函数为零
+\begin{equation}
+    \frac{\partial L}{\partial q_i}-\frac{\mathrm{d}}{\mathrm{d}t}\frac{\partial L}{\partial \dot{q}_i}=0
+\end{equation}
+
+\newpage
+\subsection{推导：场的运动方程}
+1.
+对于
+\begin{equation}
+    S=\int{\mathrm{d}^4x}\mathcal{L} 
+\end{equation}
+两边同时变分
+\begin{equation}
+    \delta S=\int{\mathrm{d}^4x}\delta \mathcal{L} 
+\end{equation}
+2.对于拉氏量
+\begin{equation}
+    \mathcal{L} =\mathcal{L} (\Phi _a,\partial _{\mu}\Phi _a)
+\end{equation}
+变分计算为
+\begin{equation}
+    \delta \mathcal{L} =\frac{\partial \mathcal{L}}{\partial \Phi _a}\delta \Phi _a+\frac{\partial \mathcal{L}}{\partial \left( \partial _{\mu}\Phi _a \right)}\delta \left( \partial _{\mu}\Phi _a \right) 
+\end{equation}
+得到
+\begin{equation}
+    \delta S=\int{\mathrm{d}^4x\left[ \frac{\partial \mathcal{L}}{\partial \Phi _a}\delta \Phi _a+\frac{\partial \mathcal{L}}{\partial \left( \partial _{\mu}\Phi _a \right)}\delta \left( \partial _{\mu}\Phi _a \right) \right]}
+\end{equation}
+3.因为可交换
+\begin{equation}
+    \delta \left( \partial _{\mu}\Phi _a \right) =\partial _{\mu}\left( \delta \Phi _a \right) 
+\end{equation}
+得到
+\begin{equation}
+    \delta S=\int{\mathrm{d}^4x}\left[ \frac{\partial \mathcal{L}}{\partial \Phi _a}\delta \Phi _a+\frac{\partial \mathcal{L}}{\partial \left( \partial _{\mu}\Phi _a \right)}\partial _{\mu}\left( \delta \Phi _a \right) \right] 
+\end{equation}
+4.求导法则
+\begin{equation}
+    \partial _{\mu}\left( \frac{\partial \mathcal{L}}{\partial \left( \partial _{\mu}\Phi _a \right)}\delta \Phi _a \right) =\frac{\partial \mathcal{L}}{\partial \left( \partial _{\mu}\Phi _a \right)}\partial _{\mu}\left( \delta \Phi _a \right) +\left( \partial _{\mu}\frac{\partial \mathcal{L}}{\partial \left( \partial _{\mu}\Phi _a \right)} \right) \delta \Phi _a
+\end{equation}
+写出
+\begin{equation}
+    \frac{\partial \mathcal{L}}{\partial \left( \partial _{\mu}\Phi _a \right)}\partial _{\mu}\left( \delta \Phi _a \right) =\partial _{\mu}\left( \frac{\partial \mathcal{L}}{\partial \left( \partial _{\mu}\Phi _a \right)}\delta \Phi _a \right) -\left( \partial _{\mu}\frac{\partial \mathcal{L}}{\partial \left( \partial _{\mu}\Phi _a \right)} \right) \delta \Phi _a
+\end{equation}
+得到
+\begin{equation}
+    \begin{aligned}
+        \delta S&=\int{\mathrm{d}^4x}\left[ \frac{\partial \mathcal{L}}{\partial \Phi _a}\delta \Phi _a+\partial _{\mu}\left( \frac{\partial \mathcal{L}}{\partial \left( \partial _{\mu}\Phi _a \right)}\delta \Phi _a \right) -\left( \partial _{\mu}\frac{\partial \mathcal{L}}{\partial \left( \partial _{\mu}\Phi _a \right)} \right) \delta \Phi _a \right] 
+\\
+&=\int{\mathrm{d}^4x}\left[ \frac{\partial \mathcal{L}}{\partial \Phi _a}-\partial _{\mu}\frac{\partial \mathcal{L}}{\partial \left( \partial _{\mu}\Phi _a \right)} \right] \delta \Phi _a+\int{\mathrm{d}^4x}\partial _{\mu}\left[ \frac{\partial \mathcal{L}}{\partial \left( \partial _{\mu}\Phi _a \right)}\delta \Phi _a \right] 
+    \end{aligned}
+\end{equation}
+5.广义斯托克斯，将四维体积转化为三维面积
+\begin{equation}
+    \int_{\mathcal{V}}{\mathrm{d}^4x}\partial _{\mu}\left[ \frac{\partial \mathcal{L}}{\partial \left( \partial _{\mu}\Phi _a \right)}\delta \Phi _a \right] =\int_{\mathcal{S}}{\mathrm{d}\sigma _{\mu}}\frac{\partial \mathcal{L}}{\partial \left( \partial _{\mu}\Phi _a \right)}\delta \Phi _a
+\end{equation}
+得到
+\begin{equation}
+    \delta S=\int{\mathrm{d}^4x}\left[ \frac{\partial \mathcal{L}}{\partial \Phi _a}-\partial _{\mu}\frac{\partial \mathcal{L}}{\partial \left( \partial _{\mu}\Phi _a \right)} \right] \delta \Phi _a+\int_{\mathcal{S}}{\mathrm{d}\sigma _{\mu}}\frac{\partial \mathcal{L}}{\partial \left( \partial _{\mu}\Phi _a \right)}\delta \Phi _a
+\end{equation}
+6.全空间积分为0
+\begin{equation}
+    \int_{\mathcal{S}}{\mathrm{d}\sigma _{\mu}}\frac{\partial \mathcal{L}}{\partial \left( \partial _{\mu}\Phi _a \right)}\delta \Phi _a=0
+\end{equation}
+得到
+\begin{equation}
+    \delta S=\int{\mathrm{d}^4x}\left[ \frac{\partial \mathcal{L}}{\partial \Phi _a}-\partial _{\mu}\frac{\partial \mathcal{L}}{\partial \left( \partial _{\mu}\Phi _a \right)} \right] \delta \Phi _a
+\end{equation}
+7.利用最小作用量原理
+\begin{equation}
+    \delta S=0
+\end{equation}
+等式右边积分为零
+\begin{equation}
+    \int{\mathrm{d}^4x}\left[ \frac{\partial \mathcal{L}}{\partial \Phi _a}-\partial _{\mu}\frac{\partial \mathcal{L}}{\partial \left( \partial _{\mu}\Phi _a \right)} \right] \delta \Phi _a=0
+\end{equation}
+被积函数为零
+\begin{equation}
+    \frac{\partial \mathcal{L}}{\partial \Phi _a}-\partial _{\mu}\frac{\partial \mathcal{L}}{\partial \left( \partial _{\mu}\Phi _a \right)}=0
+\end{equation}
+
+
+第二种写法是分部积分
+
+
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+\subsection{}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

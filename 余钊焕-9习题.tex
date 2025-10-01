@@ -1,0 +1,125 @@
+\section{习题9}
+
+\newpage
+\subsection{9.1}
+利用（9.11）和（9.12）式，证明算符 $J \cdot P \equiv J^i P^i$ 满足
+$$P^{-1}(J \cdot P)P = -J \cdot P. \tag{9.545}$$
+设 $|E, p, \sigma\rangle$ 是哈密顿量算符 $H$、动量算符 $P$ 和算符 $J \cdot P$ 的共同本征态，满足
+$$H | E, p, \sigma \rangle = E | E, p, \sigma \rangle, \quad P | E, p, \sigma \rangle = p | E, p, \sigma \rangle, \quad J \cdot P | E, p, \sigma \rangle = \sigma | E, p, \sigma \rangle. \tag{9.546}$$
+用 $P$ 变换定义 $|E, p, \sigma \rangle' \equiv P | E, p, \sigma \rangle$，证明
+$$H | E, p, \sigma \rangle' = E | E, p, \sigma \rangle', \quad P | E, p, \sigma \rangle' = -p | E, p, \sigma \rangle', \quad J \cdot P | E, p, \sigma \rangle' = -\sigma | E, p, \sigma \rangle'. \tag{9.547}$$
+
+\newpage
+\subsection{9.2}
+根据（9.42）式，证明
+$$P^{r-1} | \phi \bar{\phi} \rangle = (-)^L | \phi \bar{\phi} \rangle, \tag{9.548}$$
+其中 $|\phi \bar{\phi}\rangle$ 是一对正反标量玻色子 $\phi \bar{\phi}$ 组成的态（9.28），$L$ 是它的轨道角动量量子数。
+
+\newpage
+\subsection{9.3}
+根据（2.182）式把复标量场 $\phi(x)$ 分解为两个实标量场 $\phi_1(x)$ 和 $\phi_2(x)$，并将 $C$ 变换相位因子改写为 $\eta_C = e^{i\theta}$，其中 $\theta$ 是实数。
+
+(a) 利用 $ C $ 变换性质 (9.79) 证明
+$$C^{-1} \begin{pmatrix}
+\phi_1(x) \\
+-\phi_2(x)
+\end{pmatrix} C = \begin{pmatrix}
+c_\theta & -s_\theta \\
+s_\theta & c_\theta
+\end{pmatrix} \begin{pmatrix}
+\phi_1(x) \\
+\phi_2(x)
+\end{pmatrix}, \tag{9.549}$$
+其中 $ c_\theta \equiv \cos \theta, \, s_\theta \equiv \sin \theta $。
+
+(b) 通过 O(2) 整体变换
+$$\begin{pmatrix}
+\hat{\phi}_1 \\
+\hat{\phi}_2
+\end{pmatrix} \equiv \begin{pmatrix}
+c_{\theta/2} & s_{\theta/2} \\
+-s_{\theta/2} & c_{\theta/2}
+\end{pmatrix} \begin{pmatrix}
+1 \\
+-1
+\end{pmatrix} \begin{pmatrix}
+\phi_1 \\
+\phi_2
+\end{pmatrix} = \begin{pmatrix}
+c_{\theta/2} & s_{\theta/2} \\
+-s_{\theta/2} & c_{\theta/2}
+\end{pmatrix} \begin{pmatrix}
+\phi_1 \\
+-\phi_2
+\end{pmatrix} \tag{9.550}$$
+引入实标量场 $\hat{\phi}_1(x)$ 和 $\hat{\phi}_2(x)$, 证明它们具有 $ C $ 变换性质
+$$C^{-1} \hat{\phi}_1(x) C = + \hat{\phi}_1(x), \quad C^{-1} \hat{\phi}_2(x) C = -\hat{\phi}_2(x). \tag{9.551}$$
+可见, $\hat{\phi}_1(x)$ 和 $\hat{\phi}_2(x)$ 是 $ C $ 字称分别为偶和奇的本征态。
+
+\newpage
+\subsection{9.4}
+在 Dirac 表象 (5.300) 中，考虑 Dirac 旋量场 $\psi(x)$ 的平面波展开式 (5.314)，产生湮灭算符 $(c_{p,\sigma}, c_{p,\sigma}^\dagger)$ 和 $(d_{p,\sigma}, d_{p,\sigma}^\dagger)$ 满足反对易关系 (5.315)，平面波旋量系数 $u(p, \sigma)$ 和 $v(p, \sigma)$ 由 (5.301) 式给出。
+
+(a) 推出 $C = i \gamma^0 \gamma^2$ 和 $C \gamma^5$ 的具体形式。
+
+(b) 证明
+$$Cu^T(p, \sigma) = v(p, \sigma), \quad Cu^T(p, \sigma) = u(p, \sigma), \tag{9.552}$$
+$$\gamma^0 u(p, \sigma) = u(-p, \sigma), \quad \gamma^0 v(p, \sigma) = -v(-p, \sigma), \tag{9.553}$$
+$$C \gamma^5 u(p, \sigma) = \tau_{-\sigma}^* u^*(-p, -\sigma), \quad C \gamma^5 v(p, \sigma) = -\tau_{\sigma} v^*(-p, -\sigma), \tag{9.554}$$
+其中 $\tau_{\sigma}$ 是 (5.308) 式中的相位因子。
+
+(c) 设产生湮灭算符的 $C, P, T$ 变换为
+$$C^{-1} c_{p,\sigma} C = \zeta_C^* d_{p,\sigma}, \quad C^{-1} d_{p,\sigma}^\dagger C = \zeta_C^* c_{p,\sigma}^\dagger, \tag{9.555}$$
+$$P^{-1} c_{p,\sigma} P = \zeta_P^* c_{-p,\sigma}, \quad P^{-1} d_{p,\sigma}^\dagger P = -\zeta_P^* d_{-p,\sigma}^\dagger, \tag{9.556}$$
+$$T^{-1} c_{p,\sigma} T = \zeta_T^* \tau_{-\sigma}^* c_{-p,-\sigma}, \quad T^{-1} d_{p,\sigma}^\dagger T = -\zeta_T^* \tau_{-\sigma}^* d_{-p,-\sigma}^\dagger, \tag{9.557}$$
+推出
+$$C^{-1} \psi(x) C = \zeta_C^* \psi^C(x), \quad P^{-1} \psi(x) P = \zeta_P^* \gamma^0 \psi(Px), \quad T^{-1} \psi(x) T = \zeta_T^* C \gamma^5 \psi(Tx). \tag{9.558}$$
+
+在质心系中考虑一对正反费米子 $\psi \bar{\psi}$ 组成的系统，当轨道角动量和总自旋角动量的量子数分别为 $L$ 和 $S$ 时，态矢表达为
+$$|\psi \bar{\psi}\rangle_{L,S} = \sum_{\sigma, \sigma' = \pm 1/2} \int d^3p \Phi(p, \sigma, \sigma') c_p^i d_{-p,\sigma'}^i |0\rangle ,$$
+其中波函数分解为
+$$\Phi(p, \sigma, \sigma') = R(|p|) Y_{LM}(\theta, \phi) \chi^S_{\sigma S}(\sigma, \sigma'), \quad S = 0, 1, \quad \sigma_S = 0, \cdots, \pm S.$$
+这里 $\theta$ 和 $\phi$ 分别是球坐标系中动量 p 的极角和方位角。$\chi^S_{\sigma S}(\sigma, \sigma')$ 是自旋本征波函数，可以用正费米子 $\psi$ 和反费米子 $\bar{\psi}$ 各自的自旋本征态 $\zeta_\sigma$ 和 $\eta_{\sigma'}$ 的张量积表达为
+$$\chi_0^0(\sigma, \sigma') = \frac{1}{\sqrt{2}} (\zeta_{+1/2} \otimes \eta_{-1/2} - \zeta_{-1/2} \otimes \eta_{+1/2}),$$
+$$\chi_{+1}^1(\sigma, \sigma') = \zeta_{+1/2} \otimes \eta_{+1/2},$$
+$$\chi_0^1(\sigma, \sigma') = \frac{1}{\sqrt{2}} (\zeta_{+1/2} \otimes \eta_{-1/2} + \zeta_{-1/2} \otimes \eta_{+1/2}),$$
+$$\chi_{-1}^1(\sigma, \sigma') = \zeta_{-1/2} \otimes \eta_{-1/2}.$$
+(d) 证明
+$$\Phi(-p, \sigma', \sigma) = (-)^{L+S+1} \Phi(p, \sigma, \sigma')$$
+和
+$$C |\psi \bar{\psi}\rangle_{L,S} = (-)^{L+S} |\psi \bar{\psi}\rangle_{L,S}, \quad P |\psi \bar{\psi}\rangle_{L,S} = (-)^{L+1} |\psi \bar{\psi}\rangle_{L,S}.$$
+可见，扣除波函数 $\Phi(p, \sigma, \sigma')$ 对 $C$ 宇称的贡献 $(-)^{L+S+1}$ 之后，一对正反费米子的内禀 $C$ 宇称为奇。
+
+\newpage
+\subsection{9.5}
+类似于 (4.276) 式，无质量复矢场 $A^\mu(x)$ 的平面波展开式为
+$$A^\mu(x) = \int \frac{d^3p}{(2\pi)^3} \frac{1}{\sqrt{2E_p}} \sum_{\lambda = \pm} \left[ \epsilon^\mu(p, \lambda) a_{p,\lambda} e^{-ipx} + \epsilon^{\mu*}(p, \lambda) c_p^i \right] e^{ipx} + \int \frac{d^3p}{(2\pi)^3} \frac{1}{\sqrt{2E_p}} \sum_{\sigma = 0,3} \epsilon^\mu(p, \sigma) \left( b_{p,\sigma} e^{-ipx} + d_{p,\sigma}^i e^{ipx} \right).$$
+其中极化矢量 $\epsilon^\mu(p, \lambda) (\lambda = \pm)$ 的表达式由 (4.105) 式给出，极化矢量 $\epsilon^\mu(p, \sigma) (\sigma = 0,3)$ 的表达式是 (4.186) 和 (4.189) 式。
+(a) 证明
+$$\epsilon^\mu(-p, \sigma) = P^\mu_{\nu} \epsilon^\nu(p, \sigma), \quad \sigma = 0, 3.$$
+(b) 设产生湮灭算符的 $C, P, T$ 变换为
+$$C^{-1} a_{p,\lambda} C = \xi_c^* c_{p,\lambda}, \quad C^{-1} c_{p,\lambda}^i C = \xi_c^* c_{p,\lambda}^i,$$
+$$C^{-1}b_{p,\sigma}C = \xi^*_c d_{p,\sigma}, \quad C^{-1}d_{p,\sigma}^\dagger C = \xi^*_c b_{p,\sigma}^\dagger, \tag{9.570}$$
+$$P^{-1}a_{p,\lambda}P = -\xi^*_p a_{-p,- \lambda}, \quad P^{-1}c_{p,\lambda}^\dagger P = -\xi^*_p c_{-p,- \lambda}^\dagger, \tag{9.571}$$
+$$P^{-1}b_{p,\sigma}P = \xi^*_p b_{-p,\sigma}, \quad P^{-1}d_{p,\sigma}^\dagger P = \xi^*_p d_{-p,\sigma}^\dagger, \tag{9.572}$$
+$$T^{-1}a_{p,\lambda}T = \xi^*_T a_{-p,\lambda}, \quad T^{-1}c_{p,\lambda}^\dagger T = \xi^*_T c_{-p,\lambda}^\dagger, \tag{9.573}$$
+$$T^{-1}b_{p,\sigma}T = -\xi^*_T b_{-p,\sigma}, \quad T^{-1}d_{p,\sigma}^\dagger T = -\xi^*_T d_{-p,\sigma}^\dagger, \tag{9.574}$$
+推出 $A^\mu(x)$ 的 $C, P, T$ 变换 (9.254), (9.255), (9.256)。
+
+\newpage
+\subsection{9.6}
+验证无源 Maxwell 方程 $\partial_\mu F^{\mu\nu}(x) = 0$ 在 $C, P, T$ 变换下都保持不变。
+
+\newpage
+\subsection{9.7}
+对于参与相互作用的复标量场，Heisenberg 绘景与相互作用绘景中场算符的变换关系为
+$$\phi^H(x) = V^\dagger(t)\phi^I(x)V(t), \quad 其中 \quad V(t) = e^{iH_0^S t}e^{-iHt}. $$
+类似于自由场，$\phi^I(x)$ 的 $P, T, C$ 变换为
+$$P^{-1}\phi^I(x)P = \eta^*_P \phi^I(Px), \quad T^{-1}\phi^I(x)T = \eta^*_T \phi^I(Tx), \quad C^{-1}\phi^I(x)C = \eta^*_C \phi^H(x). \tag{9.575}$$
+假设 $[H, P] = [H_0^S, P] = [H, T] = [H_0^S, T] = [H, C] = [H_0^S, C] = 0$, 证明 $\phi^H(x)$ 的 $P, T, C$ 变换为
+$$P^{-1}\phi^H(x)P = \eta^*_P \phi^H(Px), \quad T^{-1}\phi^H(x)T = \eta^*_T \phi^H(Tx), \quad C^{-1}\phi^H(x)C = \eta^*_C \phi^H(x). \tag{9.576}$$
+
+\newpage
+\subsection{9.8}
+设 $\eta^a$ 和 $\zeta_a$ 是左手 Weyl 旋量，证明 $\eta\sigma^\mu\sigma^\nu\zeta = \eta^a(\sigma^\mu)_{ab}(\sigma^\nu)^{bc}\zeta_c$ 是 Lorentz 张量。
+

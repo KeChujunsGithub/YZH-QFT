@@ -1,0 +1,116 @@
+\section{习题1}
+
+
+\newpage
+\subsection{1.1}
+在自然单位制中，1 GeV$^{-2}$ 等于多少 cm$^2$，也等于多少 cm$^3$/s？
+
+\newpage
+\subsection{1.2}
+推出绕 $z$ 轴转动 $\theta$ 角的变换公式 (1.35)。验证相应的变换矩阵 (1.36) 满足保度规条件 (1.44)。
+
+\newpage
+\subsection{1.3}
+设四维动量 $p^\mu$ 满足质壳条件 $p^2 = m^2 \geq 0$，沿 $x$ 轴方向对它作增速变换，得
+$$p^0 = \gamma (p^0 - \beta p^1), \quad p^1 = \gamma (p^1 - \beta p^0), \quad p^2 = p^2, \quad p^3 = p^3.$$
+(1.262)
+
+证明无论 $p^0 > 0$ 还是 $p^0 < 0$，必有
+$$\frac{p^0}{p^0} > 0,$$
+(1.263)
+
+即增速变换不能改变 $p^0$ 的符号。
+
+\newpage
+\subsection{1.4}
+设四维动量 $p^\mu$ 和 $k^\mu$ 满足质壳条件 $p^2 = m_1^2$ 和 $k^2 = m_2^2$，其中 $m_1, m_2, p^0, k^0 > 0$，证明
+$$(p + k)^2 \geq (m_1 + m_2)^2, \quad (p - k)^2 \leq (m_1 - m_2)^2.$$
+
+\newpage
+\subsection{1.5}
+已知绕 $x$ 轴旋转变换 $R_x(\theta)$、绕 $y$ 轴旋转变换 $R_y(\theta)$、沿 $y$ 轴增速变换 $B_y(\xi)$ 和沿 $z$ 轴增速变换 $B_z(\xi)$ 的具体形式为
+$$R_x(\theta) =
+\begin{pmatrix}
+1 & & \\
+& 1 & \\
+& & \cos\theta & \sin\theta \\
+& & -\sin\theta & \cos\theta 
+\end{pmatrix},
+\quad R_y(\theta) =
+\begin{pmatrix}
+1 & & \\
+& \cos\theta & -\sin\theta \\
+& & 1 \\
+& & \sin\theta & \cos\theta 
+\end{pmatrix},$$
+$$B_y(\xi) =
+\begin{pmatrix}
+\cosh\xi & -\sinh\xi \\
+& 1 & \\
+-\sinh\xi & \cosh\xi \\
+& & 1 
+\end{pmatrix},
+\quad B_z(\xi) =
+\begin{pmatrix}
+\cosh\xi & -\sinh\xi \\
+& 1 & \\
+-\sinh\xi & \cosh\xi 
+\end{pmatrix}.$$
+
+(a) 分别推出这四个变换的无穷小变换参数 $\omega_{\mu\nu}$ 的矩阵形式。
+(b) 证明 $R_y(\theta_1)R_y(\theta_2) = R_y(\theta_1 + \theta_2)$ 和 $B_y(\xi_1)B_y(\xi_2) = B_y(\xi_1 + \xi_2)$。
+
+\newpage
+\subsection{1.6}
+证明
+$$g^{\mu\nu} g_{\nu\sigma}(\Lambda^{-1})^\sigma = \Lambda^\mu_\nu.$$
+
+\newpage
+\subsection{1.7}
+设 $S^{\mu\nu}$ 是对称的 Lorentz 张量，$A_{\mu\nu}$ 是反对称的 Lorentz 张量，证明
+$$S^{\mu\nu} A_{\mu\nu} = 0.$$
+
+\newpage
+\subsection{1.8}
+用 $E$ 和 $B$ 将 $F_{\mu\nu}F^{\mu\nu}$ 和 $F_{\mu\nu}\tilde{F}^{\mu\nu}$ 表示出来。
+
+\newpage
+\subsection{1.9}
+根据 Euler-Lagrange 方程（1.167），从下列拉氏量导出场 $\phi(x)$ 或 $A^\mu(x)$ 的经典运动方程。
+(a) $$L = \frac{1}{2}(\partial^\mu \phi)\partial_\mu \phi - \frac{1}{2}m^2 \phi^2 + \frac{\lambda}{3!} \phi^3,$$
+其中 $m$ 和 $\lambda$ 是常数。
+(b) $$L = -\frac{1}{2}(\partial^\nu A^\mu)\partial_\nu A_\mu + \frac{1}{2}m^2 A^\mu A_\mu,$$
+其中 $m$ 是常数。
+(c) $$L = -\frac{a}{2}(\partial^\nu A^\mu)\partial_\nu A_\mu - \frac{b}{2}(\partial^\mu A^\nu)\partial_\nu A_\mu,$$
+其中 $a$ 和 $b$ 是常数。
+(d) 对于上一小题，取 $a = 1$ 且 $b = -1$，然后用 $F^{\mu\nu} = \partial^\mu A^\nu - \partial^\nu A^\mu$ 表达经典运动方程。
+
+\newpage
+\subsection{1.10}
+将（1.237）式改写为
+$$\mathbb{J}^{\mu\nu\rho} = T^{\mu\nu}x^\nu - T^{\mu\nu}x^\rho + \mathbb{S}^{\mu\nu\rho},$$
+其中
+$$\mathbb{S}^{\mu\nu\rho} \equiv -i\frac{\partial L}{\partial (\partial_\mu \Phi_a)} (T^\rho)_{ab}\Phi_b$$
+
+满足 $\mathbb{S}^{\mu\nu\rho} = -\mathbb{S}^{\mu\nu\rho}$, 引入 Belinfante-Rosenfeld 能动张量
+$$\Theta^{\mu\nu} \equiv T^{\mu\nu} + \frac{1}{2}\partial_\rho (\mathbb{S}^{\mu\nu\rho} + \mathbb{S}^{\mu\nu\rho} - \mathbb{S}^{\mu\nu\rho}).$$
+
+(a) 由 (1.213) 和 (1.238) 式推出
+$$\partial_\mu S^{\mu\nu\rho} = T^{\rho\nu} - T^{\nu\rho}.$$    (1.271)
+
+(b) 证明
+$$\Theta^{\mu\nu} = \Theta^{\mu\nu}.$$    (1.272)
+
+(c) 证明
+$$\partial_\mu \Theta^{\mu\nu} = 0.$$    (1.273)
+
+(d) 证明
+$$\int d^3x \Theta^{00} = H, \quad \int d^3x \Theta^{0i} = P^i.$$    (1.274)
+
+可见，Belinfante-Rosenfeld 能动张量是满足守恒流方程的对称张量，且其 00 分量和 0i 分量的空间积分分别是场的总能量和总动量，符合作为对称能动张量的要求，可将它放入广义相对论的 Einstein 方程以充当引力场的源项。
+
+
+
+
+
+

@@ -1,0 +1,156 @@
+\section{习题5}
+
+\newpage
+\subsection{5.1}
+证明下列等式。
+(a) $\gamma^\mu \psi = 2p^\mu - \psi \gamma^\mu$.
+(b) $\psi \psi = p^2$.
+(c) $\{\psi \psi, \gamma^\mu \} = 2p^\mu k \psi - 2k^\mu \psi \psi + 2q^\mu \psi k$.
+(d) $\gamma^\mu \gamma_\mu = 4$.
+(e) $\sigma^\mu \sigma_\mu = 12$.
+(f) $\epsilon_{\mu \nu \rho \sigma} \sigma^{\mu \nu} \sigma^{\rho \sigma} = -24i \gamma^5$.
+(g) $\gamma_\mu \gamma^5 = -\frac{i}{6} \epsilon_{\mu \nu \rho \sigma} \gamma^\mu \gamma^\rho \gamma^\sigma$.
+(h) $[\gamma_\mu, \gamma_\nu] \gamma^5 = i \epsilon_{\mu \nu \rho \sigma} \gamma^\rho \gamma^\sigma$.
+(i) $\epsilon_{\mu \nu \rho \sigma} \sigma^{\rho \sigma} = -2i \sigma_{\mu \nu} \gamma^5$.
+
+\newpage
+\subsection{5.2}
+设自由 Dirac 旋量场 $\psi(x)$ 的拉氏量为
+$$\mathcal{L} = \frac{i}{2} \bar{\psi} \gamma^\mu \partial_\mu \psi - m \bar{\psi} \psi, \tag{5.295}$$
+证明由 Euler-Lagrange 方程（1.167）推出的经典运动方程也是 Dirac 方程（5.107）。
+
+\newpage
+\subsection{5.3}
+对于平面波旋量系数 $u(p, \lambda)$ 和 $v(k, \lambda')$，证明下列等式。
+(a) $(u \gamma^\mu v)^* = \bar{v} \gamma^\mu u$.
+(b) $(\bar{u} \gamma^5 v)^* = -\bar{v} \gamma^5 u$.
+(c) $(\bar{u} \gamma^\mu \gamma^5 v)^* = \bar{v} \gamma^\mu \gamma^5 u$.
+(d) $(\bar{u} \sigma^\mu v)^* = \bar{v} \sigma^\mu v$.
+(e) $(\bar{u} \gamma^5 \sigma^\mu v)^* = -\bar{v} \gamma^5 \sigma^\mu v$.
+
+\newpage
+\subsection{5.4}
+证明 Gordon 恒等式
+$$\bar{u}(p, \lambda) \gamma^\mu u(k, \lambda') = \bar{u}(p, \lambda) \left( \frac{p^\mu + k^\mu}{2m} + \frac{i\sigma^\mu v}{2m} \right) u(k, \lambda'),$$
+其中 $q^\mu \equiv p^\mu - k^\mu$。
+
+\newpage
+\subsection{5.5}
+在球坐标系中，动量表达为 $p = |p| \hat{p} = |p| (s_\theta c_\phi, s_\theta s_\phi, c_\theta)$，其中 $s_\theta \equiv \sin \theta$，$c_\theta \equiv \cos \theta$。
+(a) 推出
+$$\hat{p} \cdot \sigma = 
+\begin{pmatrix}
+c_\theta & e^{-i\phi} s_\theta \\
+e^{i\phi} s_\theta & -c_\theta
+\end{pmatrix}.$$
+(b) 推出螺旋态表达式
+$$\xi_+ (p) = 
+\begin{pmatrix}
+c_{\theta/2} \\
+e^{i\phi} s_{\theta/2}
+\end{pmatrix},
+\quad \xi_- (p) = 
+\begin{pmatrix}
+-e^{-i\phi} s_{\theta/2} \\
+c_{\theta/2}
+\end{pmatrix}.$$
+(c) 根据以上两步结果验证 $(\hat{p} \cdot \sigma) \xi_+ (p) = + \xi_+ (p)$ 和 $(\hat{p} \cdot \sigma) \xi_- (p) = - \xi_- (p)$。
+(d) 证明
+$$\exp(i\alpha \hat{p} \cdot \sigma) = \cos \alpha + i (\hat{p} \cdot \sigma) \sin \alpha.$$
+
+\newpage
+\subsection{5.6}
+在 Dirac 表象（也称为标准表象）中，$\gamma$ 矩阵表达为
+$$\gamma^0 = 
+\begin{pmatrix}
+1 & 0 \\
+-1 & 0
+\end{pmatrix},
+\quad \gamma^i = 
+\begin{pmatrix}
+\sigma^i \\
+-\sigma^i
+\end{pmatrix}.$$
+将平面波旋量系数表达为
+$$u(p, \sigma) = \sqrt{E_p + m} \begin{pmatrix}
+\zeta_\sigma & 0 \\
+\frac{\sigma \cdot p}{E_p + m} \zeta_\sigma
+\end{pmatrix},
+\quad v(p, \sigma) = \sqrt{E_p + m} \begin{pmatrix}
+\frac{\sigma \cdot p}{E_p + m} \eta_{-\sigma} \\
+\eta_{-\sigma}
+\end{pmatrix}.$$
+其中 $\zeta_\sigma$ 是某个固定方向上的二分量自旋本征态，不依赖于动量 $p$，$\sigma = \pm 1/2$ 是磁量子数。记这个固定方向的单位矢量为 $n$，则 $\zeta_\sigma$ 满足的本征方程、正交归一关系和完备性关系为
+$$\frac{1}{2} (n \cdot \sigma) \zeta_\sigma = \sigma \zeta_\sigma,
+\quad \zeta_\sigma^T \zeta_\sigma' = \delta_{\sigma \sigma'},
+\quad \sum_{\sigma = \pm 1/2} \zeta_\sigma \zeta_\sigma^T = 1.$$
+另一方面，$\eta_\sigma$ 定义为
+$$\eta_\sigma \equiv i \sigma^2 \zeta_{-\sigma}^*.$$
+(a) 验证 (5.300) 式表达的 $\gamma^\mu$ 满足反对易关系 (5.1)，并推出
+$$\gamma^5 = \begin{pmatrix}
+1 \\
+1
+\end{pmatrix} \tag{5.304}$$
+和
+$$\mathcal{S}^{0i} = \frac{i}{2} \begin{pmatrix}
+\sigma^i \\
+\sigma^i
+\end{pmatrix}, \quad \mathcal{S}^{ij} = \frac{1}{2} e^{ijk} \begin{pmatrix}
+\sigma^k \\
+\sigma^k
+\end{pmatrix}. \tag{5.305}$$
+(b) 证明 Pauli 矩阵 (3.53) 满足
+$$\sigma^i \sigma^2 = -\sigma^2 (\sigma^i)^T, \tag{5.306}$$
+进而证明
+$$\frac{1}{2} (\mathbf{n} \cdot \sigma) \eta_\sigma = \sigma \eta_\sigma, \quad \eta_\sigma^{\dagger} \eta_{\sigma'} = \delta_{\sigma \sigma'}, \quad \sum_{\sigma = \pm 1/2} \eta_\sigma \eta_\sigma^{\dagger} = 1. \tag{5.307}$$
+这说明 $\eta_\sigma$ 也是本征值为 $\sigma$ 的自旋本征态，跟 $\zeta_\sigma$ 至多相差一个相位因子 $\tau_\sigma$，即
+$$\eta_\sigma = \tau_\sigma \zeta_\sigma. \tag{5.308}$$
+(c) 设 $\mathbf{n} = (s_0 c_\phi, s_0 s_\phi, c_\theta)$，其中 $s_0 \equiv \sin \theta$，$c_\theta \equiv \cos \theta$。类似于 (5.298) 式，可将 $\zeta_\sigma$ 取为
+$$\zeta_{+1/2} = \begin{pmatrix}
+c_{\theta/2} \\
+e^{i\phi} s_{\theta/2}
+\end{pmatrix}, \quad \zeta_{-1/2} = \begin{pmatrix}
+-e^{-i\phi} s_{\theta/2} \\
+c_{\theta/2}
+\end{pmatrix}. \tag{5.309}$$
+由此推出 $\eta_\sigma$ 的具体形式，证明
+$$\tau_\sigma = 2\sigma. \tag{5.310}$$
+(d) 证明 $u(\mathbf{p}, \sigma)$ 和 $v(\mathbf{p}, \sigma)$ 满足运动方程
+$$(\psi - m) u(\mathbf{p}, \sigma) = 0, \quad (\psi + m) v(\mathbf{p}, \sigma) = 0, \tag{5.311}$$
+正交归一关系
+$$u^\dagger (\mathbf{p}, \sigma) u(\mathbf{p}, \sigma') = 2E_p \delta_{\sigma \sigma'}, \quad v^\dagger (\mathbf{p}, \sigma) v(\mathbf{p}, \sigma') = 2E_p \delta_{\sigma \sigma'}, \quad u^\dagger (\mathbf{p}, \sigma) v(-\mathbf{p}, \sigma') = 0, \tag{5.312}$$
+和自旋求和关系
+$$\sum_{\sigma = \pm 1/2} u(\mathbf{p}, \sigma) \bar{u}(\mathbf{p}, \sigma) = \psi + m, \quad \sum_{\sigma = \pm 1/2} v(\mathbf{p}, \sigma) \bar{v}(\mathbf{p}, \sigma) = \psi - m. \tag{5.313}$$
+于是，将 Dirac 旋量场的平面波展开式写成
+$$\psi(x) = \int \frac{d^3 p}{(2\pi)^3} \frac{1}{\sqrt{2E_p}} \sum_{\sigma = \pm 1/2} [u(\mathbf{p}, \sigma) c_{\mathbf{p}, \sigma} e^{-ip \cdot x} + v(\mathbf{p}, \sigma) d_{\mathbf{p}, \sigma}^\dagger e^{ip \cdot x}], \tag{5.314}$$
+
+\newpage
+\subsection{5.7}
+将 Weyl 表象中的 $\gamma$ 矩阵（5.68）记为 $\gamma_W^H$, Dirac 表象中的 $\gamma$ 矩阵（5.300）记为 $\gamma_D^H$, 寻找么正矩阵 $U$, 使得 $\gamma_D^H = U^\dagger \gamma_W^H U$。
+
+\newpage
+\subsection{5.8}
+对于自由 Dirac 旋量场 $\psi(x)$, 根据 1.7 节关于 Noether 定理的讨论，Lorentz 对称性给出的守恒荷算符（1.239）表达为
+$$J^{\mu \nu} = \int d^3 x [T^{0 \mu} x^{\mu} - T^{0 \mu} x^{\nu} - i \pi_a (\mathcal{S}^{\mu \nu})_{ab} \psi_b],$$
+其中 $T^{0 \mu} = \pi_a \partial^{\mu} \psi_a$, 利用等时反对易关系（5.238）推出（5.65）式。
+
+\newpage
+\subsection{5.9}
+自旋求和关系（5.214）等价于
+$$\sum_{\lambda = \pm} u(p, \lambda) u^\dagger (p, \lambda) = (\psi + m) \gamma^0, \quad \sum_{\lambda = \pm} v(p, \lambda) v^\dagger (p, \lambda) = (\psi - m) \gamma^0.$$
+(5.317)
+利用上述、产生湮灭算符的反对易关系（5.246）以及 $\psi(x,t)$ 和 $\psi^\dagger(x,t)$ 的平面波展开式（5.216）和（5.217），推出等时反对易关系（5.239）。
+
+\newpage
+\subsection{5.10}
+假如采用等时对易关系量子化 Dirac 旋量场，利用得到的产生湮灭算符对易关系（5.236）和哈密顿量表达式（5.237）推出
+$$[H, b_{p, \lambda}^\dagger] = E_p b_{p, \lambda}^\dagger.$$
+(5.318)
+真空态 $|0\rangle$ 满足
+$$a_{p, \lambda}|0\rangle = b_{p, \lambda}|0\rangle = 0, \quad \langle 0|0\rangle = 1, \quad H|0\rangle = E_{vac}|0\rangle, \quad E_{vac} = 2\delta^{(3)}(0) \int d^3 p E_p,$$
+(5.319)
+引入单粒子态 $|p^- , \lambda\rangle \equiv \sqrt{2E_p} b_{p, \lambda}^\dagger |0\rangle$, 推出非物理的结果
+$$\langle p^- , \lambda | p^- , \lambda\rangle = -2E_p (2\pi)^3 \delta^{(3)}(0) < 0,$$
+(5.320)
+$$\langle p^- , \lambda | H | p^- , \lambda\rangle = -2E_p (E_{vac} + E_p)(2\pi)^3 \delta^{(3)}(0) < 0.$$
+(5.321)

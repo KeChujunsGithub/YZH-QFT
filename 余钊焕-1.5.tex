@@ -1,0 +1,245 @@
+\section{1.5}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+\subsection{自然单位制下的麦克斯韦方程组}
+
+总结：自然单位制下的麦克斯韦方程组
+\begin{equation}
+    \begin{aligned}
+        \nabla \cdot \mathbf{E}&=\rho 
+\\
+\nabla \times \mathbf{B}&=\mathbf{J}+\frac{\partial \mathbf{E}}{\partial t}
+\\
+\nabla \cdot \mathbf{B}&=0
+\\
+\nabla \times \mathbf{E}&=-\frac{\partial \mathbf{B}}{\partial t}
+    \end{aligned}
+\end{equation}
+
+Gauss 定律
+\begin{equation}
+    \nabla \cdot \mathbf{E}=\rho 
+\end{equation}
+Ampère 环路定律对应的Ampère-Maxwell 方程
+\begin{equation}
+    \nabla \times \mathbf{B}=\mathbf{J}+\frac{\partial \mathbf{E}}{\partial t}
+\end{equation}
+Gauss 磁定律
+\begin{equation}
+    \nabla \cdot \mathbf{B}=0
+\end{equation}
+Faraday 电磁感应定律对应的 MaxwellFaraday 方程
+\begin{equation}
+    \nabla \cdot \mathbf{B}=0
+\end{equation}
+
+补充：推导
+1.1推导
+\begin{equation}
+    \nabla \cdot \mathbf{E}=\rho \Rightarrow \partial _{\mu}F^{\mu 0}=J^0
+\end{equation}
+过程
+\begin{equation}
+    \begin{aligned}
+        \nabla \cdot \mathbf{E}&=\rho 
+\\
+\partial _iE^i&=J^0
+\\
+-\partial _iF^{0i}&=J^0
+\\
+\partial _iF^{i0}&=J^0
+\\
+\partial _0F^{00}+\partial _iF^{i0}&=J^0
+\\
+\partial _{\mu}F^{\mu 0}&=J^0
+    \end{aligned}
+\end{equation}
+其中
+
+
+
+
+
+
+2.1推导
+\begin{equation}
+    \nabla \times \mathbf{B}=\mathbf{J}+\frac{\partial \mathbf{E}}{\partial t}\Rightarrow \partial _{\mu}F^{\mu i}=J^i
+\end{equation}
+过程
+\begin{equation}
+    \begin{aligned}
+        \nabla \times \mathbf{B}&=\mathbf{J}+\frac{\partial \mathbf{E}}{\partial t}
+\\
+\varepsilon ^{ijk}\partial _jB^k&=J^i+\partial _0E^i
+\\
+\partial _j\varepsilon ^{ijk}B^k&=J^i+\partial _0E^i
+\\
+-\partial _jF^{ij}&=J^i-\partial _0F^{0i}
+\\
+\partial _0F^{0i}-\partial _jF^{ij}&=J^i
+\\
+\partial _0F^{0i}+\partial _jF^{ji}&=J^i
+\\
+\partial _{\mu}F^{\mu i}&=J^i
+$$
+
+    \end{aligned}
+\end{equation}
+
+
+
+
+3.1推导
+\begin{equation}
+    
+\end{equation}
+过程
+\begin{equation}
+    \begin{aligned}
+        \nabla \times \mathbf{E}&=-\frac{\partial \mathbf{B}}{\partial t}
+\\
+\varepsilon ^{kmn}\partial _mE^n&=-\partial _0B^k
+\\
+-\varepsilon ^{kmn}\partial _mF^{0n}&=\frac{1}{2}\varepsilon ^{kmn}\partial _0F^{mn}
+\\
+\varepsilon ^{kmn}\partial _mF^{0n}+\frac{1}{2}\varepsilon ^{kmn}\partial _0F^{mn}&=0
+\\
+\varepsilon ^{kij}\varepsilon ^{kmn}\left( \partial _mF^{0n}+\frac{1}{2}\partial _0F^{mn} \right) &=0
+\\
+\left( \delta ^{im}\delta ^{jn}-\delta ^{in}\delta ^{jm} \right) \left( \partial _mF^{0n}+\frac{1}{2}\partial _0F^{mn} \right) &=0
+\\
+\delta ^{im}\delta ^{jn}\partial _mF^{0n}-\delta ^{in}\delta ^{jm}\partial _mF^{0n}+\frac{1}{2}\left( \delta ^{im}\delta ^{jn}\partial _0F^{mn}-\delta ^{in}\delta ^{jm}\partial _0F^{mn} \right) &=0
+\\
+\partial _iF^{0j}-\partial _jF^{0i}+\frac{1}{2}\left( \partial _0F^{ij}-\partial _0F^{ji} \right) &=0
+\\
+-\partial _iF^{j0}-\partial _jF^{0i}+\frac{1}{2}\left( \partial _0F^{ij}+\partial _0F^{ij} \right) &=0
+\\
+\partial _0F^{ij}-\partial _iF^{j0}-\partial _jF^{0i}&=0
+\\
+\partial ^0F^{ij}+\partial ^iF^{j0}+\partial ^jF^{0i}&=0
+    \end{aligned}
+\end{equation}
+
+
+
+
+
+
+
+4.1推导
+\begin{equation}
+    \nabla \times \mathbf{E}=-\frac{\partial \mathbf{B}}{\partial t}\Rightarrow \partial ^0F^{ij}+\partial ^iF^{j0}+\partial ^jF^{0i}=0
+\end{equation}
+
+\begin{equation}
+    \begin{aligned}
+        
+    \end{aligned}
+\end{equation}
+
+
+
+1.2推导
+\begin{equation}
+    \partial _{\mu}F^{\mu 0}=J^0\Rightarrow \nabla \cdot \mathbf{E}=\rho 
+\end{equation}
+过程
+\begin{equation}
+    \begin{aligned}
+        \partial _{\mu}F^{\mu 0}&=J^0
+\\
+\,\partial _0F^{00}+\partial _iF^{i0}&=J^0
+\\
+\partial _iF^{i0}&=J^0
+\\
+-\partial _iF^{0i}&=J^0
+\\
+\partial _iE^i&=J^0
+\\
+\nabla \cdot \mathbf{E}&=\rho 
+    \end{aligned}
+\end{equation}
+其中
+\begin{equation}
+    \begin{aligned}
+        F^{00}&=0
+\\
+\partial _0F^{00}&=0
+    \end{aligned}
+\end{equation}
+
+
+
+
+2.2推导
+\begin{equation}
+    \partial _{\mu}F^{\mu i}=J^i\Rightarrow \nabla \times \mathbf{B}=\mathbf{J}+\frac{\partial \mathbf{E}}{\partial t}
+\end{equation}
+过程
+\begin{equation}
+    \begin{aligned}
+        \partial _{\mu}F^{\mu i}&=J^i
+\\
+\partial _0F^{0i}+\partial _jF^{ji}&=J^i
+\\
+-\partial _0E^i-\partial _j\varepsilon ^{jik}B^k&=J^i
+\\
+-\partial _0E^i-\varepsilon ^{jik}\partial _jB^k&=J^i
+\\
+-\partial _0E^i+\varepsilon ^{ijk}\partial _jB^k&=J^i
+\\
+\varepsilon ^{ijk}\partial _jB^k&=J^i+\partial _0E^i
+\\
+\nabla \times \mathbf{B}&=\mathbf{J}+\frac{\partial \mathbf{E}}{\partial t}
+    \end{aligned}
+\end{equation}
+
+
+
+
+3.2推导
+\begin{equation}
+    \partial ^iF^{jk}+\partial ^jF^{ki}+\partial ^kF^{ij}=0\Rightarrow \nabla \cdot \mathbf{B}=0
+\end{equation}
+过程
+\begin{equation}
+    \begin{aligned}
+        \partial ^iF^{jk}+\partial ^jF^{ki}+\partial ^kF^{ij}&=0
+\\
+-\partial _iF^{jk}-\partial _jF^{ki}-\partial _kF^{ij}&=0
+\\
+\partial _iF^{jk}+\partial _jF^{ki}+\partial _kF^{ij}&=0
+\\
+\partial _i\varepsilon ^{jkl}B^l+\partial _j\varepsilon ^{kil}B^l+\partial _k\varepsilon ^{ijl}B^l&=0
+\\
+\varepsilon ^{jkl}\partial _iB^l+\varepsilon ^{kil}\partial _jB^l+\varepsilon ^{ijl}\partial _kB^l&=0
+\\
+\varepsilon ^{ijk}\left( \varepsilon ^{jkl}\partial _iB^l+\varepsilon ^{kil}\partial _jB^l+\varepsilon ^{ijl}\partial _kB^l \right) &=0
+\\
+\varepsilon ^{jki}\varepsilon ^{jkl}\partial _iB^l+\varepsilon ^{kij}\varepsilon ^{kil}\partial _jB^l+\varepsilon ^{ijk}\varepsilon ^{ijl}\partial _kB^l&=0
+\\
+\delta ^{il}\partial _iB^l+\delta ^{jl}\partial _jB^l+\delta ^{kl}\partial _kB^l&=0
+\\
+3\partial _lB^l&=0
+\\
+\partial _iB^i&=0
+\\
+\nabla \cdot \mathbf{B}&=0
+    \end{aligned}
+\end{equation}
+
+
+
+
+4.2推导
+\begin{equation}
+    \partial ^0F^{ij}+\partial ^iF^{j0}+\partial ^jF^{0i}=0\Rightarrow \nabla \times \mathbf{E}=-\frac{\partial \mathbf{B}}{\partial t}
+\end{equation}
+过程
+\begin{equation}
+    \begin{aligned}
+        
+    \end{aligned}
+\end{equation}
+
+

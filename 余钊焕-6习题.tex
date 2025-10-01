@@ -1,0 +1,59 @@
+\section{习题6}
+
+\newpage
+\subsection{6.1}
+考虑 $d$ 维时空中的作用量
+$$ S = \int d^d x  \mathcal{L}(x), \tag{6.412} $$
+其中拉氏量
+$$ \mathcal{L} = \frac{1}{2}(\partial^\mu \phi) \partial_\mu \phi - \frac{1}{2}(\partial_\mu A_\nu) \partial^\mu A^\nu + \frac{1}{2}(\partial_\nu A_\mu) \partial^\mu A^\nu + i \bar{\psi} \gamma^\mu \partial_\mu \psi \tag{6.413} $$
+由实标量场 $\phi(x)$、实矢量场 $A^\mu(x)$ 和 Dirac 旋量场 $\psi(x)$ 构成的。在自然单位制下，依然有 $[S] = [E]^0$ 和 $[x^\mu] = [E]^{-1}$，据此分析 $\mathcal{L}$、$\phi$、$A^\mu$ 和 $\psi$ 的量纲。
+
+\newpage
+\subsection{6.2}
+根据有质量实矢量场的平面波展开式 (4.110)，证明
+$$ [A^\mu(x), A^\nu(y)] = 0, \quad (x - y)^2 < 0. \tag{6.414} $$
+
+\newpage
+\subsection{6.3}
+证明级数 (6.106) 中 $n = 3$ 的项
+$$ I = \int_{t_0}^t dt_1 \int_{t_0}^{t_1} dt_2 \int_{t_0}^{t_2} dt_3 H_1(t_1)H_1(t_2)H_1(t_3) \tag{6.415} $$
+满足
+$$ 3!I = \int_{t_0}^t dt_1 \int_{t_0}^t dt_2 \int_{t_0}^t dt_3 T[H_1(t_1)H_1(t_2)H_1(t_3)]. \tag{6.416} $$
+
+\newpage
+\subsection{6.4}
+对于 Dirac 旋量场 $\psi(x)$ 和实矢量场 $A^\mu(x)$，根据 Wick 定理写出
+$$ T[A^\mu(x)\bar{\psi}(x)\gamma_\mu \psi(x)A^\nu(y)\bar{\psi}(y)\gamma_\nu \psi(y)] \tag{6.417} $$
+的正规乘积表达式，只需包含非零缩并。
+
+\newpage
+\subsection{6.5}
+对于拉氏量 (4.290) 描述的有质量复矢量场 $A^\mu(x)$，推出 Feynman 传播子
+$$ \bar{A^\mu}(x)A^{\nu\dagger}(y) = \langle 0|T[A^\mu(x)A^{\nu\dagger}(y)|0\rangle \tag{6.418} $$
+的表达式
+$$ \bar{A^\mu}(x)A^{\nu\dagger}(y) = \int \frac{d^4p}{(2\pi)^4} \frac{-i(g^{\mu\nu}-p^\mu p^\nu/m^2)}{p^2-m^2+i\epsilon} e^{-ip\cdot(x-y)} - \frac{i}{m^2} g^{\mu 0}g^{\nu 0}\delta^{(4)}(x-y). \tag{6.419} $$
+
+\newpage
+\subsection{6.6}
+在质心系中考虑 $2 \rightarrow n$ 散射过程，将入射流因子表达为
+$$ E_A E_B |\mathbf{v}_A - \mathbf{v}_B| = \frac{E_{GM}^2}{2} \lambda^{1/2} \left( 1, \frac{m_A^2}{E_{GM}^2}, \frac{m_B^2}{E_{GM}^2} \right). \tag{6.420} $$
+
+\newpage
+\subsection{6.7}
+一个粒子的质量为 $m$ ，四维动量为 $p^\mu = (E, p_x, p_y, p_z)$ 。将 $z$ 轴方向视作纵向，则快度
+$$ \xi = \tanh^{-1} \frac{p_z}{E} \tag{6.421} $$
+对应于沿纵向的 Lorentz 增速变换。定义赝快度 (pseudorapidity)
+$$ \eta \equiv -\ln \tan \frac{\theta}{2}, \tag{6.422} $$
+其中 $\theta$ 是动量 $\mathbf{p}$ 与 $z$ 轴之间的夹角，如图 6.8 所示。横向动量表达为 $\mathbf{p}_T = (p_x, p_y, 0)$ ，定义横向能量
+$$ E_T \equiv \sqrt{m^2 + |\mathbf{p}_T|^2} = \sqrt{m^2 + p_x^2 + p_y^2}. \tag{6.423} $$
+(a) 证明 $\eta = \xi$ 对 $m = 0$ 成立。
+(b) 证明
+$$ E = E_T \cosh \xi, $$
+$$ p_z = E_T \sinh \xi. \tag{6.424} $$
+(c) 证明
+$$ \xi = \ln \frac{E + p_z}{E_T}, \tag{6.425} $$
+且
+$$ \xi = \frac{1}{2} \ln \frac{E + p_z}{E - p_z}. \tag{6.426} $$
+(d) 假设这个粒子衰变为粒子 1 和粒子 2 ，证明
+$$ m = \sqrt{m_1^2 + m_2^2 + 2[E_{1T}E_{2T} \cosh(\xi_1 - \xi_2) - \mathbf{p}_{1T} \cdot \mathbf{p}_{2T}]}, \tag{6.427} $$
+其中 $m_i$、$E_{iT}$、$\mathbf{p}_{iT}$ 和 $\xi_i$ 分别是粒子 $i$ 的质量、横向能量、横向动量和快度。

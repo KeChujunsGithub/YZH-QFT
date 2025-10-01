@@ -1,0 +1,248 @@
+\section{习题3}
+
+
+\newpage
+\subsection{3.1}
+将 Lorentz 群的空间旋转生成元 $J^i$ 和增速生成元 $K^i$ 线性组合成
+$$ J_+^i \equiv \frac{1}{2}(J^i + iK^i), \quad J_-^i \equiv \frac{1}{2}(J^i - iK^i). \tag{3.208} $$
+
+通过对易关系 (3.62) 证明
+$$ [J_+^i, J_+^j] = i e^{ijk} J_+^k, \quad [J_-^i, J_-^j] = i e^{ijk} J_-^k, \quad [J_+^i, J_-^j] = 0. \tag{3.209} $$
+
+因此，$J_+^i$ 和 $J_-^i$ 是两套彼此独立的 SU(2) 群生成元，而 Lorentz 代数是两个 SU(2) 代数的直和。
+
+\newpage
+\subsection{3.2}
+根据对易关系 (3.71) 和 (3.72)，证明算符 $\mathbf{J} \cdot \mathbf{P} \equiv J^i P^i$ 满足
+$$ [H, \mathbf{J} \cdot \mathbf{P}] = 0, \quad [P^i, \mathbf{J} \cdot \mathbf{P}] = 0. \tag{3.210} $$
+
+\newpage
+\subsection{3.3}
+将 SU(2) 群的任意元素 $U$ 表达为
+$$ U = \begin{pmatrix} a & b \\ c & d \end{pmatrix}. \tag{3.211} $$
+
+(a) 由 $U^\dagger U = 1$ 和 $\det(U) = 1$ 推出
+$$ |a|^2 + |c|^2 = |b|^2 + |d|^2 = 1, \quad a^* b + c^* d = 0, \quad ad - bc = 1, \tag{3.212} $$
+
+并证明满足这些方程的解为
+$$ a = d^*, \quad b = -c^*, \quad |c|^2 + |d|^2 = 1. \tag{3.213} $$
+
+令 $ d = u_0 + iu_3 $，$ c = u_2 - iu_1 $，则 $ U $ 表达为
+$$ U = \begin{pmatrix} u_0 - iu_3 & -u_2 - iu_1 \\ u_2 - iu_1 & u_0 + iu_3 \end{pmatrix}. \tag{3.214} $$
+
+实参数 $ u_0 $、$ u_1 $、$ u_2 $ 和 $ u_3 $ 必须满足
+$$ u_0^2 + u_1^2 + u_2^2 + u_3^2 = |c|^2 + |d|^2 = 1, \tag{3.215} $$
+
+因此，它们之中只有三个是独立的。将 $ u_0 $、$ u_1 $、$ u_2 $ 和 $ u_3 $ 当作四维空间的直角坐标，则约束条件 (3.215) 表明 SU(2) 的群空间是四维空间中的三维球面 $ S^3 $。
+
+记三维矢量 $ \omega $ 的球坐标为 $ (\omega, \theta, \phi) $，则 $ \omega = \omega \mathbf{n} $，其中单位矢量 $ \mathbf{n}(\theta, \phi) $ 是 $ \omega $ 的方向矢量，相应的直角坐标为 $ \mathbf{n} = (\sin \theta \cos \phi, \sin \theta \sin \phi, \cos \theta) $。设
+$$ u_0 = \cos \frac{\omega}{2}, \quad u_1 = \sin \frac{\omega}{2} \sin \theta \cos \phi, \quad u_2 = \sin \frac{\omega}{2} \sin \theta \sin \phi, \quad u_3 = \sin \frac{\omega}{2} \cos \theta, \tag{3.216} $$
+
+则条件 (3.215) 得到满足，从而可以用 $ (\omega, \theta, \phi) $ 作为描述任意 $ U(\mathbf{n}, \omega) \in SU(2) $ 的三个独立实参数。
+
+(b) 证明
+$$ U(\mathbf{n}, \omega) = \cos \frac{\omega}{2} \mathbf{1} - i \sin \frac{\omega}{2} (\mathbf{n} \cdot \boldsymbol{\sigma}) \tag{3.217} $$
+
+和
+$$ (\mathbf{n} \cdot \boldsymbol{\sigma})^2 = \mathbf{1}. \tag{3.218} $$
+
+(c) 证明
+$$ U(\mathbf{n}, \omega_1) U(\mathbf{n}, \omega_2) = U(\mathbf{n}, \omega_1 + \omega_2), \tag{3.219} $$
+$$ U(\mathbf{n}, 2\pi) = -\mathbf{1}, \tag{3.220} $$
+$$ U(\mathbf{n}, 4\pi) = \mathbf{1}, \tag{3.221} $$
+$$ U(\mathbf{n}, \omega) = -U(-\mathbf{n}, 2\pi - \omega), \tag{3.222} $$
+$$ U(\mathbf{n}, \omega) = U(-\mathbf{n}, 4\pi - \omega). \tag{3.223} $$
+
+\newpage
+\subsection{3.4}
+Pauli 矩阵 (3.53) 是无迹厄米矩阵，而任意 $ 2 \times 2 $ 无迹厄米矩阵 $ X $ 只包含三个独立实参数，因此必定可以将 $ X $ 展开为三个 Pauli 矩阵的实线性组合。将组合系数取为三维空间中任意一点 $ P $ 的三个直角坐标 $ x^i $，得
+$$ X = x^i \sigma^i = \begin{pmatrix} x^3 & x^1 - i x^2 \\ x^1 + i x^2 & -x^3 \end{pmatrix}. \tag{3.224} $$
+
+可见，无迹厄米矩阵 $ X $ 与 $ P $ 点的位置矢量 $ \mathbf{x} = (x^1, x^2, x^3) $ 是一一对应的。
+
+(a) 证明
+$$ x^i = \frac{1}{2} \mathrm{tr}(X \sigma^i), \quad \det(X) = -|\mathbf{x}|^2. \tag{3.225} $$
+
+(b) 设 $ 2 \times 2 $ 矩阵 $ U \in SU(2) $，即满足 $ U^\dagger U = U U^\dagger = \mathbf{1} $ 和 $ \det(U) = 1 $。对 $ X $ 作相似变换 
+$$ X' = U X U^\dagger, $$
+
+利用 $ \mathrm{tr}(AB) = \mathrm{tr}(BA) $ 和 $ \det(AB) = \det(BA) $ 证明
+$$ X'^\dagger = X', \quad \mathrm{tr}(X') = 0, \quad \det(X') = \det(X). \tag{3.226} $$
+
+可见，$ X' $ 也是无迹厄米矩阵，因而可表达为 $ X' = x'^i \sigma^i $，即对应于三维空间另一点 $ P' $ 的位置矢量 $ \mathbf{x}' = (x'^1, x'^2, x'^3) $。$ \det(X') = \det(X) $ 表明 $ |\mathbf{x}'|^2 = |\mathbf{x}|^2 $，因而 $ \mathbf{x}' $ 与 $ \mathbf{x} $ 可以用 3 阶实正交矩阵 $ R $ 联系起来，
+$$ x'^i = R^i_j x^j. \tag{3.227} $$
+
+当 $ U = \mathbf{1} $ 时 $ X' = X $，故 $ R = \mathbf{1} $。因为任意 $ U $ 可以在连通的 $ SU(2) $ 群空间中由恒元连续变化得到，所以 $ R $ 也可以在 $ O(3) $ 群空间中由恒元连续变化得到。这意味着 $ R $ 属于 $ O(3) $ 群的连通子群 $ SO(3) $，满足 $ \det(R) = 1 $。
+
+任意两个行列式相等的 $ 2 \times 2 $ 无迹厄米矩阵 $ X $ 和 $ X' $ 可以用 $ U \in SU(2) $ 作相似变换联系起来，但这样的 $ U $ 不是唯一的。
+
+(c) 设 $ U_1, U_2 \in SU(2) $ 满足 $ U_1 X U_1^\dagger = U_2 X U_2^\dagger = X' $，证明
+$$ [U_2^\dagger U_1, X] = 0, \tag{3.228} $$
+
+即 $ U_2^\dagger U_1 $ 与任意 $ X $ 对易。因此 $ U_2^\dagger U_1 $ 与单位矩阵只相差一个常数因子 $ \lambda $，即 $ U_2^\dagger U_1 = \lambda \mathbf{I} $，故 $ U_1 = \lambda U_2 $。利用 $ \det(U_1) = \det(U_2) = 1 $ 证明
+$$ \lambda = \pm 1. \tag{3.229} $$
+
+于是，用 $ U $ 和 $ -U $ 对 $ X $ 作相似变换将得到的相同 $ X' $。由 $ R^i_j x^j \sigma^i = x'^i \sigma^i = X' = U X U^\dagger = x^j U \sigma^j U^\dagger $ 和 $ \mathbf{x} $ 的任意性得到
+$$ U \sigma^j U^\dagger = \sigma^i R^i_j, \quad (-U) \sigma^j (-U)^\dagger = \sigma^i R^i_j. \tag{3.230} $$
+
+这给出 $ SU(2) $ 群元素 $ U $ 和 $ -U $ 与 $ SO(3) $ 群元素 $ R $ 之间二对一的对应关系。
+
+(d) 设 $ U_1 \sigma^j U_1^\dagger = \sigma^i (R_1)^i_j $ 和 $ U_2 \sigma^j U_2^\dagger = \sigma^i (R_2)^i_j $，证明以上对应关系对群乘积保持不变，即
+$$ (U_2 U_1) \sigma^j (U_2 U_1)^\dagger = \sigma^i (R_2 R_1)^i_j. \tag{3.231} $$
+
+因此，这种对应关系是 $ SU(2) $ 群与 $ SO(3) $ 群之间的 $ 2:1 $ 同态关系。
+
+\newpage
+\subsection{3.5}
+本题将验证 (3.217) 表达的 $ SU(2) $ 群元 $ U(\mathbf{n}, \omega) $ 满足对应关系 (3.230)。如图 3.9 所示，将任意位置矢量 $ \mathbf{x} $ 分解为平行于 $ \mathbf{n} $ 的分量 $ a \mathbf{n} $ 和垂直于 $ \mathbf{n} $ 的分量 $ b \mathbf{m} $，即
+$$ \mathbf{x} = a \mathbf{n} + b \mathbf{m}, \tag{3.232} $$
+
+其中单位矢量 $ \mathbf{n} $ 和 $ \mathbf{m} $ 满足 $ |\mathbf{n}|^2 = |\mathbf{m}|^2 = 1 $ 和 $ \mathbf{n} \cdot \mathbf{m} = 0 $。
+
+(a) 利用 (3.218) 式证明
+$$ U(\mathbf{n}, \omega) (\mathbf{n} \cdot \boldsymbol{\sigma}) U^\dagger(\mathbf{n}, \omega) = \mathbf{n} \cdot \boldsymbol{\sigma}. $$
+
+(b) 对于任意三维矢量 $ \mathbf{p} $ 和 $ \mathbf{q} $，利用 (3.56) 式证明
+$$ (\mathbf{p} \cdot \boldsymbol{\sigma}) (\mathbf{q} \cdot \boldsymbol{\sigma}) = (\mathbf{p} \cdot \mathbf{q}) \mathbf{1} + i (\mathbf{p} \times \mathbf{q}) \cdot \boldsymbol{\sigma}. $$
+
+以此推出
+$$ (\mathbf{n} \cdot \boldsymbol{\sigma}) (\mathbf{m} \cdot \boldsymbol{\sigma}) = i (\mathbf{n} \times \mathbf{m}) \cdot \boldsymbol{\sigma}. $$
+
+利用 (1.118) 式证明
+$$ (\mathbf{n} \times \mathbf{m}) \times \mathbf{n} = \mathbf{m}, $$
+
+进而推出
+$$ (\mathbf{n} \cdot \boldsymbol{\sigma}) (\mathbf{m} \cdot \boldsymbol{\sigma}) (\mathbf{n} \cdot \boldsymbol{\sigma}) = -\mathbf{m} \cdot \boldsymbol{\sigma}. $$
+
+(c) 证明
+$$ U(\mathbf{n}, \omega) (\mathbf{m} \cdot \boldsymbol{\sigma}) U^\dagger(\mathbf{n}, \omega) = \mathbf{m}' \cdot \boldsymbol{\sigma}, $$
+
+其中
+$$ \mathbf{m}' = \cos \omega \mathbf{m} + \sin \omega (\mathbf{n} \times \mathbf{m}) $$
+
+是把 $ \mathbf{m} $ 绕 $ \mathbf{n} $ 方向转动 $ \omega $ 角得到的单位矢量。
+
+(d) 令
+$$ \mathbf{x}' \cdot \boldsymbol{\sigma} = U(\mathbf{n}, \omega) (\mathbf{x} \cdot \boldsymbol{\sigma}) U^\dagger(\mathbf{n}, \omega), $$
+
+证明
+$$ \mathbf{x}' = a \mathbf{n} + b \mathbf{m}', $$
+
+即
+$$ \mathbf{x}' = a \mathbf{n} + b \cos \omega \mathbf{m} + b \sin \omega (\mathbf{n} \times \mathbf{m}). $$
+
+\newpage
+\subsection{3.6}
+设 $ \mathbf{n}_1 $ 是一个与 $ \hat{\mathbf{p}} = \mathbf{p}/|\mathbf{p}| $ 垂直的单位矢量，而单位矢量 $ \mathbf{n}_2 = \hat{\mathbf{p}} \times \mathbf{n}_1 $，则 $ \hat{\mathbf{p}} $、$ \mathbf{n}_1 $ 和 $ \mathbf{n}_2 $ 两两之间相互垂直，如图 3.10 所示。引入自旋角动量算符 $ \mathbf{S} $ 在 $ \mathbf{n}_1 $ 和 $ \mathbf{n}_2 $ 上的投影
+$$ S_{T,1} = \mathbf{n}_1 \cdot \mathbf{S}, \quad S_{T,2} = \mathbf{n}_2 \cdot \mathbf{S}, \tag{3.244} $$
+
+以及它们的线性组合
+$$ S_\pm = S_{T,1} \pm i S_{T,2}, \tag{3.245} $$
+
+证明
+$$ \mathbf{S}^2 = S_{T,1}^2 + S_{T,2}^2 + S_p^2, \tag{3.246} $$
+
+和对易关系
+$$ [S_{T,1}, S_{T,2}] = i S_p, \quad [\mathbf{S}^2, S_\pm] = 0, \quad [S_p, S_\pm] = \pm S_\pm, \tag{3.247} $$
+
+其中 $ S_p = \hat{\mathbf{p}} \cdot \mathbf{S} $ 是螺旋度算符。由此可见，$ \mathbf{S}^2 $、$ S_{T,1} $、$ S_{T,2} $、$ S_p $ 和 $ S_\pm $ 之间的关系与 $ \mathbf{J}^2 $、$ J^1 $、$ J^2 $、$ J^3 $ 和 $ J^\pm $ 之间的关系形式相同，从而螺旋度 $ \lambda $ 与磁量子数 $ \sigma $ 的取值情况也相同。
+
+\newpage
+\subsection{3.7}
+引入 $ \sigma^\mu = (1, \boldsymbol{\sigma}) $ 和 $ \bar{\sigma}^\mu = (1, -\boldsymbol{\sigma}) $，则任意时空坐标 $ x^\mu $ 一一对应于 $ 2 \times 2 $ 厄米矩阵
+$$ \tilde{X} = x^\mu \sigma_\mu = x^0 \mathbf{1} - x^i \sigma^i = \begin{pmatrix} x^0 - x^3 & -x^1 + i x^2 \\ -x^1 - i x^2 & x^0 + x^3 \end{pmatrix}. \tag{3.248} $$
+
+(a) 证明
+$$ x^\mu = \frac{1}{2} \mathrm{tr}(\tilde{X} \sigma^\mu), \quad \det(\tilde{X}) = x^\mu x_\mu. \tag{3.249} $$
+
+(b) 设 $ \lambda $ 是满足 $ |\det(\lambda)| = 1 $ 的任意 $ 2 \times 2 $ 可逆复矩阵，对 $ \tilde{X} $ 作变换得到厄米矩阵
+$$ \tilde{X}' = \lambda \tilde{X} \lambda^\dagger, \tag{3.250} $$
+
+证明
+$$ \det(\tilde{X}') = \det(\tilde{X}). \tag{3.251} $$
+
+(c) 将 $ \tilde{X}' $ 表达为 $ \tilde{X}' = x'^\mu \sigma_\mu $，则 (3.251) 表明 $ x'^\mu x'_\mu = x^\mu x_\mu $。因此，$ \lambda $ 对应于一个 Lorentz 变换 $ \Lambda(\lambda) $，满足
+$$ \lambda x^\mu \sigma_\mu \lambda^\dagger = x'^\mu \sigma_\mu = \Lambda^\mu_\nu (\lambda) x^\nu \sigma_\mu. \tag{3.252} $$
+
+对于满足 $ |\det(\lambda)| = 1 $ 的任意 $ 2 \times 2 $ 可逆复矩阵 $ \lambda_1 $ 和 $ \lambda_2 $，证明同态关系
+$$ \Lambda^\mu_\nu (\lambda_2 \lambda_1) = \Lambda^\mu_\rho (\lambda_2) \Lambda^\rho_\nu (\lambda_1). \tag{3.253} $$
+
+如果 $ \lambda_1 $ 和 $ \lambda_2 $ 只相差一个整体相位因子，即 $ \lambda_2 = \eta \lambda_1 $，其中 $ |\eta| = 1 $，则 $ \lambda_2 \tilde{X} \lambda_2^\dagger = |\eta|^2 \lambda_1 \tilde{X} \lambda_1^\dagger = \lambda_1 \tilde{X} \lambda_1^\dagger $，因而 $ \lambda_1 $ 和 $ \lambda_2 $ 对应于同一个 Lorentz 变换。为消除这样的重复性，可以适当选取相位因子，使得 $ \det(\lambda) = 1 $。因此只需要讨论 $ \det(\lambda) = 1 $ 的任意 $ 2 \times 2 $ 可逆复矩阵 $ \lambda $，所有这样的矩阵 $ \{\lambda\} $ 构成复数域上的 2 阶特殊线性群 SL(2, C)。
+
+(d) 根据线性代数的极分解定理，任意 $ \lambda \in SL(2, C) $ 可以分解为
+$$ \lambda = U \exp(h) \tag{3.254} $$
+
+其中 $ U \in SU(2) $，而 $ h $ 是一个 $ 2 \times 2 $ 无迹厄米矩阵。对于 $ \tilde{X}' = U \tilde{X} U^\dagger $，证明
+$$ x'^0 = x^0. \tag{3.255} $$
+
+因此 $ U \in SU(2) $ 对应的 $ \Lambda(U) $ 是空间旋转变换。
+
+(e) 设 $ \theta $ 为实数，令
+$$ \lambda(\theta) = \begin{pmatrix} e^{i\theta/2} & 0 \\ 0 & e^{-i\theta/2} \end{pmatrix}, \tag{3.256} $$
+
+证明 $ \tilde{X}' = \lambda(\theta) \tilde{X} \lambda^\dagger(\theta) $ 和 $ \tilde{X} $ 对应的时空坐标满足
+$$ x'^0 = x^0, \quad x'^1 = x^1 \cos \theta + x^2 \sin \theta, \quad x'^2 = -x^1 \sin \theta + x^2 \cos \theta, \quad x'^3 = x^3. \tag{3.257} $$
+
+可见，$ \lambda(\theta) $ 对应的 Lorentz 变换 $ \Lambda[\lambda(\theta)] $ 是绕 z 轴转动 $ \theta $ 角的空间旋转变换，而 $ \lambda(0) = \mathbf{1} $ 和 $ \lambda(2\pi) = -\mathbf{1} $ 对应于同一个 Lorentz 变换 $ \Lambda[\lambda(\theta)] = \mathbf{1} $。
+
+\newpage
+\subsection{3.8}
+考虑 (3.173) 式表达的 Lorentz 变换 $ S(\alpha, \beta) $ 和 (1.36) 式表达的旋转变换 $ R_z(\theta) $。
+
+(a) 验证 $ g = S^T g S $ 和 $ \det(S) = 1 $。
+
+(b) 推出 (3.178) 式。
+
+(c) 推出 (3.180) 式。
+
+\newpage
+\subsection{3.9}
+用 Poincaré 群的生成元算符 $ P^\mu $ 和 $ J^{\mu\nu} $ 定义 Pauli-Lubanski 赝矢量算符
+$$ W^\mu = -\frac{1}{2} \varepsilon^{\mu\nu\rho\sigma} J_{\nu\rho} P_\sigma \tag{3.258} $$
+
+和两个标量算符
+$$ I = \frac{i}{8} \varepsilon_{\mu\nu\rho\sigma} J^{\mu\nu} J^{\rho\sigma}, \tag{3.259} $$
+$$ W^2 = W^\mu W_\mu. \tag{3.260} $$
+
+(a) 证明
+$$ W^\mu P_\mu = 0, \quad [P^\mu, W^\nu] = 0. \tag{3.261} $$
+
+(b) 证明
+$$ [I, P^\mu] = -W^\mu, \quad U^{-1}(\Lambda) I U(\Lambda) = I, \quad [J^{\mu\nu}, I] = 0. \tag{3.262} $$
+
+(c) 对于任意算符 $ A, B $ 和 $ C $，推出 Jacobi 恒等式
+$$ [A, [B, C]] + [B, [C, A]] + [C, [A, B]] = 0. \tag{3.263} $$
+
+进而证明
+$$ [J^{\mu\nu}, W^\rho] = i (g^{\nu\rho} W^\mu - g^{\mu\rho} W^\nu). \tag{3.264} $$
+
+(d) 证明
+$$ [P^\mu, W^2] = 0, \quad [J^{\mu\nu}, W^2] = 0. \tag{3.265} $$
+
+可见，$ W^2 $ 与 Poincaré 群的所有生成元算符对易，即它是 Poincaré 群的 Casimir 算符，因而 $ W^2 $ 的本征值在任意 Poincaré 变换下不变。Poincaré 群的不可约么正表示可以用 $ W^2 $ 和另一个 Casimir 算符 $ P^2 $ 的本征值来刻画。
+
+(e) 推出
+$$ W^0 = \mathbf{J} \cdot \mathbf{P}, \quad \mathbf{W} = \mathbf{J} H + \mathbf{K} \times \mathbf{P}. \tag{3.266} $$
+
+(f) 已知质量为 $ m > 0 $，自旋为 $ s $ 的单粒子态 $ |\Psi_{s,\sigma}(p^\mu)\rangle $ 满足本征方程
+$$ P^\mu |\Psi_{s,\sigma}(p^\mu)\rangle = p^\mu |\Psi_{s,\sigma}(p^\mu)\rangle, \quad P^2 |\Psi_{s,\sigma}(p^\mu)\rangle = m^2 |\Psi_{s,\sigma}(p^\mu)\rangle, \tag{3.267} $$
+$$ \mathbf{J}^2 |\Psi_{s,\sigma}(p^\mu)\rangle = s(s+1) |\Psi_{s,\sigma}(p^\mu)\rangle, \quad J^3 |\Psi_{s,\sigma}(p^\mu)\rangle = \sigma |\Psi_{s,\sigma}(p^\mu)\rangle. \tag{3.268} $$
+
+取 $ p^\mu = (m, \mathbf{0}) $，推出
+$$ W^0 |\Psi_{s,\sigma}(p^\mu)\rangle = 0 |\Psi_{s,\sigma}(p^\mu)\rangle, \quad \mathbf{W} |\Psi_{s,\sigma}(p^\mu)\rangle = m \mathbf{J} |\Psi_{s,\sigma}(p^\mu)\rangle, \tag{3.269} $$
+
+和
+$$ W^2 |\Psi_{s,\sigma}(p^\mu)\rangle = -m^2 s(s+1) |\Psi_{s,\sigma}(p^\mu)\rangle. \tag{3.270} $$
+
+(g) 已知螺旋度为 $ \lambda $ 的无质量单粒子态 $ |\Psi_\lambda(p^\mu)\rangle $ 满足本征方程
+$$ P^\mu |\Psi_\lambda(p^\mu)\rangle = p^\mu |\Psi_\lambda(p^\mu)\rangle, \quad \frac{\mathbf{P} \cdot \mathbf{J}}{|\mathbf{p}|} |\Psi_\lambda(p^\mu)\rangle = \lambda |\Psi_\lambda(p^\mu)\rangle, \quad W^2 |\Psi_\lambda(p^\mu)\rangle = 0 |\Psi_\lambda(p^\mu)\rangle, \tag{3.271} $$
+
+其中四维动量 $ p^\mu $ 满足 $ p^2 = 0 $。设 $ W^\mu |\Psi_\lambda(p^\mu)\rangle = w^\mu |\Psi_\lambda(p^\mu)\rangle $，论证
+$$ w^\mu = \lambda p^\mu. \tag{3.272} $$
+
+\newpage
+\subsection{3.10}
+取 $ j = 3/2 $，根据 (3.142) 和 (3.147) 式推出 SU(2) 群 4 维表示的生成元矩阵 $ \tau_{(3/2)}^1, \tau_{(3/2)}^2 $ 和 $ \tau_{(3/2)}^3 $。
+
+
+

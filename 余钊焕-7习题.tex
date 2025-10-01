@@ -1,0 +1,71 @@
+\section{习题7}
+
+\newpage
+\subsection{7.1}
+对于7.1节讨论的Yukawa理论，画出 $\psi \phi \rightarrow \psi \phi$散射过程的所有领头阶Feynman图，确定子图之间的相对符号，根据动量空间Feynman规则写出不变振幅$iM$的表达式。
+
+\newpage
+\subsection{7.2}
+在7.3节讨论的实际场$\phi^4$理论中，对于$\phi \phi \rightarrow \phi \phi$散射过程，画出所有包含2个顶点的单圈Feynman图，分析它们的对称性因子。
+
+\newpage
+\subsection{7.3}
+考虑拉氏量
+$$ \mathcal{L} = \frac{1}{2}(\partial^\mu \chi)\partial_\mu \chi - \frac{1}{2}m_x^2 \chi^2 + (\partial^\mu \phi^i)\partial_\mu \phi - m_{\phi}^2 \phi^i \phi + \lambda \chi \phi^i \phi. \tag{7.159} $$
+其中$\chi(x)$是实标量场，相应的玻色子记作$\chi_0$. $\phi(x)$是复标量场，相应的正反玻色子记作$\phi$和$\phi_0$. $\lambda$是实耦合常数。
+
+(a) $\lambda$的量纲是什么？
+
+(b) 写出动量空间中的顶点Feynman规则。
+
+(c) 当$m_x > 2m_{\phi}$时，画出$\chi \rightarrow \phi \phi$衰变过程的领头阶Feynman图，并计算相应的衰变宽度。
+
+(d) 画出下列散射过程的所有领头阶Feynman图。
+i. $\phi \phi \rightarrow \phi \phi$.
+ii. $\phi \phi \rightarrow \phi \phi$.
+iii. $\phi \chi \rightarrow \phi \chi$.
+iv. $\phi \phi \rightarrow \chi \chi$.
+v. $\chi \chi \rightarrow \chi \chi$.
+
+\newpage
+\subsection{7.4}
+考虑拉氏量
+$$ \mathcal{L} = \frac{1}{2}(\partial^\mu \phi)\partial_\mu \phi - \frac{1}{2}m_{\phi}^2 \phi^2 - \frac{1}{4}F_{\mu \nu}F^{\mu \nu} + \frac{1}{2}m_A^2A_\mu A^\mu + \frac{\kappa}{2}g_{\mu \nu}A^\mu A^\nu \phi, \tag{7.160} $$
+其中 $\phi(x)$ 是实标量场，$A^\mu(x)$ 是实矢量场，相应玻色子分别记作 $\phi$ 和 $A$，$F_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu$ 是 $A^\mu$ 的场强张量，$\kappa$ 是实耦合常数。
+
+(a) 写出动量空间中的顶点 Feynman 规则。
+(b) 当 $m_\phi > 2m_A$ 时，画出 $\phi \rightarrow AA$ 衰变过程的领头阶 Feynman 图，计算衰变宽度。
+(c) 画出 $AA \rightarrow AA$ 散射过程的所有领头阶 Feynman 图。
+
+\newpage
+\subsection{7.5}
+对于有质量复矢量场 $A^\mu(x)$，在拉氏量 (4.290) 中加入相互作用项
+$$ \mathcal{L}_1 = -g(J_\mu A^\mu + J_\mu^t A^{\mu t}), \tag{7.161} $$
+其中 $g$ 是实耦合常数，$J_\mu(x)$ 是由其它场组成的复流。
+
+(a) 论证 Feynman 传播子 (6.419) 中的非协变项在微扰论的 $g^2$ 阶计算中没有贡献，因而位置空间中有质量复矢量场的内线规则为
+$$ x; \quad \underbrace{p}_{y}; \quad \underbrace{\mu}_{x} = \overbrace{A^\mu(y)A^{\nu t}(x)}_{} \text{的 Lorentz 协变项} $$
+$$ = \int \frac{d^4p}{(2\pi)^4} \frac{-i(g^{\mu\nu} - p^\mu p^\nu / m_A^2)}{p^2 - m_A^2 + i\epsilon} e^{-ip\cdot(y-x)}. \tag{7.162} $$
+
+这里的 $m_A$ 就是拉氏量 (4.290) 中的 $m_0$。
+
+(b) 根据平面波展开式 (4.293)，推出位置空间中有质量复矢量场的外线规则为
+$$ A, \lambda; \quad \underbrace{p}_{x} = \langle 0 | \overbrace{A^\mu(x)}^{\sigma} | p^+, \lambda \rangle = \langle 0 | A^{\mu(t+)} (x) | p^+, \lambda \rangle $$
+$$ = \varepsilon^\mu(p, \lambda)e^{-ip\cdot x}, \tag{7.163} $$
+$$ \bar{A}, \lambda; \quad \underbrace{p}_{x} = \langle 0 | \overbrace{A^\mu(x)}^{\sigma} | p^- , \lambda \rangle = \langle 0 | A^{\mu(t+)} (x) | p^- , \lambda \rangle $$
+$$ = \varepsilon^\mu(p, \lambda)e^{-ip\cdot x}, \tag{7.164} $$
+$$ x \quad \underbrace{p}_{x} \sim \overbrace{A, \lambda; \mu}_{} = \langle p^+, \lambda | A^{\mu t}(x) | 0 \rangle = \langle p^+, \lambda | A^{\mu(t-)} (x) | 0 \rangle $$
+$$ = \varepsilon^\mu(p, \lambda)e^{ip\cdot x}, \tag{7.165} $$
+$$ x \quad \underbrace{p}_{x} \sim \overbrace{A, \lambda; \mu}_{} = \langle p^-, \lambda | A^{\mu t}(x) | 0 \rangle = \langle p^-, \lambda | A^{\mu(t-)} (x) | 0 \rangle $$
+$$ = \varepsilon^\mu(p, \lambda)e^{ip\cdot x}. \tag{7.166} $$
+
+因此，动量空间中有质量复矢量场的一般内外线规则为
+• 有质量正矢量玻色子入射外线：$A, \lambda; \mu \sim \underbrace{p}_{} = \varepsilon^\mu(p, \lambda)$。
+
+• 有质量反矢量玻色子入射外线： $\bar{A}, \lambda; \mu \rightarrow \overset{P}{\longleftrightarrow} = \varepsilon^{\mu}(p, \lambda)$。
+
+• 有质量正矢量玻色子出射外线： $\overset{P}{\longleftrightarrow} A, \lambda; \mu = \varepsilon^{\mu*}(p, \lambda)$。
+
+• 有质量反矢量玻色子出射外线： $\overset{P}{\longleftrightarrow} \bar{A}, \lambda; \mu = \varepsilon^{\mu*}(p, \lambda)$。
+
+• 有质量复矢量玻色子传播子： $\nu \rightarrow \overset{P}{\longleftrightarrow} \overset{\mu}{=} \frac{-i(g^{\mu\nu} - p^{\mu}p^{\nu}/m_A^2)}{p^2 - m_A^2 + i\epsilon}$。

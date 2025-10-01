@@ -1,0 +1,118 @@
+\section{习题4}
+
+\newpage
+\subsection{4.1}
+定义 Lorentz 矢量表示的增速生成元
+$$\mathcal{K}^{i} \equiv \mathcal{J}^{0i}。$$
+(a) 根据 (4.2) 式，写出 $(\mathcal{K}^{1})^{\mu}_{\nu}, (\mathcal{K}^{2})^{\mu}_{\nu}$ 和 $(\mathcal{K}^{3})^{\mu}_{\nu}$ 的矩阵表达式。
+(b) 根据 $ \mathcal{J}^i $ 的定义 (4.36) 以及 $ \theta^i $ 和 $ \xi^i $ 的定义 (3.41)，证明有限 Lorentz 变换 (4.14) 可以表示为
+$$\Lambda = \exp(i\theta^i \mathcal{J}^i + i\xi^i \mathcal{K}^i).$$
+
+\newpage
+\subsection{4.2}
+根据 (4.39)、(4.40) 和 (4.41) 式，将 $ \mathcal{J}^i $ 的纯空间部分记为
+$$\hat{\tau}_{(1)}^i = 
+\begin{pmatrix}
+0 & -i \\
+i & 0
+\end{pmatrix}, \quad \hat{\tau}_{(1)}^i = 
+\begin{pmatrix}
+i & 0 \\
+-i & 0
+\end{pmatrix}, \quad \hat{\tau}_{(1)}^i = 
+\begin{pmatrix}
+-i & 0 \\
+i & 0
+\end{pmatrix}.$$
+(a) 验证 $\hat{\tau}_{(1)}^i$ 满足 SU(2) 代数关系
+$$[\hat{\tau}_{(1)}^i, \hat{\tau}_{(1)}^j] = i e^{ijk} \hat{\tau}_{(1)}^k.$$
+(b) 验证 $\hat{\tau}_{(1)}^i$ 与 (3.156) 式表达的 $\hat{\tau}_{(1)}^i$ 之间的关系为
+$$U^{\dagger} \hat{\tau}_{(1)}^i U = \hat{\tau}_{(1)}^i,$$
+其中幺正矩阵
+$$U = \frac{1}{\sqrt{2}} 
+\begin{pmatrix}
+1 & 0 & 1 \\
+i & 0 & -i \\
+0 & \sqrt{2} & 0
+\end{pmatrix}.$$
+可见，$\hat{\tau}_{(1)}^i$ 与 $\hat{\tau}_{(1)}^i$ 等价，也可作为 SU(2) 群 3 维线性表示 $D^{(1)}$ 的生成元矩阵。
+
+\newpage
+\subsection{4.3}
+证明 (4.23) 式定义的微分算符 $\hat{L}^{\mu\nu}$ 满足 Lorentz 代数关系
+$$[\hat{L}^{\mu\nu}, \hat{L}^{\rho\sigma}] = i(g^{\nu\rho} \hat{L}^{\mu\sigma} - g^{\mu\rho} \hat{L}^{\nu\sigma} - g^{\nu\sigma} \hat{L}^{\mu\rho} + g^{\mu\sigma} \hat{L}^{\nu\rho}).$$
+实际上，$\hat{L}^{\mu\nu}$ 是 Lorentz 群在场空间上的生成元，它们生成一个无限维幺正表示。
+
+\newpage
+\subsection{4.4}
+比较 (4.111) 和 (4.112) 式中负能解的系数，得到
+$$e^{\mu*}(p, \lambda)[a_{p,\lambda}^\dagger, J] = [-\delta^\mu, x \times p + (\mathcal{J})^\mu] e^{\mu*}(p, \lambda) a_{p,\lambda}^\dagger,$$
+以此推出 $[p, J, a_{p,\lambda}^\dagger] = \lambda a_{p,\lambda}^\dagger$。
+
+\newpage
+\subsection{4.5}
+验证有质量矢量场 $A^\mu(x,t)$ 和 $\pi_i(x,t)$ 的平面波展开式 (4.110) 和 (4.126) 满足 (4.63) 式
+$$A^0 = -\nabla \cdot \pi / m^2.$$
+
+\newpage
+\subsection{4.6}
+设有质量矢量场 $A^\mu(x)$ 对应的拉氏量为
+$$\mathcal{L} = -\frac{1}{2} F_{\mu\nu}^\dagger F^{\mu\nu} + m^2 A_\mu^\dagger A^\mu,$$
+其中 $F^{\mu\nu} = \partial^\mu A^\nu - \partial^\nu A^\mu, \, m > 0$。
+(a) 由 Euler-Lagrange 方程 (1.167) 推出 $A^\mu(x)$ 的经典运动方程。
+(b) 将 $A^\mu(x)$ 分解成两个实矢量场 $B^\mu(x)$ 和 $C^\mu(x)$ 的线性组合，
+$$A^\mu = \frac{1}{\sqrt{2}} (B^\mu + iC^\mu),$$
+证明拉氏量可化为
+$$\mathcal{L} = -\frac{1}{4} B_{\mu\nu} B^{\mu\nu} + \frac{1}{2} m^2 B_\mu B^\mu - \frac{1}{4} C_{\mu\nu} C^{\mu\nu} + \frac{1}{2} m^2 C_\mu C^\mu,$$
+其中 $B^{\mu\nu} \equiv \partial^\mu B^\nu - \partial^\nu B^\mu$，而 $C^{\mu\nu} \equiv \partial^\mu C^\nu - \partial^\nu C^\mu$。因此，复矢量场的拉氏量相当于两个质量相同的实矢量场的拉氏量。
+(c) 证明 $A^\mu(x)$ 的平面波展开式为
+$$A^\mu(x) = \int \frac{d^3 p}{(2\pi)^3} \sum_{\lambda=\pm,0} \left[ e^{i\lambda}(p,\lambda)a_{p,\lambda}e^{-ip\cdot x} + e^{i\mu}(p,\lambda)b_{p,\lambda}^{\dagger}e^{ip\cdot x} \right],$$
+且产生湮灭算符满足对易关系
+$$[a_{p,\lambda}, a_{q,\lambda}] = (2\pi)^3 \delta_{\lambda \lambda'} \delta^{(3)}(p-q), \quad [a_{p,\lambda}, a_{q,\lambda'}] = [a_{p,\lambda}, a_{q,\lambda'}] = 0,$$
+$$[b_{p,\lambda}, b_{q,\lambda'}] = (2\pi)^3 \delta_{\lambda \lambda'} \delta^{(3)}(p-q), \quad [b_{p,\lambda}, b_{q,\lambda'}] = [b_{p,\lambda}, b_{q,\lambda'}] = 0,$$
+$$[a_{p,\lambda}, b_{q,\lambda'}] = [b_{p,\lambda}, a_{q,\lambda'}] = [a_{p,\lambda}, b_{q,\lambda'}] = [a_{p,\lambda}, b_{q,\lambda'}] = 0.$$
+(d) 作 U(1) 整体变换 $A^\mu(x) = e^{iq\theta} A^\mu(x)$，证明拉氏量 $\mathcal{L}(x)$ 在此变换下不变，并推出相应的 U(1) 守恒流算符
+$$J^\mu = ig(F^{\mu\nu\dagger}A_\nu - A_\nu^\dagger F^{\mu\nu}).$$
+(e) 证明 U(1) 守恒荷算符 $Q = \int d^3 x J^0$ 表达为
+$$Q = \int \frac{d^3 p}{(2\pi)^3} \sum_{\lambda=\pm,0} (q a_{p,\lambda}^\dagger a_{p,\lambda} - q b_{p,\lambda}^\dagger b_{p,\lambda}) - 3\delta^{(3)}(0) \int d^3 p q.$$
+可见，$(a_{p,\lambda}, a_{p,\lambda}^\dagger)$ 描述正矢量玻色子，$(b_{p,\lambda}, b_{p,\lambda}^\dagger)$ 描述反矢量玻色子。
+
+\newpage
+\subsection{4.7}
+考虑无质量情况下的极化矢量。
+(a) 设纵向极化矢量 $e^\mu(p,3)$ 满足归一关系 $e^\mu(p,3)e_\mu(p,3) = -1$，且其空间分量正比于 $p$，论证 $e^\mu(p,3)$ 不能满足四维横向条件 $p_\mu e^\mu(p,3) = 0$。
+(b) 论证满足归一关系 $e^\mu(p,0)e_\mu(p,0) = 1$ 的类时极化矢量 $e^\mu(p,0)$ 不能满足四维横向条件 $p_\mu e^\mu(p,0) = 0$。
+
+\newpage
+\subsection{4.8}
+由极化求和关系 (4.102) 和 (4.124) 式推出
+$$\sum_{\lambda=\pm,0} \varepsilon_i(p,\lambda)\varepsilon_j^\ast(p,\lambda) = -g_{ij},$$
+$$\sum_{\lambda = \pm 0} \varepsilon_i (p, \lambda) \varepsilon_j^* (p, \lambda) = -g_{ij} - \frac{p_ip_j}{p_0^2}.$$
+再利用以上两式，产生湮灭算符的对易关系（4.128）以及 $A^\mu (x, t)$ 和 $\pi_i (x, t)$ 的平面波展开式（4.110）和（4.126），推出有质量矢量场的等时对易关系（4.59）。
+
+\newpage
+\subsection{4.9}
+利用完备性关系（4.67）、产生湮灭算符的对易关系（4.233）以及 $A^\mu (x, t)$ 和 $\pi_\mu (x, t)$ 的平面波展开式（4.229）和（4.231），推出无质量矢量场的等时对易关系（4.218）。
+
+\newpage
+\subsection{4.10}
+设 $h_{\mu \nu}$ 是对称的二阶 Lorentz 张量场，考虑 Pauli-Fierz 作用量
+$$S_{PF} = \int d^4 x \mathcal{L}_{PF}(x),$$
+其中
+$$\mathcal{L}_{PF} = \frac{1}{2} (\partial^\mu h^{\mu \nu}) \partial_\rho h_{\mu \nu} - (\partial^\mu h^{\nu \rho}) \partial_\rho h_{\mu \nu} + (\partial^\nu h_{\mu \nu}) \partial^\mu h - \frac{1}{2} (\partial^\mu h) \partial_\mu h,$$
+而 $h \equiv g^{\mu \nu} h_{\mu \nu}$。
+(a) 对 $h_{\mu \nu}$ 作规范变换
+$$h'_{\mu \nu} (x) = h_{\mu \nu} (x) + \partial_\mu \chi_\nu (x) + \partial_\nu \chi_\mu (x),$$
+其中 $\chi_\mu (x)$ 是任意 Lorentz 矢量函数，证明 $S_{PF}$ 在规范变换下不变。
+(b) 根据 Euler-Lagrange 方程（1.167），证明 $h_{\mu \nu}$ 的经典运动方程是
+$$\partial^2 h_{\mu \nu} - \partial_\mu \partial^\rho h_{\nu \rho} - \partial_\nu \partial^\rho h_{\mu \rho} + g_{\mu \nu} \partial^\rho \partial^\sigma h_{\rho \sigma} + \partial_\mu \partial_\nu h - g_{\mu \nu} \partial^2 h = 0.$$
+注意上式对 $\mu$ 和 $\nu$ 对称。
+(c) 令
+$$\bar{h}_{\mu \nu} \equiv h_{\mu \nu} - \frac{1}{2} g_{\mu \nu} h,$$
+取 Lorenz 规范
+$$\partial^\nu \bar{h}_{\mu \nu} = 0,$$
+证明 $\bar{h}_{\mu \nu}$ 的运动方程为
+$$\partial^2 \bar{h}_{\mu \nu} = 0.$$
+
+
+

@@ -2,18 +2,184 @@
 
 \newpage
 \subsection{9.1}
-利用（9.11）和（9.12）式，证明算符 $J \cdot P \equiv J^i P^i$ 满足
-$$P^{-1}(J \cdot P)P = -J \cdot P. \tag{9.545}$$
+利用（9.11）和（9.12）式，证明算符 $$\mathbf{J}\cdot \mathbf{P}=J^iP^i$$ 满足
+$$P^{-1}\left( \mathbf{J}\cdot \mathbf{P} \right) P=-\mathbf{J}\cdot \mathbf{P}$$
+
 设 $|E, p, \sigma\rangle$ 是哈密顿量算符 $H$、动量算符 $P$ 和算符 $J \cdot P$ 的共同本征态，满足
-$$H | E, p, \sigma \rangle = E | E, p, \sigma \rangle, \quad P | E, p, \sigma \rangle = p | E, p, \sigma \rangle, \quad J \cdot P | E, p, \sigma \rangle = \sigma | E, p, \sigma \rangle. \tag{9.546}$$
-用 $P$ 变换定义 $|E, p, \sigma \rangle' \equiv P | E, p, \sigma \rangle$，证明
-$$H | E, p, \sigma \rangle' = E | E, p, \sigma \rangle', \quad P | E, p, \sigma \rangle' = -p | E, p, \sigma \rangle', \quad J \cdot P | E, p, \sigma \rangle' = -\sigma | E, p, \sigma \rangle'. \tag{9.547}$$
+$$H|E,\mathbf{p},\sigma \rangle =E|E,\mathbf{p},\sigma \rangle 
+\\
+\mathbf{P}|E,\mathbf{p},\sigma \rangle =\mathbf{p}|E,\mathbf{p},\sigma \rangle 
+\\
+\mathbf{J}\cdot \mathbf{P}|E,\mathbf{p},\sigma \rangle =\sigma |E,\mathbf{p},\sigma \rangle $$
+用 $P$ 变换定义 $$|E,\mathbf{p},\sigma \rangle ^{\prime}\equiv P|E,\mathbf{p},\sigma \rangle $$，证明
+$$H|E,\mathbf{p},\sigma \rangle ^{\prime}=E|E,\mathbf{p},\sigma \rangle ^{\prime}
+\\
+\mathbf{P}|E,\mathbf{p},\sigma \rangle ^{\prime}=-\mathbf{p}|E,\mathbf{p},\sigma \rangle ^{\prime}
+\\
+\mathbf{J}\cdot \mathbf{P}|E,\mathbf{p},\sigma \rangle ^{\prime}=-\sigma |E,\mathbf{p},\sigma \rangle ^{\prime}$$
+
+\subsubsection{解答1}
+由公式
+\begin{equation}
+    \begin{aligned}
+        P^{-1}\mathbf{J}P=+\mathbf{J}&\Leftrightarrow P^{-1}J^iP=+J^i
+\\
+P^{-1}\mathbf{K}P=-\mathbf{K}&\Leftrightarrow P^{-1}K^iP=-K^i
+    \end{aligned}
+\end{equation}
+且
+\begin{equation}
+    \begin{aligned}
+        P^{-1}HP=+H&\Leftrightarrow P^{-1}P^0P=-P^0
+\\
+P^{-1}\mathbf{P}P=-\mathbf{P}&\Leftrightarrow P^{-1}P^iP=-P^i
+    \end{aligned}
+\end{equation}
+计算
+\begin{equation}
+    \begin{aligned}
+        P^{-1}\left( \mathbf{J}\cdot \mathbf{P} \right) P&=P^{-1}\left( J^iP^i \right) P
+\\
+&=P^{-1}J^iP^iP
+\\
+&=P^{-1}J^iIP^iP
+\\
+&=P^{-1}J^i\cdot PP^{-1}\cdot P^iP
+\\
+&=P^{-1}J^iP\cdot P^{-1}P^iP
+\\
+&=\left( +J^i \right) \left( -P^i \right) 
+\\
+&=-J^iP^i
+\\
+&=-\mathbf{J}\cdot \mathbf{P}
+    \end{aligned}
+\end{equation}
+即
+
+
+
+\subsubsection{解答2}
+1.由公式
+\begin{equation}
+    \begin{aligned}
+        P^{-1}HP=+H
+\\
+HP=PH
+\\
+HP-HP=0
+\\
+\left[ H,P \right] =0
+    \end{aligned}
+\end{equation}
+且
+\begin{equation}
+    \begin{aligned}
+        P^{-1}\mathbf{P}P=-\mathbf{P}
+\\
+\mathbf{P}P=-P\mathbf{P}
+\\
+\mathbf{P}P+P\mathbf{P}=0
+\\
+\left\{ \mathbf{P},P \right\} =0
+    \end{aligned}
+\end{equation}
+且
+\begin{equation}
+    \begin{aligned}
+        P^{-1}\left( \mathbf{J}\cdot \mathbf{P} \right) P=-\mathbf{J}\cdot \mathbf{P}
+\\
+\left( \mathbf{J}\cdot \mathbf{P} \right) P=-P\left( \mathbf{J}\cdot \mathbf{P} \right) 
+\\
+\left( \mathbf{J}\cdot \mathbf{P} \right) P+P\left( \mathbf{J}\cdot \mathbf{P} \right) =0
+\\
+\left\{ \mathbf{J}\cdot \mathbf{P},P \right\} =0
+    \end{aligned}
+\end{equation}
+
+2.设
+\begin{equation}
+    \begin{aligned}
+        H|E,\mathbf{p},\sigma \rangle &=E|E,\mathbf{p},\sigma \rangle 
+\\
+\mathbf{P}|E,\mathbf{p},\sigma \rangle &=\mathbf{p}|E,\mathbf{p},\sigma \rangle 
+\\
+\mathbf{J}\cdot \mathbf{P}|E,\mathbf{p},\sigma \rangle &=\sigma |E,\mathbf{p},\sigma \rangle 
+    \end{aligned}
+\end{equation}
+以及
+\begin{equation}
+    \begin{aligned}
+        HP&=PH
+\\
+\mathbf{P}P&=-P\mathbf{P}
+\\
+\mathbf{J}\cdot \mathbf{P}P&=-P\mathbf{J}\cdot \mathbf{P}
+    \end{aligned}
+\end{equation}
+计算
+\begin{equation}
+    \begin{aligned}
+        H\left| E,\mathbf{p},\sigma \right. \rangle ^{\prime}&=HP|E,\mathbf{p},\sigma \rangle 
+\\
+&=PH|E,\mathbf{p},\sigma \rangle 
+\\
+&=PE|E,\mathbf{p},\sigma \rangle 
+\\
+&=EP|E,\mathbf{p},\sigma \rangle 
+\\
+&=E|E,\mathbf{p},\sigma \rangle ^{\prime}
+    \end{aligned}
+\end{equation}
+计算
+\begin{equation}
+    \begin{aligned}
+        \mathbf{P}\left| E,\mathbf{p},\sigma \right. \rangle ^{\prime}&=\mathbf{P}P\left| E,\mathbf{p},\sigma \right. \rangle 
+\\
+&=-P\mathbf{P}\left| E,\mathbf{p},\sigma \right. \rangle 
+\\
+&=-P\mathbf{p}|E,\mathbf{p},\sigma \rangle 
+\\
+&=-\mathbf{p}P|E,\mathbf{p},\sigma \rangle 
+\\
+&=-\mathbf{p}\left| E,\mathbf{p},\sigma \right. \rangle ^{\prime}
+    \end{aligned}
+\end{equation}
+计算
+\begin{equation}
+    \begin{aligned}
+        \mathbf{J}\cdot \mathbf{P}\left| E,\mathbf{p},\sigma \right. \rangle ^{\prime}&=\mathbf{J}\cdot \mathbf{P}P|E,\mathbf{p},\sigma \rangle 
+\\
+&=-P\mathbf{J}\cdot \mathbf{P}|E,\mathbf{p},\sigma \rangle 
+\\
+&=-P\sigma |E,\mathbf{p},\sigma \rangle 
+\\
+&=-\sigma P|E,\mathbf{p},\sigma \rangle 
+\\
+&=-\sigma |E,\mathbf{p},\sigma \rangle ^{\prime}
+    \end{aligned}
+\end{equation}
+得到
+\begin{equation}
+    \begin{aligned}
+        H|E,\mathbf{p},\sigma \rangle ^{\prime}&=E|E,\mathbf{p},\sigma \rangle ^{\prime}
+\\
+\mathbf{P}|E,\mathbf{p},\sigma \rangle ^{\prime}&=-\mathbf{p}|E,\mathbf{p},\sigma \rangle ^{\prime}
+\\
+\mathbf{J}\cdot \mathbf{P}|E,\mathbf{p},\sigma \rangle ^{\prime}&=-\sigma |E,\mathbf{p},\sigma \rangle ^{\prime}
+    \end{aligned}
+\end{equation}
+
+
 
 \newpage
 \subsection{9.2}
 根据（9.42）式，证明
-$$P^{r-1} | \phi \bar{\phi} \rangle = (-)^L | \phi \bar{\phi} \rangle, \tag{9.548}$$
+$$P^{\prime-1} | \phi \bar{\phi} \rangle = (-)^L | \phi \bar{\phi} \rangle, \tag{9.548}$$
 其中 $|\phi \bar{\phi}\rangle$ 是一对正反标量玻色子 $\phi \bar{\phi}$ 组成的态（9.28），$L$ 是它的轨道角动量量子数。
+
+
+\subsubsection{解答：写法1}
 
 \newpage
 \subsection{9.3}
